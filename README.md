@@ -1,9 +1,9 @@
 ![Img](guardian.png)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-# ARK Core-v3 Starter Kit
+# Guardian
 
-This is a template repository project. It contains ARK Core Blockchain App Boilerplate Code that accelerates your distributed application development on top of the ARK Core-v3 blockchain application platform.
+A set of Protokol modules providing Guardian support for the ARK Core Blockchain Framework.
 
 This work is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 

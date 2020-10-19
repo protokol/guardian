@@ -1,0 +1,38 @@
+name: UNIT-TESTS
+
+on:
+    push:
+        branches:
+            - "master"
+            - "develop"
+    pull_request:
+        types: [ready_for_review, synchronize, opened]
+
+jobs:
+    unit:
+        name: UNIT (API, CRYPTO, TRANSACTIONS)
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [12.x]
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Install And Build
+              run: yarn install --immutable --immutable-cache && yarn build
+
+            - name: GUARDIAN-CRYPTO
+              run: cd packages/guardian-crypto && yarn test:unit:coverage --coverageDirectory .coverage/unit-guardian-crypto --maxWorkers=2
+
+            - name: GUARDIAN-TRANSACTIONS
+              run: cd packages/guardian-transactions && yarn test:unit:coverage --coverageDirectory .coverage/unit-guardian-transactions --maxWorkers=2
+
+            - name: GUARDIAN-API
+              run: cd packages/guardian-api && yarn test:unit:coverage --coverageDirectory .coverage/unit-guardian-api --maxWorkers=2

@@ -2266,9 +2266,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@protokol/repo-name@workspace:.":
+"@protokol/guardian@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@protokol/repo-name@workspace:."
+  resolution: "@protokol/guardian@workspace:."
   dependencies:
     "@arkecosystem/core": ^3.0.0-next.4
     "@arkecosystem/core-cli": ^3.0.0-next.4
