@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-api@npm:^3.0.0-next.4, @arkecosystem/core-api@npm:next":
+"@arkecosystem/core-api@npm:^3.0.0-next.3, @arkecosystem/core-api@npm:^3.0.0-next.4, @arkecosystem/core-api@npm:next":
   version: 3.0.0-next.4
   resolution: "@arkecosystem/core-api@npm:3.0.0-next.4"
   dependencies:
@@ -90,7 +90,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-database@npm:^3.0.0-next.4, @arkecosystem/core-database@npm:next":
+"@arkecosystem/core-database@npm:^3.0.0-next.3, @arkecosystem/core-database@npm:^3.0.0-next.4, @arkecosystem/core-database@npm:next":
   version: 3.0.0-next.4
   resolution: "@arkecosystem/core-database@npm:3.0.0-next.4"
   dependencies:
@@ -121,7 +121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-kernel@npm:^3.0.0-next.4":
+"@arkecosystem/core-kernel@npm:^3.0.0-next.3, @arkecosystem/core-kernel@npm:^3.0.0-next.4":
   version: 3.0.0-next.4
   resolution: "@arkecosystem/core-kernel@npm:3.0.0-next.4"
   dependencies:
@@ -288,7 +288,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-state@npm:^3.0.0-next.4, @arkecosystem/core-state@npm:next":
+"@arkecosystem/core-state@npm:^3.0.0-next.3, @arkecosystem/core-state@npm:^3.0.0-next.4, @arkecosystem/core-state@npm:next":
   version: 3.0.0-next.4
   resolution: "@arkecosystem/core-state@npm:3.0.0-next.4"
   dependencies:
@@ -351,7 +351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-transactions@npm:^3.0.0-next.4, @arkecosystem/core-transactions@npm:next":
+"@arkecosystem/core-transactions@npm:^3.0.0-next.3, @arkecosystem/core-transactions@npm:^3.0.0-next.4, @arkecosystem/core-transactions@npm:next":
   version: 3.0.0-next.4
   resolution: "@arkecosystem/core-transactions@npm:3.0.0-next.4"
   dependencies:
@@ -427,7 +427,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/crypto@npm:^3.0.0-next.4":
+"@arkecosystem/crypto@npm:^3.0.0-next.3, @arkecosystem/crypto@npm:^3.0.0-next.4":
   version: 3.0.0-next.4
   resolution: "@arkecosystem/crypto@npm:3.0.0-next.4"
   dependencies:
@@ -2326,6 +2326,89 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@protokol/nft-base-api@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-base-api@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-api": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@hapi/boom": ^9.0.0
+    "@hapi/hapi": ^19.0.0
+    "@hapi/joi": ^17.1.0
+    "@protokol/nft-base-crypto": ^1.0.0-beta.28
+    "@protokol/nft-base-transactions": ^1.0.0-beta.28
+    latest-version: ^5.1.0
+  checksum: b7dcb25b82fb5e00dccec43118ba622a573819ed07f3ed86403d2a8814f18f4cf42e496331f4cb306fbdba2882dbe096b53b05a08dd013a099be71cdff6e623f
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-base-crypto@npm:^1.0.0-beta.28":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next.3
+    "@protokol/utils": ^1.0.0-beta.28
+    bytebuffer: ^5.0.1
+  checksum: f26ba00284af402d57e8e6939cd8129ad92fac5c192d90913f6632746ac21d8eb763709e14d4bdc2474feeaa00b7c0ab79bfe5f5957734d938e2f23abcbfd00b
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-base-transactions@npm:^1.0.0-beta.28, @protokol/nft-base-transactions@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-base-transactions@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-database": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@arkecosystem/core-state": ^3.0.0-next.3
+    "@arkecosystem/core-transactions": ^3.0.0-next.3
+    "@arkecosystem/crypto": ^3.0.0-next.3
+    "@protokol/nft-base-crypto": ^1.0.0-beta.28
+  checksum: 97393e8cf061f00013acc0916cee918ad309e54c7d8f63177690ec999d8fd18f42a618f3c27b67f67009258412a7470b7655ff638504a72bee3af127ec62ba86
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-api@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-exchange-api@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-api": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@hapi/boom": ^9.0.0
+    "@hapi/hapi": ^19.0.0
+    "@hapi/joi": ^17.1.0
+    "@protokol/nft-exchange-transactions": ^1.0.0-beta.28
+    latest-version: ^5.1.0
+  checksum: 0a392ea09bec82668d9918058dbabee2be00ae14337f7b43136b28f36e18c27c21aeb59f8c575c405b2ce8c633875c373b32c492247d7b9eec1beaa1c9d9e728
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-crypto@npm:^1.0.0-beta.28, @protokol/nft-exchange-crypto@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next.3
+    "@protokol/utils": ^1.0.0-beta.28
+    bytebuffer: ^5.0.1
+  checksum: 26b82f6d8ef5f20fa2b775e6f2c51ac2018b823c08eef76ea1a5c1d745eb448f108d085b96113e2e91c8509ded45950a0d16870606bdb077c094079d87f7e3b9
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-transactions@npm:^1.0.0-beta.28, @protokol/nft-exchange-transactions@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-exchange-transactions@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-database": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@arkecosystem/core-state": ^3.0.0-next.3
+    "@arkecosystem/core-transactions": ^3.0.0-next.3
+    "@arkecosystem/crypto": ^3.0.0-next.3
+    "@protokol/nft-base-crypto": ^1.0.0-beta.28
+    "@protokol/nft-base-transactions": ^1.0.0-beta.28
+    "@protokol/nft-exchange-crypto": ^1.0.0-beta.28
+  checksum: 797523771c154b07967ba50f4722b8ab87495c1775509c2e4d79601f8a221e72cd73880773dc76143d46664adf688d9bc03e050a9971b5e99f1647ebdaa07dde
+  languageName: node
+  linkType: hard
+
 "@protokol/utils@npm:^1.0.0-beta.28":
   version: 1.0.0-beta.28
   resolution: "@protokol/utils@npm:1.0.0-beta.28"
@@ -3209,6 +3292,18 @@ __metadata:
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
   checksum: 50d72b0a10326732072f5481b1b6bd5a43f8d770878b8f88ba5bb232abb745cefbf7f87a0e64679bd477d4a8bba0b3aea084675bd34943db5279c15907ee658f
+  languageName: node
+  linkType: hard
+
+"ajv@npm:latest":
+  version: 6.12.6
+  resolution: "ajv@npm:6.12.6"
+  dependencies:
+    fast-deep-equal: ^3.1.1
+    fast-json-stable-stringify: ^2.0.0
+    json-schema-traverse: ^0.4.1
+    uri-js: ^4.2.2
+  checksum: 19a8f3b0a06001eb68e6268f4f9f04424b32baadd5df6ba8292cd473e22e5f4019ed9ab17c3e3510394178ed8bef9b42ad0bdb5c675d65f042421a774780ce1a
   languageName: node
   linkType: hard
 
