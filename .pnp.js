@@ -282,6 +282,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@pm2/io", "npm:4.3.5"],
             ["@protokol/guardian-api", "workspace:packages/guardian-api"],
             ["@protokol/guardian-transactions", "workspace:packages/guardian-transactions"],
+            ["@protokol/nft-base-api", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-base-transactions", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-exchange-api", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-exchange-transactions", "npm:1.0.0-beta.28"],
             ["chalk", "npm:4.1.0"],
             ["cron", "npm:1.8.2"],
             ["dayjs", "npm:1.9.3"],
@@ -2559,6 +2563,97 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["@protokol/nft-base-api", [
+        ["npm:1.0.0-beta.28", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-api-npm-1.0.0-beta.28-bc9b84c414-b7dcb25b82.zip/node_modules/@protokol/nft-base-api/",
+          "packageDependencies": [
+            ["@protokol/nft-base-api", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/core-api", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0-next.4"],
+            ["@hapi/boom", "npm:9.1.0"],
+            ["@hapi/hapi", "npm:19.2.0"],
+            ["@hapi/joi", "npm:17.1.1"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-base-transactions", "npm:1.0.0-beta.28"],
+            ["latest-version", "npm:5.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@protokol/nft-base-crypto", [
+        ["npm:1.0.0-beta.28", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.28-fde3c53e83-f26ba00284.zip/node_modules/@protokol/nft-base-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.4"],
+            ["@protokol/utils", "npm:1.0.0-beta.28"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@protokol/nft-base-transactions", [
+        ["npm:1.0.0-beta.28", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-transactions-npm-1.0.0-beta.28-6609b83173-97393e8cf0.zip/node_modules/@protokol/nft-base-transactions/",
+          "packageDependencies": [
+            ["@protokol/nft-base-transactions", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/core-database", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-state", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0-next.4"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.4"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
+            ["ajv", "npm:6.12.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@protokol/nft-exchange-api", [
+        ["npm:1.0.0-beta.28", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-api-npm-1.0.0-beta.28-e2b0b3a1a5-0a392ea09b.zip/node_modules/@protokol/nft-exchange-api/",
+          "packageDependencies": [
+            ["@protokol/nft-exchange-api", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/core-api", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0-next.4"],
+            ["@hapi/boom", "npm:9.1.0"],
+            ["@hapi/hapi", "npm:19.2.0"],
+            ["@hapi/joi", "npm:17.1.1"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-exchange-transactions", "npm:1.0.0-beta.28"],
+            ["latest-version", "npm:5.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@protokol/nft-exchange-crypto", [
+        ["npm:1.0.0-beta.28", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.28-6baa9c1d36-26b82f6d8e.zip/node_modules/@protokol/nft-exchange-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.4"],
+            ["@protokol/utils", "npm:1.0.0-beta.28"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@protokol/nft-exchange-transactions", [
+        ["npm:1.0.0-beta.28", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-transactions-npm-1.0.0-beta.28-7a12a2fcbb-797523771c.zip/node_modules/@protokol/nft-exchange-transactions/",
+          "packageDependencies": [
+            ["@protokol/nft-exchange-transactions", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/core-database", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-state", "npm:3.0.0-next.4"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0-next.4"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.4"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-base-transactions", "npm:1.0.0-beta.28"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@protokol/utils", [
         ["npm:1.0.0-beta.28", {
           "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-beta.28-153ec4e86a-87c63781ea.zip/node_modules/@protokol/utils/",
@@ -3569,6 +3664,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ajv-npm-6.12.4-c4dcb5109f-50d72b0a10.zip/node_modules/ajv/",
           "packageDependencies": [
             ["ajv", "npm:6.12.4"],
+            ["fast-deep-equal", "npm:3.1.3"],
+            ["fast-json-stable-stringify", "npm:2.1.0"],
+            ["json-schema-traverse", "npm:0.4.1"],
+            ["uri-js", "npm:4.4.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.12.6", {
+          "packageLocation": "./.yarn/cache/ajv-npm-6.12.6-4b5105e2b2-19a8f3b0a0.zip/node_modules/ajv/",
+          "packageDependencies": [
+            ["ajv", "npm:6.12.6"],
             ["fast-deep-equal", "npm:3.1.3"],
             ["fast-json-stable-stringify", "npm:2.1.0"],
             ["json-schema-traverse", "npm:0.4.1"],
