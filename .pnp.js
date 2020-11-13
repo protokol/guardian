@@ -2681,7 +2681,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", "npm:2.1.5"],
             ["@types/rimraf", "npm:3.0.0"],
             ["@types/semver", "npm:7.3.4"],
-            ["ajv", "npm:6.12.4"],
+            ["ajv", "npm:6.12.6"],
             ["big-integer", "npm:1.6.48"],
             ["bip39", "npm:3.0.2"],
             ["buffer-es6", "npm:4.9.3"],
