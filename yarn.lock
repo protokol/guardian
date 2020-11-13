@@ -2357,7 +2357,7 @@ __metadata:
     "@types/prettier": ^2.1.0
     "@types/rimraf": ^3.0.0
     "@types/semver": 7.3.4
-    ajv: 6.12.4
+    ajv: 6.12.6
     big-integer: ^1.6.48
     bip39: 3.0.2
     buffer-es6: ^4.9.3
@@ -3402,19 +3402,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:6.12.4, ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.4":
-  version: 6.12.4
-  resolution: "ajv@npm:6.12.4"
-  dependencies:
-    fast-deep-equal: ^3.1.1
-    fast-json-stable-stringify: ^2.0.0
-    json-schema-traverse: ^0.4.1
-    uri-js: ^4.2.2
-  checksum: 50d72b0a10326732072f5481b1b6bd5a43f8d770878b8f88ba5bb232abb745cefbf7f87a0e64679bd477d4a8bba0b3aea084675bd34943db5279c15907ee658f
-  languageName: node
-  linkType: hard
-
-"ajv@npm:^6.12.3, ajv@npm:latest":
+"ajv@npm:6.12.6, ajv@npm:^6.12.3, ajv@npm:latest":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
@@ -3423,6 +3411,18 @@ __metadata:
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
   checksum: 19a8f3b0a06001eb68e6268f4f9f04424b32baadd5df6ba8292cd473e22e5f4019ed9ab17c3e3510394178ed8bef9b42ad0bdb5c675d65f042421a774780ce1a
+  languageName: node
+  linkType: hard
+
+"ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.4":
+  version: 6.12.4
+  resolution: "ajv@npm:6.12.4"
+  dependencies:
+    fast-deep-equal: ^3.1.1
+    fast-json-stable-stringify: ^2.0.0
+    json-schema-traverse: ^0.4.1
+    uri-js: ^4.2.2
+  checksum: 50d72b0a10326732072f5481b1b6bd5a43f8d770878b8f88ba5bb232abb745cefbf7f87a0e64679bd477d4a8bba0b3aea084675bd34943db5279c15907ee658f
   languageName: node
   linkType: hard
 
