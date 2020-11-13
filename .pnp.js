@@ -2693,7 +2693,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-extended", "npm:0.11.5"],
             ["jest-localstorage-mock", "npm:2.4.3"],
             ["pg", "npm:8.3.3"],
-            ["prettier", "npm:2.1.1"],
+            ["prettier", "npm:2.1.2"],
             ["process-es6", "npm:0.11.6"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.3.0"],
@@ -6523,7 +6523,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.2.4"],
             ["@types/prettier", "npm:2.1.5"],
             ["eslint", "npm:7.8.1"],
-            ["prettier", "npm:2.1.1"],
+            ["prettier", "npm:2.1.2"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
           "packagePeers": [
@@ -12029,13 +12029,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.1.1", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.1.1-4096027ae9-420a807cda.zip/node_modules/prettier/",
-          "packageDependencies": [
-            ["prettier", "npm:2.1.1"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:2.1.2", {
           "packageLocation": "./.yarn/cache/prettier-npm-2.1.2-9d456ef3cd-bedc24c568.zip/node_modules/prettier/",
           "packageDependencies": [
