@@ -2598,7 +2598,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.7"],
             ["@types/prettier", "npm:2.1.5"],
             ["@types/rimraf", "npm:3.0.0"],
-            ["@types/semver", "npm:7.3.2"],
+            ["@types/semver", "npm:7.3.4"],
             ["@types/uuid", "npm:7.0.4"],
             ["@typescript-eslint/eslint-plugin", "virtual:d203bf382b1d200a4debed8aca4ef27c3ac5838eaa88751966fdf2c665f75cf7b2bdaf2167e9cb6f24b433c641ff73155e43c645d08a955402360bc364d3a9d8#npm:3.10.1"],
             ["@typescript-eslint/parser", "virtual:d203bf382b1d200a4debed8aca4ef27c3ac5838eaa88751966fdf2c665f75cf7b2bdaf2167e9cb6f24b433c641ff73155e43c645d08a955402360bc364d3a9d8#npm:3.10.1"],
@@ -2680,7 +2680,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.14.7"],
             ["@types/prettier", "npm:2.1.5"],
             ["@types/rimraf", "npm:3.0.0"],
-            ["@types/semver", "npm:7.3.3"],
+            ["@types/semver", "npm:7.3.4"],
             ["ajv", "npm:6.12.4"],
             ["big-integer", "npm:1.6.48"],
             ["bip39", "npm:3.0.2"],
@@ -3301,17 +3301,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/semver", [
-        ["npm:7.3.2", {
-          "packageLocation": "./.yarn/cache/@types-semver-npm-7.3.2-0d20f98537-7abf2e27e2.zip/node_modules/@types/semver/",
-          "packageDependencies": [
-            ["@types/semver", "npm:7.3.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:7.3.3", {
           "packageLocation": "./.yarn/cache/@types-semver-npm-7.3.3-67a3d9ddc0-6dd845385b.zip/node_modules/@types/semver/",
           "packageDependencies": [
             ["@types/semver", "npm:7.3.3"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.3.4", {
+          "packageLocation": "./.yarn/cache/@types-semver-npm-7.3.4-96fde085ea-7e8588aa55.zip/node_modules/@types/semver/",
+          "packageDependencies": [
+            ["@types/semver", "npm:7.3.4"]
           ],
           "linkType": "HARD",
         }]
