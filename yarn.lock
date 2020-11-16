@@ -2376,7 +2376,7 @@ __metadata:
     jest: ~26.6.0
     jest-extended: ~0.11.5
     jest-localstorage-mock: 2.4.3
-    pg: 8.3.3
+    pg: 8.5.1
     prettier: 2.1.2
     process-es6: ^0.11.6
     rimraf: ^3.0.2
@@ -10394,7 +10394,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-connection-string@npm:^2.3.0, pg-connection-string@npm:^2.4.0":
+"pg-connection-string@npm:^2.4.0":
   version: 2.4.0
   resolution: "pg-connection-string@npm:2.4.0"
   checksum: fdb3ec1c3daa8356381b1de3ed5fe03269e69d88644c4eb83a30aec1d1e320e0a8450d7ff8c04666dd06a4798c996c9dd006497f038d338790667965ec940d1d
@@ -10415,7 +10415,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-pool@npm:^3.2.1, pg-pool@npm:^3.2.2":
+"pg-pool@npm:^3.2.2":
   version: 3.2.2
   resolution: "pg-pool@npm:3.2.2"
   peerDependencies:
@@ -10424,7 +10424,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-protocol@npm:^1.2.5, pg-protocol@npm:^1.4.0":
+"pg-protocol@npm:^1.4.0":
   version: 1.4.0
   resolution: "pg-protocol@npm:1.4.0"
   checksum: 2b5ebfccd014a4a9127a04e34a423a9e7fe6f6b96c32698929e0860e32c453e64438c935068405ee923ab99788345b9591a6dbaa30bba70e724d7fc4d5f5d21e
@@ -10453,23 +10453,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg@npm:8.3.3":
-  version: 8.3.3
-  resolution: "pg@npm:8.3.3"
-  dependencies:
-    buffer-writer: 2.0.0
-    packet-reader: 1.0.0
-    pg-connection-string: ^2.3.0
-    pg-pool: ^3.2.1
-    pg-protocol: ^1.2.5
-    pg-types: ^2.1.0
-    pgpass: 1.x
-    semver: 4.3.2
-  checksum: 56fc9d6c8537cc5ba5136861fc7fdfc284afb885034c617446af7ea8ce521b5c0514ffad1e1818ab12c800f0531934776a43434b05d87f56939156dbe562679c
-  languageName: node
-  linkType: hard
-
-"pg@npm:^8.2.1, pg@npm:latest":
+"pg@npm:8.5.1, pg@npm:^8.2.1, pg@npm:latest":
   version: 8.5.1
   resolution: "pg@npm:8.5.1"
   dependencies:
@@ -11527,15 +11511,6 @@ fsevents@~2.1.2:
   bin:
     semver: ./bin/semver
   checksum: 06ff0ed753ebf741b7602be8faad620d6e160a2cb3f61019d00d919c8bca141638aa23c34da779b8595afdc9faa3678bfbb5f60366b6a4f65f98cf86605bbcdb
-  languageName: node
-  linkType: hard
-
-"semver@npm:4.3.2":
-  version: 4.3.2
-  resolution: "semver@npm:4.3.2"
-  bin:
-    semver: ./bin/semver
-  checksum: 325999b7241266b130324d54edba4432413de2afe358c7c482ccf104d3b870eabb655db2178ee966473f4dfcbdcf5f5808d1fb26a670908ba3cca2568ea5f95b
   languageName: node
   linkType: hard
 

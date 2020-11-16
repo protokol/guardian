@@ -2700,7 +2700,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],
             ["jest-localstorage-mock", "npm:2.4.3"],
-            ["pg", "npm:8.3.3"],
+            ["pg", "virtual:f9376621cd59bdda7fb9564a11020f866b7cd377c643467ed7ed5fb832b2ebb8078cc36028d5d65985b29a7ca840c9f22b04146c29bf2a60289a51e7b4b100d7#npm:8.5.1"],
             ["prettier", "npm:2.1.2"],
             ["process-es6", "npm:0.11.6"],
             ["rimraf", "npm:3.0.2"],
@@ -11574,21 +11574,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["pg", [
-        ["npm:8.3.3", {
-          "packageLocation": "./.yarn/cache/pg-npm-8.3.3-f593d963c0-56fc9d6c85.zip/node_modules/pg/",
-          "packageDependencies": [
-            ["pg", "npm:8.3.3"],
-            ["buffer-writer", "npm:2.0.0"],
-            ["packet-reader", "npm:1.0.0"],
-            ["pg-connection-string", "npm:2.4.0"],
-            ["pg-pool", "virtual:f593d963c09adeb6c76e3a24fe03097ec8092045893c0aecf0b6002ba7b1a7d86a54b1aa30097e3de84e3154062347162c7cb68ac00109413a4e4bce8079969a#npm:3.2.2"],
-            ["pg-protocol", "npm:1.4.0"],
-            ["pg-types", "npm:2.2.0"],
-            ["pgpass", "npm:1.0.4"],
-            ["semver", "npm:4.3.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["virtual:f9376621cd59bdda7fb9564a11020f866b7cd377c643467ed7ed5fb832b2ebb8078cc36028d5d65985b29a7ca840c9f22b04146c29bf2a60289a51e7b4b100d7#npm:8.5.1", {
           "packageLocation": "./.yarn/$$virtual/pg-virtual-f3aea3f7e9/0/cache/pg-npm-8.5.1-fadefeb3ad-b8eed3cd38.zip/node_modules/pg/",
           "packageDependencies": [
@@ -11645,19 +11630,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pg-pool", "virtual:f3aea3f7e95d1a13ba87d3c8cab9df6ab52466521cf520de139565185e8e6f591665933e352ca7b592acc652bba379de742b330774862cffe2527cd29c7ed1c5#npm:3.2.2"],
             ["@types/pg", null],
             ["pg", "virtual:f9376621cd59bdda7fb9564a11020f866b7cd377c643467ed7ed5fb832b2ebb8078cc36028d5d65985b29a7ca840c9f22b04146c29bf2a60289a51e7b4b100d7#npm:8.5.1"]
-          ],
-          "packagePeers": [
-            "@types/pg",
-            "pg"
-          ],
-          "linkType": "HARD",
-        }],
-        ["virtual:f593d963c09adeb6c76e3a24fe03097ec8092045893c0aecf0b6002ba7b1a7d86a54b1aa30097e3de84e3154062347162c7cb68ac00109413a4e4bce8079969a#npm:3.2.2", {
-          "packageLocation": "./.yarn/$$virtual/pg-pool-virtual-ed8a434233/0/cache/pg-pool-npm-3.2.2-0c6a03a132-d25d4d0757.zip/node_modules/pg-pool/",
-          "packageDependencies": [
-            ["pg-pool", "virtual:f593d963c09adeb6c76e3a24fe03097ec8092045893c0aecf0b6002ba7b1a7d86a54b1aa30097e3de84e3154062347162c7cb68ac00109413a4e4bce8079969a#npm:3.2.2"],
-            ["@types/pg", null],
-            ["pg", "npm:8.3.3"]
           ],
           "packagePeers": [
             "@types/pg",
@@ -12864,13 +12836,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["semver", [
-        ["npm:4.3.2", {
-          "packageLocation": "./.yarn/cache/semver-npm-4.3.2-b21788172b-325999b724.zip/node_modules/semver/",
-          "packageDependencies": [
-            ["semver", "npm:4.3.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:5.7.1", {
           "packageLocation": "./.yarn/cache/semver-npm-5.7.1-40bcea106b-06ff0ed753.zip/node_modules/semver/",
           "packageDependencies": [
