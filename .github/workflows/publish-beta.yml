@@ -1,0 +1,25 @@
+name: PUBLISH NPM:BETA
+on:
+  release:
+    types: [created]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 12
+                  registry-url: https://registry.npmjs.org/
+
+            - name: Install & Build
+              run: yarn && yarn build
+
+            - name: Publish to NPM
+              run: |
+                cd packages
+                cd guardian-crypto && npm publish --tag beta --access public --tolerate-republish && cd ..
+                cd guardian-transactions && npm publish --tag beta --access public --tolerate-republish && cd ..
+                cd guardian-api && npm publish --tag beta --access public --tolerate-republish && cd ..
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_AUTOMATION_TOKEN }}
