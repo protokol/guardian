@@ -5,4 +5,4 @@ import * as Interfaces from "./interfaces";
 import * as Indexers from "./wallet-indexes";
 export * from "./service-provider";
 
-export { Handlers, Defaults, Interfaces, Indexers, Errors };
+export { Defaults, Errors, Handlers, Indexers, Interfaces };
