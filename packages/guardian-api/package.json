@@ -34,11 +34,11 @@
 		"build:watch": "yarn clean && yarn compile -w",
 		"clean": "rimraf .coverage dist tmp",
 		"test": "jest",
-		"prepublishOnly": "yarn build",
 		"test:unit": "jest __tests__/unit/** --forceExit --detectOpenHandles",
 		"test:unit:coverage": "jest __tests__/unit --coverage --detectOpenHandles",
 		"test:integration": "jest __tests__/integration --runInBand --forceExit",
-		"test:integration:coverage": "jest __tests__/integration --coverage --runInBand --forceExit"
+		"test:integration:coverage": "jest __tests__/integration --coverage --runInBand --forceExit",
+		"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish"
 	},
 	"dependencies": {
 		"@arkecosystem/core-api": "^3.0.0-next.9",
