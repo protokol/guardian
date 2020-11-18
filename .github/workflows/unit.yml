@@ -26,7 +26,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
 
             - name: Install And Build
-              run: yarn install --immutable --immutable-cache && yarn build
+              run: yarn && yarn build
 
             - name: GUARDIAN-CRYPTO
               run: cd packages/guardian-crypto && yarn test:unit:coverage --coverageDirectory .coverage/unit-guardian-crypto --maxWorkers=2
