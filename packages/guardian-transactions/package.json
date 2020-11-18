@@ -63,7 +63,7 @@
         "@types/is-url-superb": "3.0.0",
         "@types/jest": "^26.0.15",
         "@types/lodash.orderby": "4.6.6",
-        "@types/node": "^14.14.7",
+        "@types/node": "^14.14.8",
         "@types/prettier": "^2.1.5",
         "@types/rimraf": "^3.0.0",
         "@types/semver": "7.3.4",
