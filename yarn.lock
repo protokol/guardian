@@ -2275,7 +2275,7 @@ __metadata:
     "@hapi/joi": ^17.1.0
     "@protokol/guardian-crypto": "workspace:packages/guardian-crypto"
     "@protokol/guardian-transactions": "workspace:packages/guardian-transactions"
-    "@sindresorhus/tsconfig": ^0.7.0
+    "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/hapi__boom": ^7.4.1
@@ -2320,7 +2320,7 @@ __metadata:
     "@arkecosystem/core-test-framework": 3.0.0-next.9
     "@arkecosystem/crypto": ^3.0.0-next.9
     "@protokol/utils": ^1.0.0-beta.28
-    "@sindresorhus/tsconfig": ~0.7.0
+    "@sindresorhus/tsconfig": ~0.8.0
     "@types/jest": ~26.0.15
     "@types/node": ^14.14.8
     "@types/rimraf": ^3.0.0
@@ -2354,7 +2354,7 @@ __metadata:
     "@arkecosystem/crypto": ^3.0.0-next.9
     "@arkecosystem/utils": "*"
     "@protokol/guardian-crypto": "workspace:packages/guardian-crypto"
-    "@sindresorhus/tsconfig": ~0.7.0
+    "@sindresorhus/tsconfig": ~0.8.0
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/hapi__joi": 17.1.6
@@ -2392,7 +2392,7 @@ __metadata:
   dependencies:
     "@arkecosystem/core": ^3.0.0-next.9
     "@arkecosystem/core-cli": ^3.0.0-next.9
-    "@sindresorhus/tsconfig": ^0.7.0
+    "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^26.0.10
@@ -2573,10 +2573,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sindresorhus/tsconfig@npm:^0.7.0, @sindresorhus/tsconfig@npm:~0.7.0":
-  version: 0.7.0
-  resolution: "@sindresorhus/tsconfig@npm:0.7.0"
-  checksum: e0092defcf2b240ee7c84684e59f7e9b380d8a4fd47a0361721d2a67d9e816db762cb663ef42900b1925580823f173dcef291a60c148d33440c5fcd49b4f71d4
+"@sindresorhus/tsconfig@npm:^0.8.0, @sindresorhus/tsconfig@npm:~0.8.0":
+  version: 0.8.0
+  resolution: "@sindresorhus/tsconfig@npm:0.8.0"
+  checksum: 5131f97d6be9517cbafcc2ffc29450b7ba23c343637410c38a88d4bf2fabc5b9ce7a72b9371cc090c210ed81b61b5bf10610c86d4d39e444d6f306b6a896ec29
   languageName: node
   linkType: hard
 
