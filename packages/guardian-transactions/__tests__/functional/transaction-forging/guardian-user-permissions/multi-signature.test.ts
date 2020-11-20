@@ -40,7 +40,7 @@ afterAll(async () => await support.tearDown());
 describe("Guardian set user permissions functional tests", () => {
     // Register a multi signature wallet with defaults
     const passphrase = generateMnemonic();
-    const secrets = [passphrase, passphrases[4], passphrases[5]];
+    const secrets = [passphrase, passphrases[4]!, passphrases[5]!];
     const participants = [
         Identities.PublicKey.fromPassphrase(secrets[0]!),
         Identities.PublicKey.fromPassphrase(secrets[1]!),
