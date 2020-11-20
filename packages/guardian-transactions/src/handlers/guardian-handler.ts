@@ -72,7 +72,9 @@ export abstract class GuardianTransactionHandler extends Handlers.TransactionHan
         };
     }
 
-    protected async getLastTxByAsset(asset: Interfaces.ITransactionAsset): Promise<Interfaces.ITransactionData> {
+    protected async getLastTxByAsset(
+        asset: Interfaces.ITransactionAsset,
+    ): Promise<Interfaces.ITransactionData | undefined> {
         const criteria = {
             ...this.getDefaultCriteria(),
             asset,

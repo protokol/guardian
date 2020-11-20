@@ -29,7 +29,7 @@ describe("Guardian set group permissions functional tests - Signed with one Pass
         // Set group permissions
         const setGroupPermissions = GuardianTransactionFactory.initialize(app)
             .GuardianSetGroupPermissions(groupPermissionsAsset)
-            .withPassphrase(passphrases[0])
+            .withPassphrase(passphrases[0]!)
             .createOne();
 
         await expect(setGroupPermissions).toBeAccepted();

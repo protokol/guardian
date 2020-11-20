@@ -65,10 +65,10 @@ beforeAll(async () => {
 
 	// set mock users and groups
 	for (let i = 0; i < users.length; i++) {
-		const wallet: Contracts.State.Wallet = walletRepository.findByPublicKey(users[i].publicKey);
+		const wallet: Contracts.State.Wallet = walletRepository.findByPublicKey(users[i]!.publicKey);
 		wallet.setAttribute("guardian.userPermissions", users[i]);
 		walletRepository.getIndex(Indexers.GuardianIndexers.UserPermissionsIndexer).index(wallet);
-		await groupsPermissionsCache.put(users[i].groups[0], groups[users[i].groups[0]], -1);
+		await groupsPermissionsCache.put(users[i]!.groups[0]!, groups[users[i]!.groups[0]!], -1);
 	}
 });
 
@@ -83,16 +83,16 @@ describe("API - Users", () => {
 			api.expectPaginator(response);
 			expect(response.data.data).toBeArray();
 			expect(response.data.data.length).toBe(2);
-			expect(response.data.data[0]).toStrictEqual(users[0]);
+			expect(response.data.data[0]!).toStrictEqual(users[0]!);
 		});
 	});
 
 	describe("GET /guardian/users/{id}", () => {
 		it("should GET user by id", async () => {
-			const response = await api.request("GET", `guardian/users/${users[0].publicKey}`);
+			const response = await api.request("GET", `guardian/users/${users[0]!.publicKey}`);
 
 			expect(response).toBeSuccessfulResponse();
-			expect(response.data.data).toStrictEqual(users[0]);
+			expect(response.data.data).toStrictEqual(users[0]!);
 		});
 
 		it("should fail to GET a user by id if it doesn't exist", async () => {
@@ -107,12 +107,12 @@ describe("API - Users", () => {
 
 	describe("GET /guardian/users/{id}/groups", () => {
 		it("should GET user's groups", async () => {
-			const response = await api.request("GET", `guardian/users/${users[0].publicKey}/groups`);
+			const response = await api.request("GET", `guardian/users/${users[0]!.publicKey}/groups`);
 
 			expect(response).toBeSuccessfulResponse();
 			expect(response.data.data).toBeArray();
 			expect(response.data.data.length).toBe(1);
-			expect(response.data.data[0]).toStrictEqual(groups[users[0].groups[0]]);
+			expect(response.data.data[0]!).toStrictEqual(groups[users[0]!.groups[0]!]);
 		});
 
 		it("should fail to GET a users's groups if user doesn't exist", async () => {

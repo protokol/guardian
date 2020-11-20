@@ -59,16 +59,16 @@ describe("API - Groups", () => {
 			api.expectPaginator(response);
 			expect(response.data.data).toBeArray();
 			expect(response.data.data.length).toBe(2);
-			expect(response.data.data[0]).toStrictEqual(groups[0]);
+			expect(response.data.data[0]!).toStrictEqual(groups[0]!);
 		});
 	});
 
 	describe("GET /guardian/groups/{id}", () => {
 		it("should GET user by id", async () => {
-			const response = await api.request("GET", `guardian/groups/${groups[0].name}`);
+			const response = await api.request("GET", `guardian/groups/${groups[0]!.name}`);
 
 			expect(response).toBeSuccessfulResponse();
-			expect(response.data.data).toStrictEqual(groups[0]);
+			expect(response.data.data).toStrictEqual(groups[0]!);
 		});
 
 		it("should fail to GET a group by id if it doesn't exist", async () => {
@@ -93,12 +93,12 @@ describe("API - Groups", () => {
 			wallet.setAttribute("guardian.userPermissions", user);
 			walletRepository.getIndex(Indexers.GuardianIndexers.UserPermissionsIndexer).index(wallet);
 
-			const response = await api.request("GET", `guardian/groups/${groups[0].name}/users`);
+			const response = await api.request("GET", `guardian/groups/${groups[0]!.name}/users`);
 
 			expect(response).toBeSuccessfulResponse();
 			expect(response.data.data).toBeArray();
 			expect(response.data.data.length).toBe(1);
-			expect(response.data.data[0]).toStrictEqual({ ...user, publicKey });
+			expect(response.data.data[0]!).toStrictEqual({ ...user, publicKey });
 		});
 
 		it("should fail to GET a group's users if group doesn't exist", async () => {

@@ -48,13 +48,13 @@ const buildGroupPermissionsTx = (asset?, nonce?) =>
     new Builders.GuardianGroupPermissionsBuilder()
         .GuardianGroupPermissions(asset || groupPermissionsAsset)
         .nonce(nonce || "1")
-        .sign(passphrases[0])
+        .sign(passphrases[0]!)
         .build();
 
 beforeEach(() => {
     app = initApp();
 
-    senderWallet = buildWallet(app, passphrases[0]);
+    senderWallet = buildWallet(app, passphrases[0]!);
 
     walletRepository = app.get<Wallets.WalletRepository>(Container.Identifiers.WalletRepository);
 
@@ -260,7 +260,7 @@ describe("Guardian permission resolver tests", () => {
 
         it("should allow transaction if genesis", async () => {
             const mockBlock = cloneDeep(defaultMockBlock);
-            mockBlock.transactions![0].data.senderPublicKey = senderWallet.publicKey;
+            mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.publicKey;
             Mocks.StateStore.setBlock(mockBlock);
 
             const isTxAllowed = await permissionResolver.resolve(actual);
@@ -270,7 +270,7 @@ describe("Guardian permission resolver tests", () => {
 
         it("should use cached genesis publicKey to check permissions", async () => {
             const mockBlock = cloneDeep(defaultMockBlock);
-            mockBlock.transactions![0].data.senderPublicKey = senderWallet.publicKey;
+            mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.publicKey;
             Mocks.StateStore.setBlock(mockBlock);
 
             await permissionResolver.resolve(actual);

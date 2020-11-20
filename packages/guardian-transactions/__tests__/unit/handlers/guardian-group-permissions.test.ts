@@ -8,7 +8,6 @@ import { Handlers } from "@arkecosystem/core-transactions";
 import { Interfaces, Transactions, Utils } from "@arkecosystem/crypto";
 import { Builders, Enums } from "@protokol/guardian-crypto";
 
-import { buildWallet, initApp, transactionHistoryService } from "../__support__/app";
 import { FeeType } from "../../../src/enums";
 import {
     DuplicatePermissionsError,
@@ -17,6 +16,7 @@ import {
 } from "../../../src/errors";
 import { GuardianApplicationEvents } from "../../../src/events";
 import { IGroupPermissions } from "../../../src/interfaces";
+import { buildWallet, initApp, transactionHistoryService } from "../__support__/app";
 import { deregisterTransactions } from "../utils/utils";
 
 let app: Application;
@@ -51,14 +51,14 @@ const buildGroupPermissionsTx = (asset?, nonce?, fee?) =>
     new Builders.GuardianGroupPermissionsBuilder()
         .GuardianGroupPermissions(asset || groupPermissionsAsset)
         .nonce(nonce || "1")
-        .sign(passphrases[0])
+        .sign(passphrases[0]!)
         .fee(fee || Enums.GuardianStaticFees.GuardianSetGroupPermissions)
         .build();
 
 beforeEach(() => {
     app = initApp();
 
-    senderWallet = buildWallet(app, passphrases[0]);
+    senderWallet = buildWallet(app, passphrases[0]!);
 
     walletRepository = app.get<Wallets.WalletRepository>(Container.Identifiers.WalletRepository);
 

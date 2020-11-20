@@ -8,7 +8,6 @@ import { Handlers } from "@arkecosystem/core-transactions";
 import { Interfaces, Transactions } from "@arkecosystem/crypto";
 import { Builders, Enums, Interfaces as GuardianInterfaces } from "@protokol/guardian-crypto";
 
-import { buildWallet, initApp, transactionHistoryService } from "../__support__/app";
 import {
     DuplicatePermissionsError,
     GroupDoesntExistError,
@@ -18,6 +17,7 @@ import {
 import { GuardianApplicationEvents } from "../../../src/events";
 import { IGroupPermissions, IUserPermissions } from "../../../src/interfaces";
 import { GuardianIndexers } from "../../../src/wallet-indexes";
+import { buildWallet, initApp, transactionHistoryService } from "../__support__/app";
 import { deregisterTransactions } from "../utils/utils";
 
 let app: Application;
@@ -55,13 +55,13 @@ const buildUserPermissionsTx = (publicKey, groups?, allow?, deny?) =>
     new Builders.GuardianUserPermissionsBuilder()
         .GuardianUserPermissions(buildUserPermissionsAsset(publicKey, groups, allow, deny))
         .nonce("1")
-        .sign(passphrases[0])
+        .sign(passphrases[0]!)
         .build();
 
 beforeEach(async () => {
     app = initApp();
 
-    senderWallet = buildWallet(app, passphrases[0]);
+    senderWallet = buildWallet(app, passphrases[0]!);
 
     walletRepository = app.get<Wallets.WalletRepository>(Container.Identifiers.WalletRepository);
 
@@ -81,7 +81,7 @@ beforeEach(async () => {
     const groupsPermissionsCache = app.get<Contracts.Kernel.CacheStore<IGroupPermissions["name"], IGroupPermissions>>(
         Container.Identifiers.CacheService,
     );
-    await groupsPermissionsCache.put(userPermissions.groups[0], {} as IGroupPermissions, -1);
+    await groupsPermissionsCache.put(userPermissions.groups[0]!, {} as IGroupPermissions, -1);
 });
 
 afterEach(() => {

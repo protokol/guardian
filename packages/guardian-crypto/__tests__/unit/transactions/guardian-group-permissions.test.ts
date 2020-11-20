@@ -26,7 +26,7 @@ describe("Guardian set group permissions tests", () => {
             const actual = new GuardianGroupPermissionsBuilder()
                 .GuardianGroupPermissions(groupPermission)
                 .nonce("4")
-                .sign(passphrases[0])
+                .sign(passphrases[0]!)
                 .getStruct();
 
             const serialized = Transactions.TransactionFactory.fromData(actual).serialized.toString("hex");
@@ -43,7 +43,7 @@ describe("Guardian set group permissions tests", () => {
             const actual = new GuardianGroupPermissionsBuilder()
                 .GuardianGroupPermissions(groupPermissions)
                 .nonce("4")
-                .sign(passphrases[0])
+                .sign(passphrases[0]!)
                 .getStruct();
 
             const serialized = Transactions.TransactionFactory.fromData(actual).serialized.toString("hex");
@@ -59,7 +59,7 @@ describe("Guardian set group permissions tests", () => {
             const actual = new GuardianGroupPermissionsBuilder()
                 .GuardianGroupPermissions(groupPermissions)
                 .nonce("4")
-                .sign(passphrases[0])
+                .sign(passphrases[0]!)
                 .getStruct();
 
             const serialized = Transactions.TransactionFactory.fromData(actual).serialized.toString("hex");
@@ -72,7 +72,7 @@ describe("Guardian set group permissions tests", () => {
             const actual = new GuardianGroupPermissionsBuilder().GuardianGroupPermissions(groupPermission).nonce("3");
 
             actual.data.asset = undefined;
-            expect(() => actual.sign(passphrases[0])).toThrow();
+            expect(() => actual.sign(passphrases[0]!)).toThrow();
         });
     });
 });

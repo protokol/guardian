@@ -46,7 +46,7 @@ describe("Guardian set user permissions functional tests - Signed with 2 Passphr
         // Initial Funds
         const initialFunds = TransactionFactory.initialize(app)
             .transfer(Identities.Address.fromPassphrase(passphrase), 150 * 1e8)
-            .withPassphrase(passphrases[0])
+            .withPassphrase(passphrases[0]!)
             .createOne();
 
         await expect(initialFunds).toBeAccepted();
@@ -66,7 +66,7 @@ describe("Guardian set user permissions functional tests - Signed with 2 Passphr
         // Set group permissions
         const setGroupPermissions = GuardianTransactionFactory.initialize(app)
             .GuardianSetGroupPermissions(groupPermissionsAsset)
-            .withPassphrase(passphrases[0])
+            .withPassphrase(passphrases[0]!)
             .createOne();
 
         await expect(setGroupPermissions).toBeAccepted();
