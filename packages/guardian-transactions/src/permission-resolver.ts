@@ -106,7 +106,7 @@ export class PermissionResolver {
     private getGenesisWalletPublicKey() {
         if (!this.genesisWalletPublicKey) {
             const [genesisTx] = this.stateStore.getGenesisBlock().transactions;
-            this.genesisWalletPublicKey = genesisTx.data.senderPublicKey;
+            this.genesisWalletPublicKey = genesisTx?.data.senderPublicKey;
         }
 
         return this.genesisWalletPublicKey;

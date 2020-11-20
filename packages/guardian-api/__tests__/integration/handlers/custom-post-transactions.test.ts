@@ -27,7 +27,7 @@ describe("API - Post transaction", () => {
 				publicKey: "02def27da9336e7fbf63131b8d7e5c9f45b296235db035f1f4242c507398f0f21d",
 			})
 			.nonce("3")
-			.sign(passphrases[0])
+			.sign(passphrases[0]!)
 			.build();
 
 		const response = await api.request("POST", "transactions", {

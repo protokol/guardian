@@ -8,6 +8,7 @@ import Hapi from "@hapi/hapi";
 import { Enums, Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
 import { Indexers, Interfaces } from "@protokol/guardian-transactions";
 
+import { GroupsController } from "../../../src/controllers/groups";
 import {
 	buildWallet,
 	CollectionResponse,
@@ -16,7 +17,6 @@ import {
 	ItemResponse,
 	PaginatedResponse,
 } from "../__support__";
-import { GroupsController } from "../../../src/controllers/groups";
 
 let app: Application;
 
@@ -89,7 +89,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(groups.length);
 		expect(response.results.length).toBe(groups.length);
-		expect(response.results[0]).toStrictEqual(groups[0]);
+		expect(response.results[0]!).toStrictEqual(groups[0]!);
 	});
 
 	it("index - return all groups that matches search query - priority", async () => {
@@ -98,7 +98,7 @@ describe("Test group controller", () => {
 				page: 1,
 				limit: 100,
 				orderBy: [],
-				priority: groups[1].priority,
+				priority: groups[1]!.priority,
 			},
 		};
 
@@ -106,7 +106,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]);
 	});
 
 	it("index - return all groups that matches search query - default", async () => {
@@ -123,7 +123,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]);
 	});
 
 	it("index - return all groups that matches search query - active", async () => {
@@ -140,7 +140,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]);
 	});
 
 	it("index - return all groups that matches search query - name", async () => {
@@ -157,7 +157,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]);
 	});
 
 	it("index - return all groups that matches search query - case insensitive name", async () => {
@@ -174,19 +174,19 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(groups.length);
 		expect(response.results.length).toBe(groups.length);
-		expect(response.results[0]).toStrictEqual(groups[0]);
+		expect(response.results[0]!).toStrictEqual(groups[0]!);
 	});
 
 	it("show - return group by id", async () => {
 		const request: Hapi.Request = {
 			params: {
-				id: groups[0].name,
+				id: groups[0]!.name,
 			},
 		};
 
 		const response = (await groupController.show(request, undefined)) as ItemResponse;
 
-		expect(response.data).toStrictEqual(groups[0]);
+		expect(response.data).toStrictEqual(groups[0]!);
 	});
 
 	it("show - should return 404 if group does not exist", async () => {
@@ -204,7 +204,7 @@ describe("Test group controller", () => {
 	it("showUsers - return group's users", async () => {
 		const request: Hapi.Request = {
 			params: {
-				id: groups[0].name,
+				id: groups[0]!.name,
 			},
 		};
 
@@ -213,14 +213,14 @@ describe("Test group controller", () => {
 			allow: [],
 			deny: [],
 		};
-		const wallet = buildWallet(app, passphrases[0]);
+		const wallet = buildWallet(app, passphrases[0]!);
 		wallet.setAttribute("guardian.userPermissions", user);
 		walletRepository.getIndex(Indexers.GuardianIndexers.UserPermissionsIndexer).index(wallet);
 
 		const response = (await groupController.showUsers(request, undefined)) as CollectionResponse;
 
 		expect(response.data.length).toBe(1);
-		expect(response.data[0]).toStrictEqual({ ...user, publicKey: wallet.publicKey });
+		expect(response.data[0]!).toStrictEqual({ ...user, publicKey: wallet.publicKey });
 	});
 
 	it("showUsers - should return 404 if group does not exist", async () => {

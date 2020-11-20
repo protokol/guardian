@@ -43,7 +43,7 @@ describe("Guardian set user permissions functional tests", () => {
             // Set group permissions
             const setGroupPermissions = GuardianTransactionFactory.initialize(app)
                 .GuardianSetGroupPermissions(groupPermissionsAsset)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .createOne();
 
             await expect(setGroupPermissions).toBeAccepted();
@@ -53,7 +53,7 @@ describe("Guardian set user permissions functional tests", () => {
             // Set user permissions
             const setUserPermissions = GuardianTransactionFactory.initialize(app)
                 .GuardianSetUserPermissions(userPermissionsAsset)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .createOne();
 
             await expect(setUserPermissions).toBeAccepted();
@@ -71,7 +71,7 @@ describe("Guardian set user permissions functional tests", () => {
             // Initial Funds
             const initialFunds = TransactionFactory.initialize(app)
                 .transfer(Identities.Address.fromPassphrase(passphrase), 150 * 1e8)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .createOne();
 
             await expect(initialFunds).toBeAccepted();
@@ -91,7 +91,7 @@ describe("Guardian set user permissions functional tests", () => {
             // Set group permissions
             const setGroupPermissions = GuardianTransactionFactory.initialize(app)
                 .GuardianSetGroupPermissions(groupPermissionsAsset)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .createOne();
 
             await expect(setGroupPermissions).toBeAccepted();
@@ -116,7 +116,7 @@ describe("Guardian set user permissions functional tests", () => {
         const passphrase = generateMnemonic();
         const secrets = [passphrase, passphrases[4], passphrases[5]];
         const participants = [
-            Identities.PublicKey.fromPassphrase(secrets[0]),
+            Identities.PublicKey.fromPassphrase(secrets[0]!),
             Identities.PublicKey.fromPassphrase(secrets[1]),
             Identities.PublicKey.fromPassphrase(secrets[2]),
         ];
@@ -124,7 +124,7 @@ describe("Guardian set user permissions functional tests", () => {
             // Funds to register a multi signature wallet
             const initialFunds = TransactionFactory.initialize(app)
                 .transfer(Identities.Address.fromPassphrase(passphrase), 50 * 1e8)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .createOne();
 
             await expect(initialFunds).toBeAccepted();
@@ -150,7 +150,7 @@ describe("Guardian set user permissions functional tests", () => {
 
             const multiSignatureFunds = TransactionFactory.initialize(app)
                 .transfer(multiSigAddress, 100 * 1e8)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .createOne();
 
             await expect(multiSignatureFunds).toBeAccepted();
@@ -160,7 +160,7 @@ describe("Guardian set user permissions functional tests", () => {
             // Set group permissions
             const setGroupPermissions = GuardianTransactionFactory.initialize(app)
                 .GuardianSetGroupPermissions(groupPermissionsAsset)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .createOne();
 
             await expect(setGroupPermissions).toBeAccepted();
@@ -170,7 +170,7 @@ describe("Guardian set user permissions functional tests", () => {
             // Set user permissions
             const setUserPermissions = GuardianTransactionFactory.initialize(app)
                 .GuardianSetUserPermissions(userPermissionsAsset)
-                .withPassphrase(passphrases[0])
+                .withPassphrase(passphrases[0]!)
                 .withSenderPublicKey(multiSigPublicKey)
                 .withPassphraseList(secrets)
                 .createOne();

@@ -24,7 +24,7 @@ describe("Guardian User Permissions tests", () => {
                 .GuardianUserPermissions(userPermission)
                 .vendorField("guardian-user-permissions transaction")
                 .nonce("4")
-                .sign(passphrases[0]);
+                .sign(passphrases[0]!);
 
             expect(actual.build().verified).toBeTrue();
             expect(actual.verify()).toBeTrue();

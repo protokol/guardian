@@ -8,6 +8,7 @@ import Hapi from "@hapi/hapi";
 import { Enums, Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
 import { Indexers, Interfaces } from "@protokol/guardian-transactions";
 
+import { UsersController } from "../../../src/controllers/users";
 import {
 	buildWallet,
 	CollectionResponse,
@@ -16,7 +17,6 @@ import {
 	ItemResponse,
 	PaginatedResponse,
 } from "../__support__";
-import { UsersController } from "../../../src/controllers/users";
 
 let userController: UsersController;
 
@@ -73,11 +73,11 @@ beforeEach(async () => {
 
 	// set mock users and groups
 	for (let i = 0; i < users.length; i++) {
-		const wallet = buildWallet(app, passphrases[i]);
+		const wallet = buildWallet(app, passphrases[i]!);
 		wallet.setAttribute("guardian.userPermissions", users[i]);
 		walletRepository.getIndex(Indexers.GuardianIndexers.UserPermissionsIndexer).index(wallet);
 		users[i].publicKey = wallet.publicKey;
-		await groupsPermissionsCache.put(users[i].groups[0], groups[users[i].groups[0]], -1);
+		await groupsPermissionsCache.put(users[i].groups[0]!, groups[users[i].groups[0]!], -1);
 	}
 });
 
@@ -100,7 +100,7 @@ describe("Test user controller", () => {
 
 		expect(response.totalCount).toBe(users.length);
 		expect(response.results.length).toBe(users.length);
-		expect(response.results[0]).toStrictEqual(users[0]);
+		expect(response.results[0]!).toStrictEqual(users[0]!);
 	});
 
 	it("index - return all users that matches search query - publicKey", async () => {
@@ -115,19 +115,19 @@ describe("Test user controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]).toStrictEqual(users[1]);
+		expect(response.results[0]!).toStrictEqual(users[1]);
 	});
 
 	it("show - return user by id", async () => {
 		const request: Hapi.Request = {
 			params: {
-				id: users[0].publicKey,
+				id: users[0]!.publicKey,
 			},
 		};
 
 		const response = (await userController.show(request, undefined)) as ItemResponse;
 
-		expect(response.data).toStrictEqual(users[0]);
+		expect(response.data).toStrictEqual(users[0]!);
 	});
 
 	it("show - should return 404 if user does not exist", async () => {
@@ -145,14 +145,14 @@ describe("Test user controller", () => {
 	it("showGroups - return user's groups", async () => {
 		const request: Hapi.Request = {
 			params: {
-				id: users[0].publicKey,
+				id: users[0]!.publicKey,
 			},
 		};
 
 		const response = (await userController.showGroups(request, undefined)) as CollectionResponse;
 
 		expect(response.data.length).toBe(1);
-		expect(response.data[0]).toStrictEqual(groups[users[0].groups[0]]);
+		expect(response.data[0]!).toStrictEqual(groups[users[0]!.groups[0]!]);
 	});
 
 	it("showGroups - should return 404 if user does not exist", async () => {
