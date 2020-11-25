@@ -52,8 +52,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@arkecosystem/core", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.9"],
+            ["@arkecosystem/core", "virtual:1dd0167e86dae8e2c9ed778fa2cf49a382594b0f72bc6d840ceeb5a5bfb670c1e1b1a5f19d61a1af141e4dd77d72b3926e63fde83095a7ad5cd907222814a2aa#npm:3.0.0-next.11"],
+            ["@arkecosystem/core-cli", "npm:3.0.0-next.11"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.5"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
@@ -79,7 +79,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pg-query-stream", "npm:3.4.2"],
             ["prettier", "npm:2.1.2"],
             ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:26.4.4"],
+            ["ts-jest", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.4.4"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a72311"],
             ["typescript-language-server", "npm:0.4.0"]
           ],
@@ -97,55 +97,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core", [
-        ["npm:3.0.0-next.9", {
-          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-npm-3.0.0-next.9-550a1d9a2a/node_modules/@arkecosystem/core/",
-          "packageDependencies": [
-            ["@arkecosystem/core", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-api", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-blockchain", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-forger", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-logger-pino", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-magistrate-api", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-p2p", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-snapshots", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-transactions", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-webhooks", "npm:3.0.0-next.9"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
-            ["@arkecosystem/utils", "npm:1.2.0"],
-            ["@hapi/joi", "npm:17.1.1"],
-            ["@oclif/errors", "npm:1.3.4"],
-            ["bip39", "npm:3.0.2"],
-            ["boxen", "npm:4.2.0"],
-            ["bytebuffer", "npm:5.0.1"],
-            ["dayjs", "npm:1.9.6"],
-            ["env-paths", "npm:2.2.0"],
-            ["envfile", "npm:5.2.0"],
-            ["execa", "npm:3.4.0"],
-            ["fs-extra", "npm:8.1.0"],
-            ["got", "npm:11.8.0"],
-            ["kleur", "npm:4.1.3"],
-            ["ngrok", "npm:3.3.0"],
-            ["nodejs-tail", "npm:1.1.1"],
-            ["ora", "npm:4.1.1"],
-            ["pretty-bytes", "npm:5.4.1"],
-            ["pretty-ms", "npm:7.0.1"],
-            ["prompts", "npm:2.4.0"],
-            ["read-last-lines", "npm:1.7.2"],
-            ["simple-git", "npm:2.22.0"],
-            ["tar", "npm:6.0.5"],
-            ["type-fest", "npm:0.16.0"],
-            ["wif", "npm:2.0.6"]
-          ],
-          "linkType": "HARD",
-        }],
         ["virtual:1dd0167e86dae8e2c9ed778fa2cf49a382594b0f72bc6d840ceeb5a5bfb670c1e1b1a5f19d61a1af141e4dd77d72b3926e63fde83095a7ad5cd907222814a2aa#npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/$$virtual/@arkecosystem-core-virtual-f7205a7724/0/cache/@arkecosystem-core-npm-3.0.0-next.11-223b801e56-2190d08d31.zip/node_modules/@arkecosystem/core/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-virtual-f7205a7724/node_modules/@arkecosystem/core/",
           "packageDependencies": [
             ["@arkecosystem/core", "virtual:1dd0167e86dae8e2c9ed778fa2cf49a382594b0f72bc6d840ceeb5a5bfb670c1e1b1a5f19d61a1af141e4dd77d72b3926e63fde83095a7ad5cd907222814a2aa#npm:3.0.0-next.11"],
             ["@arkecosystem/core-api", "npm:3.0.0-next.11"],
@@ -200,7 +153,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/core-api", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-api-npm-3.0.0-next.11-703f08deca-8acb414460.zip/node_modules/@arkecosystem/core-api/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-api-npm-3.0.0-next.11-703f08deca/node_modules/@arkecosystem/core-api/",
           "packageDependencies": [
             ["@arkecosystem/core-api", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-database", "npm:3.0.0-next.11"],
@@ -286,7 +239,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/core-cli", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-cli-npm-3.0.0-next.11-c6e52e36a3-0ce765ca63.zip/node_modules/@arkecosystem/core-cli/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-cli-npm-3.0.0-next.11-c6e52e36a3/node_modules/@arkecosystem/core-cli/",
           "packageDependencies": [
             ["@arkecosystem/core-cli", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-kernel", "npm:3.0.0-next.11"],
@@ -352,7 +305,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/core-database", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-database-npm-3.0.0-next.11-486f715f7a-17f212740a.zip/node_modules/@arkecosystem/core-database/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-database-npm-3.0.0-next.11-486f715f7a/node_modules/@arkecosystem/core-database/",
           "packageDependencies": [
             ["@arkecosystem/core-database", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-kernel", "npm:3.0.0-next.11"],
@@ -414,7 +367,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/core-kernel", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-kernel-npm-3.0.0-next.11-5e6e8eeb78-35972ba3a5.zip/node_modules/@arkecosystem/core-kernel/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-kernel-npm-3.0.0-next.11-5e6e8eeb78/node_modules/@arkecosystem/core-kernel/",
           "packageDependencies": [
             ["@arkecosystem/core-kernel", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-api", "npm:3.0.0-next.9"],
@@ -761,7 +714,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/core-state", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-state-npm-3.0.0-next.11-fdb548b033-51a3c92cb8.zip/node_modules/@arkecosystem/core-state/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-state-npm-3.0.0-next.11-fdb548b033/node_modules/@arkecosystem/core-state/",
           "packageDependencies": [
             ["@arkecosystem/core-state", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-database", "npm:3.0.0-next.11"],
@@ -789,7 +742,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/core-test-framework", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-test-framework-npm-3.0.0-next.11-1dd0167e86-516cf1ee7e.zip/node_modules/@arkecosystem/core-test-framework/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-test-framework-npm-3.0.0-next.11-1dd0167e86/node_modules/@arkecosystem/core-test-framework/",
           "packageDependencies": [
             ["@arkecosystem/core-test-framework", "npm:3.0.0-next.11"],
             ["@arkecosystem/core", "virtual:1dd0167e86dae8e2c9ed778fa2cf49a382594b0f72bc6d840ceeb5a5bfb670c1e1b1a5f19d61a1af141e4dd77d72b3926e63fde83095a7ad5cd907222814a2aa#npm:3.0.0-next.11"],
@@ -817,41 +770,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["xstate", "npm:4.14.0"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:3.0.0-next.9", {
-          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-test-framework-npm-3.0.0-next.9-126ed30421/node_modules/@arkecosystem/core-test-framework/",
-          "packageDependencies": [
-            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-api", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-blockchain", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-forger", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-p2p", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.9"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
-            ["bip39", "npm:3.0.2"],
-            ["bs58", "npm:4.0.1"],
-            ["bytebuffer", "npm:5.0.1"],
-            ["chance", "npm:1.1.7"],
-            ["env-paths", "npm:2.2.0"],
-            ["fast-memoize", "npm:2.5.2"],
-            ["fs-extra", "npm:8.1.0"],
-            ["got", "npm:11.8.0"],
-            ["jest-extended", "npm:0.11.5"],
-            ["lodash.clonedeep", "npm:4.5.0"],
-            ["tmp", "npm:0.2.1"],
-            ["xstate", "npm:4.14.0"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["@arkecosystem/core-transaction-pool", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-transaction-pool-npm-3.0.0-next.11-5810dd4c40-052d51ae77.zip/node_modules/@arkecosystem/core-transaction-pool/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-transaction-pool-npm-3.0.0-next.11-5810dd4c40/node_modules/@arkecosystem/core-transaction-pool/",
           "packageDependencies": [
             ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-database", "npm:3.0.0-next.11"],
@@ -891,7 +814,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/core-transactions", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-core-transactions-npm-3.0.0-next.11-89525faf7b-0241386b0c.zip/node_modules/@arkecosystem/core-transactions/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-transactions-npm-3.0.0-next.11-89525faf7b/node_modules/@arkecosystem/core-transactions/",
           "packageDependencies": [
             ["@arkecosystem/core-transactions", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-database", "npm:3.0.0-next.11"],
@@ -945,7 +868,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@arkecosystem/crypto", [
         ["npm:3.0.0-next.11", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-crypto-npm-3.0.0-next.11-ed06b91d00-f92e27daad.zip/node_modules/@arkecosystem/crypto/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-crypto-npm-3.0.0-next.11-ed06b91d00/node_modules/@arkecosystem/crypto/",
           "packageDependencies": [
             ["@arkecosystem/crypto", "npm:3.0.0-next.11"],
             ["@arkecosystem/crypto-identities", "npm:1.1.1"],
@@ -1038,7 +961,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }],
         ["npm:1.2.1", {
-          "packageLocation": "./.yarn/cache/@arkecosystem-utils-npm-1.2.1-cd80c58e4e-0946b8a7f9.zip/node_modules/@arkecosystem/utils/",
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-utils-npm-1.2.1-cd80c58e4e/node_modules/@arkecosystem/utils/",
           "packageDependencies": [
             ["@arkecosystem/utils", "npm:1.2.1"],
             ["@hapi/bourne", "npm:2.0.0"],
@@ -2977,8 +2900,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@protokol/guardian", "workspace:."],
-            ["@arkecosystem/core", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.9"],
+            ["@arkecosystem/core", "virtual:1dd0167e86dae8e2c9ed778fa2cf49a382594b0f72bc6d840ceeb5a5bfb670c1e1b1a5f19d61a1af141e4dd77d72b3926e63fde83095a7ad5cd907222814a2aa#npm:3.0.0-next.11"],
+            ["@arkecosystem/core-cli", "npm:3.0.0-next.11"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.5"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
@@ -3004,7 +2927,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pg-query-stream", "npm:3.4.2"],
             ["prettier", "npm:2.1.2"],
             ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:26.4.4"],
+            ["ts-jest", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.4.4"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a72311"],
             ["typescript-language-server", "npm:0.4.0"]
           ],
@@ -3016,14 +2939,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/guardian-api/",
           "packageDependencies": [
             ["@protokol/guardian-api", "workspace:packages/guardian-api"],
-            ["@arkecosystem/core-api", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-transactions", "npm:3.0.0-next.9"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
+            ["@arkecosystem/core-api", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-database", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-state", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0-next.11"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.11"],
             ["@hapi/boom", "npm:9.1.0"],
             ["@hapi/hapi", "npm:20.0.2"],
             ["@hapi/joi", "npm:17.1.1"],
@@ -3060,8 +2983,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-check-updates", "npm:10.2.1"],
             ["prettier", "npm:2.1.2"],
             ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:26.4.4"],
-            ["typedoc", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:0.19.2"],
+            ["ts-jest", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.4.4"],
+            ["typedoc", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:0.19.2"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a72311"]
           ],
           "linkType": "SOFT",
@@ -3072,9 +2995,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/guardian-crypto/",
           "packageDependencies": [
             ["@protokol/guardian-crypto", "workspace:packages/guardian-crypto"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.9"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0-next.11"],
             ["@arkecosystem/core-test-framework", "npm:3.0.0-next.11"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.11"],
             ["@protokol/utils", "npm:1.0.0-beta.28"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/jest", "npm:26.0.15"],
@@ -3090,8 +3013,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-extended", "npm:0.11.5"],
             ["process-es6", "npm:0.11.6"],
             ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:26.4.4"],
-            ["typedoc", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:0.19.2"],
+            ["ts-jest", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.4.4"],
+            ["typedoc", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:0.19.2"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a72311"],
             ["util", "npm:0.12.3"]
           ],
@@ -3103,14 +3026,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/guardian-transactions/",
           "packageDependencies": [
             ["@protokol/guardian-transactions", "workspace:packages/guardian-transactions"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.9"],
-            ["@arkecosystem/core-transactions", "npm:3.0.0-next.9"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
-            ["@arkecosystem/utils", "npm:1.2.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-state", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.11"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0-next.11"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.11"],
+            ["@arkecosystem/utils", "npm:1.2.1"],
             ["@protokol/guardian-crypto", "workspace:packages/guardian-crypto"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.5"],
@@ -3138,8 +3061,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.2.0"],
             ["process-es6", "npm:0.11.6"],
             ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:26.4.4"],
-            ["typedoc", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:0.19.2"],
+            ["ts-jest", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.4.4"],
+            ["typedoc", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:0.19.2"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=a72311"]
           ],
           "linkType": "SOFT",
@@ -11188,7 +11111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.3.0", {
-          "packageLocation": "./.yarn/cache/ngrok-npm-3.3.0-ff8d3edfc1-6e9bdd8e03.zip/node_modules/ngrok/",
+          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.3.0-ff8d3edfc1/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.3.0"],
             ["@types/node", "npm:8.10.66"],
@@ -12726,7 +12649,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.1", {
-          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.1-e168613ba4-6917e25337.zip/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.1-e168613ba4/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.1"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
@@ -14701,10 +14624,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-jest", [
-        ["virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:26.4.4", {
-          "packageLocation": "./.yarn/$$virtual/ts-jest-virtual-aec4960b7f/0/cache/ts-jest-npm-26.4.4-6fd34d9b91-bee46b789c.zip/node_modules/ts-jest/",
+        ["virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.4.4", {
+          "packageLocation": "./.yarn/$$virtual/ts-jest-virtual-e62905afdb/0/cache/ts-jest-npm-26.4.4-6fd34d9b91-bee46b789c.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:26.4.4"],
+            ["ts-jest", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:26.4.4"],
             ["@types/jest", "npm:26.0.15"],
             ["@types/typescript", null],
             ["bs-logger", "npm:0.2.6"],
@@ -14901,10 +14824,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typedoc", [
-        ["virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:0.19.2", {
-          "packageLocation": "./.yarn/$$virtual/typedoc-virtual-0875189e27/0/cache/typedoc-npm-0.19.2-67686083da-fc33909c4d.zip/node_modules/typedoc/",
+        ["virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:0.19.2", {
+          "packageLocation": "./.yarn/$$virtual/typedoc-virtual-b913d398b6/0/cache/typedoc-npm-0.19.2-67686083da-fc33909c4d.zip/node_modules/typedoc/",
           "packageDependencies": [
-            ["typedoc", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:0.19.2"],
+            ["typedoc", "virtual:36cd666ac0f9a6dff3fcb6c27d260e34ec116dd4fd5a816eb4e692586d34803d6198f2049500c10097e1b4897faf95a6259cbad94aa5894169e813b06a26b6d7#npm:0.19.2"],
             ["@types/typescript", null],
             ["fs-extra", "npm:9.0.1"],
             ["handlebars", "npm:4.7.6"],
