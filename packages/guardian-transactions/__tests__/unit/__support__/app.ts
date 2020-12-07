@@ -17,11 +17,11 @@ import {
 import { Handlers } from "@arkecosystem/core-transactions";
 import { Identities, Managers, Utils } from "@arkecosystem/crypto";
 
-import { transactionRepository } from "../__mocks__/transaction-repository";
 import { GuardianGroupPermissionsHandler, GuardianUserPermissionsHandler } from "../../../src/handlers";
 import { Identifiers as GuardianIdentifiers } from "../../../src/interfaces";
 import { PermissionResolver } from "../../../src/permission-resolver";
 import { GuardianIndexers, guardianUserPermissionIndexer } from "../../../src/wallet-indexes";
+import { transactionRepository } from "../__mocks__/transaction-repository";
 
 const logger = {
     notice: jest.fn(),
