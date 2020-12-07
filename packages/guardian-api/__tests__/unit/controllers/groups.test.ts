@@ -106,7 +106,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]!).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]!);
 	});
 
 	it("index - return all groups that matches search query - default", async () => {
@@ -123,7 +123,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]!).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]!);
 	});
 
 	it("index - return all groups that matches search query - active", async () => {
@@ -140,7 +140,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]!).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]!);
 	});
 
 	it("index - return all groups that matches search query - name", async () => {
@@ -157,7 +157,7 @@ describe("Test group controller", () => {
 
 		expect(response.totalCount).toBe(1);
 		expect(response.results.length).toBe(1);
-		expect(response.results[0]!).toStrictEqual(groups[1]);
+		expect(response.results[0]!).toStrictEqual(groups[1]!);
 	});
 
 	it("index - return all groups that matches search query - case insensitive name", async () => {
