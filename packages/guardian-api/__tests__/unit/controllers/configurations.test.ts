@@ -7,8 +7,8 @@ import { Defaults as CryptoDefaults } from "@protokol/guardian-crypto";
 import { Defaults as TransactionsDefaults } from "@protokol/guardian-transactions";
 import latestVersion from "latest-version";
 
-import { initApp, ItemResponse } from "../__support__";
 import { ConfigurationController } from "../../../src/controllers/configurations";
+import { initApp, ItemResponse } from "../__support__";
 
 let app: Application;
 

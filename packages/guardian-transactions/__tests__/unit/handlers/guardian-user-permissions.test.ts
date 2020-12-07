@@ -97,9 +97,9 @@ describe("Guardian set user permissions tests", () => {
 
             await expect(handler.bootstrap()).toResolve();
 
-            expect(
-                senderWallet.getAttribute<GuardianInterfaces.IGuardianUserPermissionsAsset>("guardian.userPermissions"),
-            ).toStrictEqual(userPermissions);
+            expect(senderWallet.getAttribute<IUserPermissions>("guardian.userPermissions")).toStrictEqual(
+                userPermissions,
+            );
 
             expect(
                 walletRepository.findByIndex(
@@ -240,9 +240,9 @@ describe("Guardian set user permissions tests", () => {
         it("should test apply method", async () => {
             await expect(handler.apply(actual)).toResolve();
 
-            expect(
-                senderWallet.getAttribute<GuardianInterfaces.IGuardianUserPermissionsAsset>("guardian.userPermissions"),
-            ).toStrictEqual(userPermissions);
+            expect(senderWallet.getAttribute<IUserPermissions>("guardian.userPermissions")).toStrictEqual(
+                userPermissions,
+            );
 
             expect(
                 walletRepository.findByIndex(
@@ -256,9 +256,7 @@ describe("Guardian set user permissions tests", () => {
             actual = buildUserPermissionsTx(publicKey);
             await expect(handler.apply(actual)).toResolve();
 
-            expect(
-                senderWallet.getAttribute<GuardianInterfaces.IGuardianUserPermissionsAsset>("guardian.userPermissions"),
-            ).toStrictEqual({
+            expect(senderWallet.getAttribute<IUserPermissions>("guardian.userPermissions")).toStrictEqual({
                 groups: [],
                 allow: [],
                 deny: [],
@@ -318,9 +316,9 @@ describe("Guardian set user permissions tests", () => {
 
             await expect(handler.revert(actual)).toResolve();
 
-            expect(
-                senderWallet.getAttribute<GuardianInterfaces.IGuardianUserPermissionsAsset>("guardian.userPermissions"),
-            ).toStrictEqual(oldPermissions);
+            expect(senderWallet.getAttribute<IUserPermissions>("guardian.userPermissions")).toStrictEqual(
+                oldPermissions,
+            );
             expect(
                 walletRepository.findByIndex(
                     GuardianIndexers.UserPermissionsIndexer,
