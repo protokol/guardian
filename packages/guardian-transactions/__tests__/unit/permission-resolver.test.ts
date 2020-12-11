@@ -1,10 +1,9 @@
 import "jest-extended";
 
-import { Application, Container, Contracts, Providers } from "@arkecosystem/core-kernel";
+import { Application, Container, Contracts, Providers, Utils } from "@arkecosystem/core-kernel";
 import { Wallets } from "@arkecosystem/core-state";
 import { Mocks, passphrases } from "@arkecosystem/core-test-framework";
 import { Interfaces } from "@arkecosystem/crypto";
-import { cloneDeep } from "@arkecosystem/utils";
 import { Builders, Enums } from "@protokol/guardian-crypto";
 
 import { Identifiers as GuardianIdentifiers, IGroupPermissions } from "../../src/interfaces";
@@ -249,7 +248,7 @@ describe("Guardian permission resolver tests", () => {
         });
 
         it("should allow transaction if it is first block", async () => {
-            const mockBlock = cloneDeep(defaultMockBlock);
+            const mockBlock = Utils.cloneDeep(defaultMockBlock);
             mockBlock.data!.height = 1;
             Mocks.StateStore.setBlock(mockBlock);
 
@@ -259,7 +258,7 @@ describe("Guardian permission resolver tests", () => {
         });
 
         it("should allow transaction if genesis", async () => {
-            const mockBlock = cloneDeep(defaultMockBlock);
+            const mockBlock = Utils.cloneDeep(defaultMockBlock);
             mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.publicKey;
             Mocks.StateStore.setBlock(mockBlock);
 
@@ -269,7 +268,7 @@ describe("Guardian permission resolver tests", () => {
         });
 
         it("should use cached genesis publicKey to check permissions", async () => {
-            const mockBlock = cloneDeep(defaultMockBlock);
+            const mockBlock = Utils.cloneDeep(defaultMockBlock);
             mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.publicKey;
             Mocks.StateStore.setBlock(mockBlock);
 
