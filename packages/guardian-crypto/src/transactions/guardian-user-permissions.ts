@@ -1,5 +1,5 @@
+import { Utils as AppUtils } from "@arkecosystem/core-kernel";
 import { Transactions, Utils } from "@arkecosystem/crypto";
-import { Asserts } from "@protokol/utils";
 import ByteBuffer from "bytebuffer";
 
 import { defaults } from "../defaults";
@@ -56,7 +56,7 @@ export class GuardianUserPermissionsTransaction extends Transactions.Transaction
     public serialize(): ByteBuffer {
         const { data } = this;
 
-        Asserts.assert.defined<IGuardianUserPermissionsAsset>(data.asset?.setUserPermissions);
+        AppUtils.assert.defined<IGuardianUserPermissionsAsset>(data.asset?.setUserPermissions);
         const setUserPermissionAsset: IGuardianUserPermissionsAsset = data.asset.setUserPermissions;
 
         const groupNamesBuffer: Buffer[] = [];

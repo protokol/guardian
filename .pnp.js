@@ -2737,7 +2737,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/core-kernel", "npm:3.0.0-next.16"],
             ["@arkecosystem/core-test-framework", "npm:3.0.0-next.16"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.16"],
-            ["@protokol/utils", "npm:1.0.0-beta.37"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/jest", "npm:26.0.19"],
             ["@types/node", "npm:14.14.12"],
@@ -2804,15 +2803,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=cc6730"]
           ],
           "linkType": "SOFT",
-        }]
-      ]],
-      ["@protokol/utils", [
-        ["npm:1.0.0-beta.37", {
-          "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-beta.37-85eca0c1f1-d8f1bf81fd.zip/node_modules/@protokol/utils/",
-          "packageDependencies": [
-            ["@protokol/utils", "npm:1.0.0-beta.37"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["@samverschueren/stream-to-observable", [
