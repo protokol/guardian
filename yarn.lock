@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-api@npm:3.0.0-next.16, @arkecosystem/core-api@npm:^3.0.0-next.16, @arkecosystem/core-api@npm:next":
+"@arkecosystem/core-api@npm:^3.0.0-next, @arkecosystem/core-api@npm:^3.0.0-next.16, @arkecosystem/core-api@npm:next":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-api@npm:3.0.0-next.16"
   dependencies:
@@ -57,7 +57,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-cli@npm:3.0.0-next.16, @arkecosystem/core-cli@npm:^3.0.0-next.16":
+"@arkecosystem/core-cli@npm:^3.0.0-next, @arkecosystem/core-cli@npm:^3.0.0-next.16":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-cli@npm:3.0.0-next.16"
   dependencies:
@@ -90,7 +90,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-database@npm:3.0.0-next.16, @arkecosystem/core-database@npm:^3.0.0-next.16, @arkecosystem/core-database@npm:next":
+"@arkecosystem/core-database@npm:^3.0.0-next, @arkecosystem/core-database@npm:^3.0.0-next.16, @arkecosystem/core-database@npm:next":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-database@npm:3.0.0-next.16"
   dependencies:
@@ -120,7 +120,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-kernel@npm:3.0.0-next.16, @arkecosystem/core-kernel@npm:^3.0.0-next.16":
+"@arkecosystem/core-kernel@npm:^3.0.0-next, @arkecosystem/core-kernel@npm:^3.0.0-next.16":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-kernel@npm:3.0.0-next.16"
   dependencies:
@@ -292,7 +292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-state@npm:3.0.0-next.16, @arkecosystem/core-state@npm:^3.0.0-next.16, @arkecosystem/core-state@npm:next":
+"@arkecosystem/core-state@npm:^3.0.0-next, @arkecosystem/core-state@npm:^3.0.0-next.16, @arkecosystem/core-state@npm:next":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-state@npm:3.0.0-next.16"
   dependencies:
@@ -306,7 +306,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-test-framework@npm:3.0.0-next.16":
+"@arkecosystem/core-test-framework@npm:^3.0.0-next":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-test-framework@npm:3.0.0-next.16"
   dependencies:
@@ -337,7 +337,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-transaction-pool@npm:3.0.0-next.16, @arkecosystem/core-transaction-pool@npm:^3.0.0-next.16, @arkecosystem/core-transaction-pool@npm:next":
+"@arkecosystem/core-transaction-pool@npm:^3.0.0-next, @arkecosystem/core-transaction-pool@npm:^3.0.0-next.16, @arkecosystem/core-transaction-pool@npm:next":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-transaction-pool@npm:3.0.0-next.16"
   dependencies:
@@ -356,7 +356,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-transactions@npm:3.0.0-next.16, @arkecosystem/core-transactions@npm:^3.0.0-next.16, @arkecosystem/core-transactions@npm:next":
+"@arkecosystem/core-transactions@npm:^3.0.0-next, @arkecosystem/core-transactions@npm:^3.0.0-next.16, @arkecosystem/core-transactions@npm:next":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core-transactions@npm:3.0.0-next.16"
   dependencies:
@@ -383,7 +383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core@npm:3.0.0-next.16, @arkecosystem/core@npm:^3.0.0-next.16":
+"@arkecosystem/core@npm:^3.0.0-next, @arkecosystem/core@npm:^3.0.0-next.16":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/core@npm:3.0.0-next.16"
   dependencies:
@@ -453,7 +453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/crypto@npm:3.0.0-next.16, @arkecosystem/crypto@npm:^3.0.0-next.16":
+"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.16":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/crypto@npm:3.0.0-next.16"
   dependencies:
@@ -2269,14 +2269,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/guardian-api@workspace:packages/guardian-api"
   dependencies:
-    "@arkecosystem/core-api": 3.0.0-next.16
-    "@arkecosystem/core-database": 3.0.0-next.16
-    "@arkecosystem/core-kernel": 3.0.0-next.16
-    "@arkecosystem/core-state": 3.0.0-next.16
-    "@arkecosystem/core-test-framework": 3.0.0-next.16
-    "@arkecosystem/core-transaction-pool": 3.0.0-next.16
-    "@arkecosystem/core-transactions": 3.0.0-next.16
-    "@arkecosystem/crypto": 3.0.0-next.16
+    "@arkecosystem/core-api": ^3.0.0-next
+    "@arkecosystem/core-database": ^3.0.0-next
+    "@arkecosystem/core-kernel": ^3.0.0-next
+    "@arkecosystem/core-state": ^3.0.0-next
+    "@arkecosystem/core-test-framework": ^3.0.0-next
+    "@arkecosystem/core-transaction-pool": ^3.0.0-next
+    "@arkecosystem/core-transactions": ^3.0.0-next
+    "@arkecosystem/crypto": ^3.0.0-next
     "@hapi/boom": ^9.1.0
     "@hapi/hapi": ^20.0.2
     "@hapi/joi": ^17.1.0
@@ -2323,9 +2323,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/guardian-crypto@workspace:packages/guardian-crypto"
   dependencies:
-    "@arkecosystem/core-kernel": 3.0.0-next.16
-    "@arkecosystem/core-test-framework": 3.0.0-next.16
-    "@arkecosystem/crypto": 3.0.0-next.16
+    "@arkecosystem/core-kernel": ^3.0.0-next
+    "@arkecosystem/core-test-framework": ^3.0.0-next
+    "@arkecosystem/crypto": ^3.0.0-next
     "@protokol/utils": 1.0.0-beta.37
     "@sindresorhus/tsconfig": ~0.8.0
     "@types/jest": ~26.0.15
@@ -2352,13 +2352,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/guardian-transactions@workspace:packages/guardian-transactions"
   dependencies:
-    "@arkecosystem/core-database": 3.0.0-next.16
-    "@arkecosystem/core-kernel": 3.0.0-next.16
-    "@arkecosystem/core-state": 3.0.0-next.16
-    "@arkecosystem/core-test-framework": 3.0.0-next.16
-    "@arkecosystem/core-transaction-pool": 3.0.0-next.16
-    "@arkecosystem/core-transactions": 3.0.0-next.16
-    "@arkecosystem/crypto": 3.0.0-next.16
+    "@arkecosystem/core-database": ^3.0.0-next
+    "@arkecosystem/core-kernel": ^3.0.0-next
+    "@arkecosystem/core-state": ^3.0.0-next
+    "@arkecosystem/core-test-framework": ^3.0.0-next
+    "@arkecosystem/core-transaction-pool": ^3.0.0-next
+    "@arkecosystem/core-transactions": ^3.0.0-next
+    "@arkecosystem/crypto": ^3.0.0-next
     "@arkecosystem/utils": 1.2.1
     "@protokol/guardian-crypto": "workspace:packages/guardian-crypto"
     "@sindresorhus/tsconfig": ~0.8.0
@@ -2397,8 +2397,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/guardian@workspace:."
   dependencies:
-    "@arkecosystem/core": 3.0.0-next.16
-    "@arkecosystem/core-cli": 3.0.0-next.16
+    "@arkecosystem/core": ^3.0.0-next
+    "@arkecosystem/core-cli": ^3.0.0-next
     "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.0
     "@types/eslint-plugin-prettier": ^3.1.0
