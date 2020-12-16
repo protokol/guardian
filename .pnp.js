@@ -2793,7 +2793,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:3.2.0"],
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],
-            ["jest-localstorage-mock", "npm:2.4.4"],
+            ["jest-localstorage-mock", "npm:2.4.5"],
             ["pg", "virtual:b99730336d6765a5cc1c2693ed29a397bb5ef3a89e7cb787e02c1c75dd1195ef8703401f7e975b778ff0c595d6c6227c4bdbae8d59e98e1f97c0ad218f9aac42#npm:8.5.1"],
             ["prettier", "npm:2.2.1"],
             ["process-es6", "npm:0.11.6"],
@@ -9066,10 +9066,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.4.4", {
-          "packageLocation": "./.yarn/cache/jest-localstorage-mock-npm-2.4.4-c247249296-003668b70f.zip/node_modules/jest-localstorage-mock/",
+        ["npm:2.4.5", {
+          "packageLocation": "./.yarn/cache/jest-localstorage-mock-npm-2.4.5-79ba57d075-7787284674.zip/node_modules/jest-localstorage-mock/",
           "packageDependencies": [
-            ["jest-localstorage-mock", "npm:2.4.4"]
+            ["jest-localstorage-mock", "npm:2.4.5"]
           ],
           "linkType": "HARD",
         }]
