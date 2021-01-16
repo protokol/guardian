@@ -1179,6 +1179,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["strip-json-comments", "npm:3.1.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:0.3.0", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/@eslint-eslintrc-npm-0.3.0-360365131b-00e87c1946.zip/node_modules/@eslint/eslintrc/",
+          "packageDependencies": [
+            ["@eslint/eslintrc", "npm:0.3.0"],
+            ["ajv", "npm:6.12.6"],
+            ["debug", "virtual:75c807624a1c16c0a8cc2bd5d8a2e9aa1df1c544dc2bbbddf1d1c9ed191f4248eedda1a3e0b0bcacbbc5934cf664baa5da14675e8a7a6ec6490dea178cda6d6f#npm:4.3.2"],
+            ["espree", "npm:7.3.1"],
+            ["globals", "npm:12.4.0"],
+            ["ignore", "npm:4.0.6"],
+            ["import-fresh", "npm:3.2.2"],
+            ["js-yaml", "npm:3.14.1"],
+            ["lodash", "npm:4.17.20"],
+            ["minimatch", "npm:3.0.4"],
+            ["strip-json-comments", "npm:3.1.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@faustbrian/remote-address", [
@@ -2753,7 +2770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", "npm:2.1.5"],
             ["bip39", "npm:3.0.3"],
             ["codecov", "npm:3.8.1"],
-            ["eslint", "npm:7.17.0"],
+            ["eslint", "npm:7.18.0"],
             ["eslint-plugin-prettier", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:3.2.0"],
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],
@@ -6362,12 +6379,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:7.17.0", {
-          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/eslint-npm-7.17.0-916da62d1c-12b09a972e.zip/node_modules/eslint/",
+        ["npm:7.18.0", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/eslint-npm-7.18.0-c2f4ad46af-5c6f6ca0eb.zip/node_modules/eslint/",
           "packageDependencies": [
-            ["eslint", "npm:7.17.0"],
+            ["eslint", "npm:7.18.0"],
             ["@babel/code-frame", "npm:7.10.4"],
-            ["@eslint/eslintrc", "npm:0.2.2"],
+            ["@eslint/eslintrc", "npm:0.3.0"],
             ["ajv", "npm:6.12.6"],
             ["chalk", "npm:4.1.0"],
             ["cross-spawn", "npm:7.0.3"],
@@ -6466,7 +6483,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:3.2.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/prettier", "npm:2.1.5"],
-            ["eslint", "npm:7.17.0"],
+            ["eslint", "npm:7.18.0"],
             ["prettier", "npm:2.2.1"],
             ["prettier-linter-helpers", "npm:1.0.0"]
           ],
