@@ -885,6 +885,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/eslintrc@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@eslint/eslintrc@npm:0.3.0"
+  dependencies:
+    ajv: ^6.12.4
+    debug: ^4.1.1
+    espree: ^7.3.0
+    globals: ^12.1.0
+    ignore: ^4.0.6
+    import-fresh: ^3.2.1
+    js-yaml: ^3.13.1
+    lodash: ^4.17.20
+    minimatch: ^3.0.4
+    strip-json-comments: ^3.1.1
+  checksum: 00e87c194672eb85dcea22ba749fb3cabdd9768e952e748b2c727940f06691c873369d75cf3bddb239301eca8c38de6e098b0de4839fa7c16a2062e536e8ff5a
+  languageName: node
+  linkType: hard
+
 "@faustbrian/remote-address@npm:^0.2.0":
   version: 0.2.0
   resolution: "@faustbrian/remote-address@npm:0.2.0"
@@ -2299,7 +2317,6 @@ __metadata:
     eslint-plugin-simple-import-sort: ^7.0.0
     jest: ^26.6.3
     jest-extended: ^0.11.5
-    jest-localstorage-mock: ^2.4.3
     latest-version: ^5.1.0
     prettier: ^2.1.2
     rimraf: ^3.0.2
@@ -2351,11 +2368,10 @@ __metadata:
     "@types/prettier": ^2.1.5
     bip39: 3.0.3
     codecov: ^3.8.1
-    eslint: 7.17.0
+    eslint: 7.18.0
     eslint-plugin-prettier: ^3.1.4
     jest: ~26.6.3
     jest-extended: ~0.11.5
-    jest-localstorage-mock: 2.4.6
     prettier: 2.2.1
     rimraf: ^3.0.2
     ts-jest: ~26.4.4
@@ -5503,12 +5519,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.17.0":
-  version: 7.17.0
-  resolution: "eslint@npm:7.17.0"
+"eslint@npm:7.18.0":
+  version: 7.18.0
+  resolution: "eslint@npm:7.18.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
-    "@eslint/eslintrc": ^0.2.2
+    "@eslint/eslintrc": ^0.3.0
     ajv: ^6.10.0
     chalk: ^4.0.0
     cross-spawn: ^7.0.2
@@ -5532,7 +5548,7 @@ __metadata:
     js-yaml: ^3.13.1
     json-stable-stringify-without-jsonify: ^1.0.1
     levn: ^0.4.1
-    lodash: ^4.17.19
+    lodash: ^4.17.20
     minimatch: ^3.0.4
     natural-compare: ^1.4.0
     optionator: ^0.9.1
@@ -5546,7 +5562,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 12b09a972eb0b81fabf9c1b38b3e9ada0cc051a22ee5022e31852e7babde6fe02a0135be3027451ee02c9ff4a6f738b55205d2953f98eb16a43350ad73070b27
+  checksum: 5c6f6ca0eb6c3738a0d14d3441a23f045ef9e7f73aaba4848aea0877c5fd50ec42937ccdaf53fb9107694f5700a9989bca55334b7b17e5d3be2f6e69a42241fa
   languageName: node
   linkType: hard
 
@@ -7759,20 +7775,6 @@ fsevents@~2.1.2:
     jest-get-type: ^26.3.0
     pretty-format: ^26.6.2
   checksum: 08c1bbb628c46d22bead4de7bcbe6a4c9d5761d55f15a1d938b9409473eeb6175545ebade44318f9ae950fcdf484e1cbffbbcdcce8600b946e21300d7d1ed206
-  languageName: node
-  linkType: hard
-
-"jest-localstorage-mock@npm:2.4.6":
-  version: 2.4.6
-  resolution: "jest-localstorage-mock@npm:2.4.6"
-  checksum: b073649ded0130aaef0d7b87b4fc9b4f4df6d5e0a38fa105c36f7767ce08d4e075e69e08b52218d0f91f0e41f513cdbfe2f7daa0245b8f5ec194e9ee04ed0239
-  languageName: node
-  linkType: hard
-
-"jest-localstorage-mock@npm:^2.4.3":
-  version: 2.4.3
-  resolution: "jest-localstorage-mock@npm:2.4.3"
-  checksum: 9b06aa9a29285f03ee2c6c605fcfbe89d25da94a5bc08b28881eec4a3baaadbd4ec16a5d209cd3d663637010960be2a14648f2195009947b36bb5fba1293e067
   languageName: node
   linkType: hard
 
