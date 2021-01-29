@@ -1,5 +1,5 @@
 import { Schemas } from "@arkecosystem/core-api";
-import Joi from "@hapi/joi";
+import Joi from "joi";
 
 export const groupCriteriaSchemaObject = {
 	name: Joi.string(),

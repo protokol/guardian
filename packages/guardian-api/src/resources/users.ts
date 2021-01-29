@@ -1,5 +1,5 @@
 import { Contracts } from "@arkecosystem/core-kernel";
-import Joi from "@hapi/joi";
+import Joi from "joi";
 import { Interfaces } from "@protokol/guardian-transactions";
 
 export type UserResource = Interfaces.IUserPermissions & {
