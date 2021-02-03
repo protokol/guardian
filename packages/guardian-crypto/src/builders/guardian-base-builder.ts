@@ -3,9 +3,9 @@ import { Interfaces, Transactions } from "@arkecosystem/crypto";
 import { defaults } from "../defaults";
 import { GuardianTransactionGroup } from "../enums";
 
-export abstract class GuardianBaseTransactionBuilder<TBuilder> extends Transactions.TransactionBuilder<
-    GuardianBaseTransactionBuilder<TBuilder>
-> {
+export abstract class GuardianBaseTransactionBuilder<
+    TBuilder extends Transactions.TransactionBuilder<TBuilder>
+> extends Transactions.TransactionBuilder<TBuilder> {
     protected constructor() {
         super();
         this.data.version = defaults.version;
