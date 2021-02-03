@@ -30,6 +30,17 @@ describe("Guardian User Permissions tests", () => {
             expect(actual.verify()).toBeTrue();
         });
 
+        it("should verify correctly when Asset method is not on top", () => {
+            const actual = new GuardianUserPermissionsBuilder()
+                .vendorField("guardian-user-permissions transaction")
+                .nonce("4")
+                .GuardianUserPermissions(userPermission)
+                .sign(passphrases[0]!);
+
+            expect(actual.build().verified).toBeTrue();
+            expect(actual.verify()).toBeTrue();
+        });
+
         it("object should remain the same if asset is undefined", () => {
             const actual = new GuardianUserPermissionsBuilder();
             actual.data.asset = undefined;

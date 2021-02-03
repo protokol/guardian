@@ -31,6 +31,17 @@ describe("Guardian Group Permissions tests", () => {
             expect(actual.verify()).toBeTrue();
         });
 
+        it("should verify correctly when Asset method is not on top", () => {
+            const actual = new GuardianGroupPermissionsBuilder()
+                .vendorField("guardian-group-permissions transaction")
+                .nonce("4")
+                .GuardianGroupPermissions(groupPermission)
+                .sign(passphrases[0]!);
+
+            expect(actual.build().verified).toBeTrue();
+            expect(actual.verify()).toBeTrue();
+        });
+
         it("object should remain the same if asset is undefined", () => {
             const actual = new GuardianGroupPermissionsBuilder();
             actual.data.asset = undefined;
