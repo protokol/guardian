@@ -36,6 +36,7 @@ export const setUp = async (): Promise<Contracts.Kernel.Application> => {
 
         Managers.configManager.getMilestone().aip11 = false;
         Managers.configManager.getMilestone().htlcEnabled = false;
+        Managers.configManager.getMilestone().vendorFieldLength = 255;
 
         await app.boot();
 
