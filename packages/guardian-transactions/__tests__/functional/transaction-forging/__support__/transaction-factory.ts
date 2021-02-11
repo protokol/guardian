@@ -11,6 +11,11 @@ export class GuardianTransactionFactory extends TransactionFactory {
         return new GuardianTransactionFactory(app);
     }
 
+    public withVendorField(vendorField: string): GuardianTransactionFactory {
+        this.builder.vendorField(vendorField);
+        return this;
+    }
+
     public GuardianSetUserPermissions(
         userPermissions: GuardianInterfaces.IGuardianUserPermissionsAsset,
     ): GuardianTransactionFactory {

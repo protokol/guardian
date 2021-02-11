@@ -16,6 +16,8 @@ export abstract class GuardianBaseTransactionBuilder<
         const struct: Interfaces.ITransactionData = super.getStruct();
         struct.amount = this.data.amount;
         struct.asset = this.data.asset;
+        struct.vendorField = this.data.vendorField;
+
         return struct;
     }
 }
