@@ -34,6 +34,7 @@ export class GuardianGroupPermissionsTransaction extends Transactions.Transactio
                         setGroupPermissions: {
                             type: "object",
                             required: ["name", "priority", "active", "default"],
+                            uniqueAllowDeny: true,
                             properties: {
                                 name: groupNameSchema,
                                 priority: {

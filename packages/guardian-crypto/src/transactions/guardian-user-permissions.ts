@@ -34,6 +34,7 @@ export class GuardianUserPermissionsTransaction extends Transactions.Transaction
                         setUserPermissions: {
                             type: "object",
                             required: ["publicKey"],
+                            uniqueAllowDeny: true,
                             properties: {
                                 publicKey: {
                                     $ref: "publicKey",
