@@ -36,4 +36,15 @@ describe("Guardian set group permissions functional tests - Signed with one Pass
         await snoozeForBlock(1);
         await expect(setGroupPermissions.id).toBeForged();
     });
+
+    it("should reject if duplicates in allow/deny permissions [Signed with 1 Passphrase]", async () => {
+        const groupPermissions = { ...groupPermissionsAsset, deny: groupPermissionsAsset.allow };
+        // Set group permissions
+        const setGroupPermissions = GuardianTransactionFactory.initialize(app)
+            .GuardianSetGroupPermissions(groupPermissions)
+            .withPassphrase(passphrases[0]!)
+            .createOne();
+
+        await expect(setGroupPermissions).toBeRejected();
+    });
 });

@@ -1,10 +1,8 @@
 import "@arkecosystem/core-test-framework/dist/matchers";
 
 import { Contracts } from "@arkecosystem/core-kernel";
-import { passphrases, snoozeForBlock, TransactionFactory } from "@arkecosystem/core-test-framework";
-import { Identities } from "@arkecosystem/crypto";
+import { passphrases, snoozeForBlock } from "@arkecosystem/core-test-framework";
 import { Enums } from "@protokol/guardian-crypto";
-import { generateMnemonic } from "bip39";
 
 import * as support from "../__support__";
 import { GuardianTransactionFactory } from "../__support__/transaction-factory";
@@ -59,6 +57,22 @@ describe("Guardian set user permissions functional tests", () => {
             await expect(setUserPermissions).toBeAccepted();
             await snoozeForBlock(1);
             await expect(setUserPermissions.id).toBeForged();
+        });
+
+        it("should reject if duplicates in allow/deny permissions [Signed with 1 Passphrase]", async () => {
+            const userPermissions = {
+                ...userPermissionsAsset,
+                groupNames: undefined,
+                deny: userPermissionsAsset.allow,
+            };
+
+            // Set user permissions
+            const setUserPermissions = GuardianTransactionFactory.initialize(app)
+                .GuardianSetUserPermissions(userPermissions)
+                .withPassphrase(passphrases[0]!)
+                .createOne();
+
+            await expect(setUserPermissions).toBeRejected();
         });
     });
 });
