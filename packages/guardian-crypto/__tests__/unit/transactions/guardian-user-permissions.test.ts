@@ -1,17 +1,17 @@
 import "jest-extended";
 
 import { passphrases } from "@arkecosystem/core-test-framework";
-import { Managers, Transactions } from "@arkecosystem/crypto";
+import { Errors, Managers, Transactions } from "@arkecosystem/crypto";
 
 import { GuardianUserPermissionsBuilder } from "../../../src/builders";
-import { IGuardianGroupPermissionsAsset, IGuardianUserPermissionsAsset } from "../../../src/interfaces";
+import { IGuardianUserPermissionsAsset } from "../../../src/interfaces";
 import { GuardianUserPermissionsTransaction } from "../../../src/transactions";
 
 const userPermission = {
     groupNames: ["group name"],
     publicKey: "02def27da9336e7fbf63131b8d7e5c9f45b296235db035f1f4242c507398f0f21d",
     allow: [{ transactionType: 9000, transactionTypeGroup: 0 }],
-    deny: [{ transactionType: 9000, transactionTypeGroup: 0 }],
+    deny: [{ transactionType: 9000, transactionTypeGroup: 1 }],
 };
 
 describe("Guardian set user permissions tests", () => {
@@ -27,10 +27,49 @@ describe("Guardian set user permissions tests", () => {
                 .sign(passphrases[0]!)
                 .getStruct();
 
-            const serialized = Transactions.TransactionFactory.fromData(actual).serialized.toString("hex");
+            const serialized = Transactions.Utils.toBytes(actual);
             const deserialized = Transactions.Deserializer.deserialize(serialized);
 
             expect(deserialized.data.asset!.setUserPermissions).toStrictEqual(userPermission);
+            expect(() => {
+                Transactions.TransactionFactory.fromBytes(serialized);
+            }).not.toThrow();
+        });
+
+        it("should throw if there are duplicates in deny/allow permissions", () => {
+            const userPermissions: IGuardianUserPermissionsAsset = {
+                ...userPermission,
+                deny: userPermission.allow,
+            };
+
+            const actual = new GuardianUserPermissionsBuilder()
+                .GuardianUserPermissions(userPermissions)
+                .nonce("3")
+                .sign(passphrases[0]!)
+                .getStruct();
+
+            expect(() => {
+                const serialized = Transactions.Utils.toBytes(actual);
+                Transactions.TransactionFactory.fromBytes(serialized);
+            }).toThrowError(Errors.TransactionSchemaError);
+        });
+
+        it("should throw if there are duplicates in allow permissions", () => {
+            const userPermissions: IGuardianUserPermissionsAsset = {
+                ...userPermission,
+                allow: [...userPermission.allow, ...userPermission.allow],
+            };
+
+            const actual = new GuardianUserPermissionsBuilder()
+                .GuardianUserPermissions(userPermissions)
+                .nonce("3")
+                .sign(passphrases[0]!)
+                .getStruct();
+
+            expect(() => {
+                const serialized = Transactions.Utils.toBytes(actual);
+                Transactions.TransactionFactory.fromBytes(serialized);
+            }).toThrowError(Errors.TransactionSchemaError);
         });
 
         it("should ser/deser correctly without group names and permissions", () => {
@@ -42,12 +81,15 @@ describe("Guardian set user permissions tests", () => {
                 .sign(passphrases[0]!)
                 .getStruct();
 
-            const serialized = Transactions.TransactionFactory.fromData(actual).serialized.toString("hex");
+            const serialized = Transactions.Utils.toBytes(actual);
             const deserialized = Transactions.Deserializer.deserialize(serialized);
 
             expect(deserialized.data.asset!.setUserPermissions).toStrictEqual({
                 publicKey: userPermission.publicKey,
             });
+            expect(() => {
+                Transactions.TransactionFactory.fromBytes(serialized);
+            }).not.toThrow();
         });
 
         it("should ser/deser correctly with only allow permissions", () => {
@@ -61,10 +103,13 @@ describe("Guardian set user permissions tests", () => {
                 .sign(passphrases[0]!)
                 .getStruct();
 
-            const serialized = Transactions.TransactionFactory.fromData(actual).serialized.toString("hex");
+            const serialized = Transactions.Utils.toBytes(actual);
             const deserialized = Transactions.Deserializer.deserialize(serialized);
 
             expect(deserialized.data.asset!.setUserPermissions).toStrictEqual(userPermissions);
+            expect(() => {
+                Transactions.TransactionFactory.fromBytes(serialized);
+            }).not.toThrow();
         });
 
         it("should throw if asset is undefined", () => {

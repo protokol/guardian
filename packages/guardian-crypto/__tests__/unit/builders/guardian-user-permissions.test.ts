@@ -10,7 +10,7 @@ const userPermission = {
     groupNames: ["group name"],
     publicKey: "02def27da9336e7fbf63131b8d7e5c9f45b296235db035f1f4242c507398f0f21d",
     allow: [{ transactionType: 9000, transactionTypeGroup: 0 }],
-    deny: [{ transactionType: 9000, transactionTypeGroup: 0 }],
+    deny: [{ transactionType: 9000, transactionTypeGroup: 1 }],
 };
 
 describe("Guardian User Permissions tests", () => {

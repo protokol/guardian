@@ -4,7 +4,7 @@ import { Interfaces, Managers, Utils } from "@arkecosystem/crypto";
 import { Interfaces as GuardianInterfaces } from "@protokol/guardian-crypto";
 
 import { FeeType } from "../enums";
-import { DuplicatePermissionsError, StaticFeeMismatchError, TransactionTypeDoesntExistError } from "../errors";
+import { StaticFeeMismatchError, TransactionTypeDoesntExistError } from "../errors";
 import { IGroupPermissions } from "../interfaces";
 
 const pluginName = require("../../package.json").name;
@@ -99,7 +99,6 @@ export abstract class GuardianTransactionHandler extends Handlers.TransactionHan
         const { allow, deny } = this.sanitizePermissions(asset.allow, asset.deny);
         const mergedPermissions = [...allow, ...deny];
         this.verifyPermissionsTypes(mergedPermissions);
-        this.checkUniquePermissions(mergedPermissions);
     }
 
     protected sanitizePermissions(
@@ -107,21 +106,6 @@ export abstract class GuardianTransactionHandler extends Handlers.TransactionHan
         deny: GuardianInterfaces.IPermission[] | undefined,
     ): { allow: GuardianInterfaces.IPermission[]; deny: GuardianInterfaces.IPermission[] } {
         return { allow: allow || [], deny: deny || [] };
-    }
-
-    private checkUniquePermissions(permissions: GuardianInterfaces.IPermission[]): void {
-        const duplicates = {};
-        for (const permission of permissions) {
-            if (!duplicates[permission.transactionTypeGroup]) {
-                duplicates[permission.transactionTypeGroup] = {};
-            }
-
-            if (duplicates[permission.transactionTypeGroup][permission.transactionType]) {
-                throw new DuplicatePermissionsError();
-            }
-
-            duplicates[permission.transactionTypeGroup][permission.transactionType] = true;
-        }
     }
 
     private verifyPermissionsTypes(permissions: GuardianInterfaces.IPermission[]): void {

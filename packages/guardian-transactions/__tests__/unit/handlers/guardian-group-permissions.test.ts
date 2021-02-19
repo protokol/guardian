@@ -9,11 +9,7 @@ import { Interfaces, Transactions, Utils } from "@arkecosystem/crypto";
 import { Builders, Enums } from "@protokol/guardian-crypto";
 
 import { FeeType } from "../../../src/enums";
-import {
-    DuplicatePermissionsError,
-    StaticFeeMismatchError,
-    TransactionTypeDoesntExistError,
-} from "../../../src/errors";
+import { StaticFeeMismatchError, TransactionTypeDoesntExistError } from "../../../src/errors";
 import { GuardianApplicationEvents } from "../../../src/events";
 import { IGroupPermissions } from "../../../src/interfaces";
 import { buildWallet, initApp, transactionHistoryService } from "../__support__/app";
@@ -117,37 +113,6 @@ describe("Guardian set group permissions tests", () => {
             undefinedTokenInTransaction.data.asset = undefined;
 
             await expect(handler.throwIfCannotBeApplied(undefinedTokenInTransaction, senderWallet)).toReject();
-        });
-
-        it("should throw if permissions array contains duplicates", async () => {
-            const type = {
-                transactionType: Enums.GuardianTransactionTypes.GuardianSetGroupPermissions,
-                transactionTypeGroup: Enums.GuardianTransactionGroup,
-            };
-            const allow = [type];
-            const deny = [type];
-            actual = buildGroupPermissionsTx({ ...groupPermissionsAsset, allow, deny });
-
-            await expect(handler.throwIfCannotBeApplied(actual, senderWallet)).rejects.toThrowError(
-                DuplicatePermissionsError,
-            );
-        });
-
-        it("should not throw if permissions array contains distinct values", async () => {
-            const typeOne = {
-                transactionType: Enums.GuardianTransactionTypes.GuardianSetGroupPermissions,
-                transactionTypeGroup: Enums.GuardianTransactionGroup,
-            };
-            const typeTwo = {
-                transactionType: Enums.GuardianTransactionTypes.GuardianSetUserPermissions,
-                transactionTypeGroup: Enums.GuardianTransactionGroup,
-            };
-            const typeThree = { transactionType: 0, transactionTypeGroup: 1 };
-            const allow = [typeOne, typeTwo];
-            const deny = [typeThree];
-            actual = buildGroupPermissionsTx({ ...groupPermissionsAsset, allow, deny });
-
-            await expect(handler.throwIfCannotBeApplied(actual, senderWallet)).toResolve();
         });
 
         it("should throw if types array in permissions contains non existing type", async () => {
