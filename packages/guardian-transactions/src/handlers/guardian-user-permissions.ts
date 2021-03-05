@@ -1,8 +1,7 @@
 import { Container, Contracts, Utils as AppUtils } from "@arkecosystem/core-kernel";
 import { Handlers } from "@arkecosystem/core-transactions";
 import { Interfaces, Transactions } from "@arkecosystem/crypto";
-import { Interfaces as GuardianInterfaces } from "@protokol/guardian-crypto";
-import { Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
+import { Interfaces as GuardianInterfaces, Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
 
 import { GroupDoesntExistError, UserInToManyGroupsError } from "../errors";
 import { GuardianApplicationEvents } from "../events";
@@ -41,7 +40,7 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
     }
 
     public emitEvents(transaction: Interfaces.ITransaction, emitter: Contracts.Kernel.EventDispatcher): void {
-        emitter.dispatch(GuardianApplicationEvents.SetUserPermissions, transaction.data);
+        void emitter.dispatch(GuardianApplicationEvents.SetUserPermissions, transaction.data);
     }
 
     public async throwIfCannotBeApplied(
