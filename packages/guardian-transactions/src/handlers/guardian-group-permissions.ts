@@ -1,8 +1,7 @@
 import { Container, Contracts, Utils as AppUtils } from "@arkecosystem/core-kernel";
 import { Handlers } from "@arkecosystem/core-transactions";
 import { Interfaces, Transactions } from "@arkecosystem/crypto";
-import { Interfaces as GuardianInterfaces } from "@protokol/guardian-crypto";
-import { Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
+import { Interfaces as GuardianInterfaces, Transactions as GuardianTransactions } from "@protokol/guardian-crypto";
 
 import { GuardianApplicationEvents } from "../events";
 import { IGroupPermissions } from "../interfaces";
@@ -29,7 +28,7 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
             );
 
             const setGroupPermissions = transaction.asset.setGroupPermissions;
-            this.groupsPermissionsCache.put(
+            await this.groupsPermissionsCache.put(
                 setGroupPermissions.name,
                 this.buildGroupPermissions(setGroupPermissions),
                 -1,
@@ -38,7 +37,7 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
     }
 
     public emitEvents(transaction: Interfaces.ITransaction, emitter: Contracts.Kernel.EventDispatcher): void {
-        emitter.dispatch(GuardianApplicationEvents.SetGroupPermissions, transaction.data);
+        void emitter.dispatch(GuardianApplicationEvents.SetGroupPermissions, transaction.data);
     }
 
     public async throwIfCannotBeApplied(
@@ -80,7 +79,11 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
         //     transaction.data.asset?.setGroupPermissions,
         // );
         const setGroupPermissions = transaction.data.asset!.setGroupPermissions;
-        this.groupsPermissionsCache.put(setGroupPermissions.name, this.buildGroupPermissions(setGroupPermissions), -1);
+        await this.groupsPermissionsCache.put(
+            setGroupPermissions.name,
+            this.buildGroupPermissions(setGroupPermissions),
+            -1,
+        );
     }
 
     public async revert(transaction: Interfaces.ITransaction): Promise<void> {
@@ -96,9 +99,9 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
         });
 
         if (!lastGroupPermissionsTx) {
-            this.groupsPermissionsCache.forget(setGroupPermissionsAsset.name);
+            await this.groupsPermissionsCache.forget(setGroupPermissionsAsset.name);
         } else {
-            this.groupsPermissionsCache.put(
+            await this.groupsPermissionsCache.put(
                 setGroupPermissionsAsset.name,
                 this.buildGroupPermissions(lastGroupPermissionsTx.asset!.setGroupPermissions),
                 -1,
