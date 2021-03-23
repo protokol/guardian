@@ -112,7 +112,7 @@ export class GuardianUserPermissionsTransaction extends Transactions.Transaction
             setUserPermissions.groupNames = [];
             for (let i = 0; i < numOfGroupNames; i++) {
                 const groupNameLength: number = buf.readUint8();
-                setUserPermissions.groupNames.push(buf.readString(groupNameLength));
+                setUserPermissions.groupNames.push(buf.readBytes(groupNameLength).toBuffer().toString("utf8"));
             }
         }
 
