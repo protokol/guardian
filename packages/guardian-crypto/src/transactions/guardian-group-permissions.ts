@@ -97,7 +97,7 @@ export class GuardianGroupPermissionsTransaction extends Transactions.Transactio
         const { data } = this;
 
         const nameLength: number = buf.readUint8();
-        const name: string = buf.readString(nameLength);
+        const name: string = buf.readBytes(nameLength).toBuffer().toString("utf8");
         const priority = buf.readUInt32();
         const active = Boolean(buf.readUint8());
         const isDefault = Boolean(buf.readUint8());
