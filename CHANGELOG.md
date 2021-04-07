@@ -2,10 +2,27 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [1.0.0-beta.40](https://github.com/protokol/guardian/compare/1.0.0-beta.39...1.0.0-beta.40)
+
+> 7 April 2021
+
+-   chore(deps): update dependency @sindresorhus/tsconfig to v1 [`#79`](https://github.com/protokol/guardian/pull/79)
+-   chore(deps): update dependency eslint to v7.23.0 [`#78`](https://github.com/protokol/guardian/pull/78)
+-   fix(guardian-crypto): deserializing strings [`#77`](https://github.com/protokol/guardian/pull/77)
+-   chore(deps): update dependency eslint to v7.22.0 [`#76`](https://github.com/protokol/guardian/pull/76)
+-   chore(deps): update dependency @sindresorhus/tsconfig to v0.9.0 [`#74`](https://github.com/protokol/guardian/pull/74)
+-   chore(deps): update dependency typescript to ~4.2.0 [`#73`](https://github.com/protokol/guardian/pull/73)
+-   chore(deps): update dependency eslint to v7.21.0 [`#75`](https://github.com/protokol/guardian/pull/75)
+-   chore(deps): update dependency eslint-config-prettier to v8 [`#72`](https://github.com/protokol/guardian/pull/72)
+-   feat: move allow and deny checks to crypto [`#71`](https://github.com/protokol/guardian/pull/71)
+-   chore(deps): update dependency eslint to v7.20.0 [`#70`](https://github.com/protokol/guardian/pull/70)
+-   release: 1.0.0-beta.40 [`b1f6ca7`](https://github.com/protokol/guardian/commit/b1f6ca7b105baed2c3531e2d22457e731069fc9a)
+
 #### [1.0.0-beta.39](https://github.com/protokol/guardian/compare/1.0.0-beta.34...1.0.0-beta.39)
 
 > 11 February 2021
 
+-   chore: release 1.0.0-beta.39 [`#69`](https://github.com/protokol/guardian/pull/69)
 -   fix: vendor field in transactions [`#68`](https://github.com/protokol/guardian/pull/68)
 -   fix(crypto): fix builder, make it possible that asset method does not have to be first [`#67`](https://github.com/protokol/guardian/pull/67)
 -   chore(deps): update dependency eslint to v7.19.0 [`#66`](https://github.com/protokol/guardian/pull/66)
