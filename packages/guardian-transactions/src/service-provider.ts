@@ -8,10 +8,13 @@ import { Identifiers } from "./interfaces";
 import { PermissionResolver } from "./permission-resolver";
 import { GuardianIndexers, guardianUserPermissionIndexer } from "./wallet-indexes";
 
-const pluginName = require("../package.json").name;
+const plugin = require("../package.json");
 
 export class ServiceProvider extends Providers.ServiceProvider {
     public async register(): Promise<void> {
+        const logger: Contracts.Kernel.Logger = this.app.get(Container.Identifiers.LogService);
+        logger.info(`Loading plugin: ${plugin.name} with version ${plugin.version}.`);
+
         this.registerIndexers();
 
         this.app.bind(Container.Identifiers.TransactionHandler).to(GuardianUserPermissionsHandler);
@@ -21,7 +24,7 @@ export class ServiceProvider extends Providers.ServiceProvider {
         this.app
             .bind(Container.Identifiers.CacheService)
             .toConstantValue(await cacheFactory())
-            .whenTargetTagged("cache", pluginName);
+            .whenTargetTagged("cache", plugin.name);
         this.app.bind(Identifiers.PermissionsResolver).to(PermissionResolver).inSingletonScope();
 
         this.registerActions();
