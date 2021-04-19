@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@arkecosystem/core", "virtual:5f896b02e5e79957b4779202cc1ff29c1f7cb0c607093abccddd6290fbc85c8f42e7537e64546f6af080de09f047735526af189f4996fa338535d9de68b1fe8c#npm:3.0.0-next.23"],
             ["@arkecosystem/core-cli", "npm:3.0.0-next.23"],
-            ["@sindresorhus/tsconfig", "npm:1.0.1"],
+            ["@sindresorhus/tsconfig", "npm:1.0.2"],
             ["@types/eslint", "npm:7.2.7"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:26.0.22"],
@@ -2638,7 +2638,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/guardian", "workspace:."],
             ["@arkecosystem/core", "virtual:5f896b02e5e79957b4779202cc1ff29c1f7cb0c607093abccddd6290fbc85c8f42e7537e64546f6af080de09f047735526af189f4996fa338535d9de68b1fe8c#npm:3.0.0-next.23"],
             ["@arkecosystem/core-cli", "npm:3.0.0-next.23"],
-            ["@sindresorhus/tsconfig", "npm:1.0.1"],
+            ["@sindresorhus/tsconfig", "npm:1.0.2"],
             ["@types/eslint", "npm:7.2.7"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:26.0.22"],
@@ -2681,7 +2681,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hapi/hapi", "npm:20.1.2"],
             ["@protokol/guardian-crypto", "workspace:packages/guardian-crypto"],
             ["@protokol/guardian-transactions", "workspace:packages/guardian-transactions"],
-            ["@sindresorhus/tsconfig", "npm:1.0.1"],
+            ["@sindresorhus/tsconfig", "npm:1.0.2"],
             ["@types/eslint", "npm:7.2.7"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/hapi__boom", "npm:7.4.1"],
@@ -2859,6 +2859,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-1.0.1-c557aac544-fa694f39cf.zip/node_modules/@sindresorhus/tsconfig/",
           "packageDependencies": [
             ["@sindresorhus/tsconfig", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-1.0.2-a4962efd1e-5f0f2b8746.zip/node_modules/@sindresorhus/tsconfig/",
+          "packageDependencies": [
+            ["@sindresorhus/tsconfig", "npm:1.0.2"]
           ],
           "linkType": "HARD",
         }]
