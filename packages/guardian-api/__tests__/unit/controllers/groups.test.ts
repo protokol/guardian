@@ -220,7 +220,7 @@ describe("Test group controller", () => {
 		const response = (await groupController.showUsers(request, undefined)) as CollectionResponse;
 
 		expect(response.data.length).toBe(1);
-		expect(response.data[0]!).toStrictEqual({ ...user, publicKey: wallet.publicKey });
+		expect(response.data[0]!).toStrictEqual({ ...user, publicKey: wallet.getPublicKey() });
 	});
 
 	it("showUsers - should return 404 if group does not exist", async () => {

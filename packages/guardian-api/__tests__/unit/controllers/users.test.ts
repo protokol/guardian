@@ -76,7 +76,7 @@ beforeEach(async () => {
 		const wallet = buildWallet(app, passphrases[i]!);
 		wallet.setAttribute("guardian.userPermissions", users[i]);
 		walletRepository.getIndex(Indexers.GuardianIndexers.UserPermissionsIndexer).index(wallet);
-		users[i].publicKey = wallet.publicKey;
+		users[i].publicKey = wallet.getPublicKey();
 		await groupsPermissionsCache.put(users[i].groups[0]!, groups[users[i].groups[0]!], -1);
 	}
 });
