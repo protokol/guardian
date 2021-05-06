@@ -259,7 +259,7 @@ describe("Guardian permission resolver tests", () => {
 
         it("should allow transaction if genesis", async () => {
             const mockBlock = Utils.cloneDeep(defaultMockBlock);
-            mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.publicKey;
+            mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.getPublicKey();
             Mocks.StateStore.setBlock(mockBlock);
 
             const isTxAllowed = await permissionResolver.resolve(actual);
@@ -269,7 +269,7 @@ describe("Guardian permission resolver tests", () => {
 
         it("should use cached genesis publicKey to check permissions", async () => {
             const mockBlock = Utils.cloneDeep(defaultMockBlock);
-            mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.publicKey;
+            mockBlock.transactions![0]!.data.senderPublicKey = senderWallet.getPublicKey();
             Mocks.StateStore.setBlock(mockBlock);
 
             await permissionResolver.resolve(actual);
@@ -281,7 +281,7 @@ describe("Guardian permission resolver tests", () => {
         it("should allow transaction if user is masterPublicKey", async () => {
             app.get<Providers.PluginConfiguration>(Container.Identifiers.PluginConfiguration).set(
                 "masterPublicKey",
-                senderWallet.publicKey,
+                senderWallet.getPublicKey(),
             );
 
             const isTxAllowed = await permissionResolver.resolve(actual);

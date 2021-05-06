@@ -8,7 +8,7 @@ export const guardianUserPermissionIndexer = (
     index: Contracts.State.WalletIndex,
     wallet: Contracts.State.Wallet,
 ): void => {
-    if (wallet.publicKey && wallet.hasAttribute("guardian.userPermissions")) {
-        index.set(wallet.publicKey, wallet);
+    if (wallet.getPublicKey() && wallet.hasAttribute("guardian.userPermissions")) {
+        index.set(wallet.getPublicKey()!, wallet);
     }
 };

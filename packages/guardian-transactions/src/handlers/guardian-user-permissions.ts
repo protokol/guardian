@@ -35,7 +35,11 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
             const userPermissionsWallet = this.buildUserPermissions(setUserPermissionsAsset);
 
             userWallet.setAttribute("guardian.userPermissions", userPermissionsWallet);
-            this.walletRepository.getIndex(GuardianIndexers.UserPermissionsIndexer).index(userWallet);
+            this.walletRepository.setOnIndex(
+                GuardianIndexers.UserPermissionsIndexer,
+                setUserPermissionsAsset.publicKey,
+                userWallet,
+            );
         }
     }
 
@@ -101,7 +105,11 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
         const userPermissionsWallet = this.buildUserPermissions(setUserPermissionsAsset);
 
         userWallet.setAttribute("guardian.userPermissions", userPermissionsWallet);
-        this.walletRepository.getIndex(GuardianIndexers.UserPermissionsIndexer).index(userWallet);
+        this.walletRepository.setOnIndex(
+            GuardianIndexers.UserPermissionsIndexer,
+            setUserPermissionsAsset.publicKey,
+            userWallet,
+        );
     }
 
     public async revertForRecipient(transaction: Interfaces.ITransaction): Promise<void> {
@@ -117,13 +125,18 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
 
         if (!lastUserPermissionsTx) {
             userWallet.forgetAttribute("guardian.userPermissions");
-            this.walletRepository
-                .getIndex(GuardianIndexers.UserPermissionsIndexer)
-                .forget(setUserPermissionsAsset.publicKey);
+            this.walletRepository.forgetOnIndex(
+                GuardianIndexers.UserPermissionsIndexer,
+                setUserPermissionsAsset.publicKey,
+            );
         } else {
             const userPermissionsWallet = this.buildUserPermissions(lastUserPermissionsTx.asset!.setUserPermissions);
             userWallet.setAttribute("guardian.userPermissions", userPermissionsWallet);
-            this.walletRepository.getIndex(GuardianIndexers.UserPermissionsIndexer).index(userWallet);
+            this.walletRepository.setOnIndex(
+                GuardianIndexers.UserPermissionsIndexer,
+                setUserPermissionsAsset.publicKey,
+                userWallet,
+            );
         }
     }
 
