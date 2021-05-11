@@ -2,10 +2,25 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [1.0.0-beta.41](https://github.com/protokol/guardian/compare/1.0.0-beta.40...1.0.0-beta.41)
+
+> 11 May 2021
+
+-   chore(deps): update dependency prettier to v2.3.0 [`#91`](https://github.com/protokol/guardian/pull/91)
+-   chore(deps): update dependency eslint to v7.26.0 [`#90`](https://github.com/protokol/guardian/pull/90)
+-   chore: update ark deps + adjust code to core changes [`#89`](https://github.com/protokol/guardian/pull/89)
+-   chore(deps): update dependency bip39 to v3.0.4 [`#88`](https://github.com/protokol/guardian/pull/88)
+-   chore(deps): update dependency eslint to v7.25.0 [`#87`](https://github.com/protokol/guardian/pull/87)
+-   chore(deps): update dependency eslint to ^7.23.0 [`#84`](https://github.com/protokol/guardian/pull/84)
+-   chore(deps): update dependency eslint to v7.24.0 [`#82`](https://github.com/protokol/guardian/pull/82)
+-   feat: log plugin info on load [`#81`](https://github.com/protokol/guardian/pull/81)
+-   release: 1.0.0-beta.41 [`12d2231`](https://github.com/protokol/guardian/commit/12d22315200ed15ba2cab17cf15a17782750ce4b)
+
 #### [1.0.0-beta.40](https://github.com/protokol/guardian/compare/1.0.0-beta.39...1.0.0-beta.40)
 
 > 7 April 2021
 
+-   release: 1.0.0 beta.40 [`#80`](https://github.com/protokol/guardian/pull/80)
 -   chore(deps): update dependency @sindresorhus/tsconfig to v1 [`#79`](https://github.com/protokol/guardian/pull/79)
 -   chore(deps): update dependency eslint to v7.23.0 [`#78`](https://github.com/protokol/guardian/pull/78)
 -   fix(guardian-crypto): deserializing strings [`#77`](https://github.com/protokol/guardian/pull/77)
@@ -16,7 +31,6 @@ All notable changes to this project will be documented in this file. Dates are d
 -   chore(deps): update dependency eslint-config-prettier to v8 [`#72`](https://github.com/protokol/guardian/pull/72)
 -   feat: move allow and deny checks to crypto [`#71`](https://github.com/protokol/guardian/pull/71)
 -   chore(deps): update dependency eslint to v7.20.0 [`#70`](https://github.com/protokol/guardian/pull/70)
--   release: 1.0.0-beta.40 [`b1f6ca7`](https://github.com/protokol/guardian/commit/b1f6ca7b105baed2c3531e2d22457e731069fc9a)
 
 #### [1.0.0-beta.39](https://github.com/protokol/guardian/compare/1.0.0-beta.34...1.0.0-beta.39)
 
