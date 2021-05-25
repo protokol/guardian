@@ -26,7 +26,7 @@ export class UserSearchService {
 
 	public getUsersByGroup(groupName: string): UserResource[] {
 		return this.walletRepository
-			.valuesByIndex(Indexers.GuardianIndexers.UserPermissionsIndexer)
+			.allByIndex(Indexers.GuardianIndexers.UserPermissionsIndexer)
 			.filter((user) => user.getAttribute("guardian.userPermissions").groups.includes(groupName))
 			.map(this.getUserResourceFromWallet);
 	}
