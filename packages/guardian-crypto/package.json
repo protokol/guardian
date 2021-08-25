@@ -48,7 +48,7 @@
     },
     "devDependencies": {
         "@arkecosystem/core-test-framework": "^3.0.0-next",
-        "@sindresorhus/tsconfig": "~1.0.1",
+        "@sindresorhus/tsconfig": "~2.0.0",
         "@types/jest": "~27.0.0",
         "codecov": "^3.8.1",
         "cross-env": "^7.0.2",
