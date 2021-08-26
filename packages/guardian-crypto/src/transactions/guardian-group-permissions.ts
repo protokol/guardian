@@ -11,14 +11,14 @@ import { calculatePermissionsLength, deserializePermissions, serializePermission
 const { schemas } = Transactions;
 
 export class GuardianGroupPermissionsTransaction extends Transactions.Transaction {
-    public static typeGroup: number = GuardianTransactionGroup;
-    public static type = GuardianTransactionTypes.GuardianSetGroupPermissions;
-    public static key = "GuardianGroupPermissions";
-    public static version: number = defaults.version;
+    public static override typeGroup: number = GuardianTransactionGroup;
+    public static override type = GuardianTransactionTypes.GuardianSetGroupPermissions;
+    public static override key = "GuardianGroupPermissions";
+    public static override version: number = defaults.version;
 
-    protected static defaultStaticFee = Utils.BigNumber.make(GuardianStaticFees.GuardianSetGroupPermissions);
+    protected static override defaultStaticFee = Utils.BigNumber.make(GuardianStaticFees.GuardianSetGroupPermissions);
 
-    public static getSchema(): Transactions.schemas.TransactionSchema {
+    public static override getSchema(): Transactions.schemas.TransactionSchema {
         return schemas.extend(schemas.transactionBaseSchema, {
             $id: this.key,
             required: ["asset", "typeGroup"],
@@ -126,7 +126,7 @@ export class GuardianGroupPermissionsTransaction extends Transactions.Transactio
         };
     }
 
-    public hasVendorField(): boolean {
+    public override hasVendorField(): boolean {
         return true;
     }
 }

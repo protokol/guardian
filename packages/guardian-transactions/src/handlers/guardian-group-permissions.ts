@@ -36,11 +36,11 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
         }
     }
 
-    public emitEvents(transaction: Interfaces.ITransaction, emitter: Contracts.Kernel.EventDispatcher): void {
+    public override emitEvents(transaction: Interfaces.ITransaction, emitter: Contracts.Kernel.EventDispatcher): void {
         void emitter.dispatch(GuardianApplicationEvents.SetGroupPermissions, transaction.data);
     }
 
-    public async throwIfCannotBeApplied(
+    public override async throwIfCannotBeApplied(
         transaction: Interfaces.ITransaction,
         sender: Contracts.State.Wallet,
     ): Promise<void> {
@@ -55,7 +55,7 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
         return super.throwIfCannotBeApplied(transaction, sender);
     }
 
-    public async throwIfCannotEnterPool(transaction: Interfaces.ITransaction): Promise<void> {
+    public override async throwIfCannotEnterPool(transaction: Interfaces.ITransaction): Promise<void> {
         const { name }: GuardianInterfaces.IGuardianGroupPermissionsAsset = transaction.data.asset!.setGroupPermissions;
         const hasGroupPermissionsTx: boolean = this.poolQuery
             .getAll()
@@ -71,7 +71,7 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
         }
     }
 
-    public async apply(transaction: Interfaces.ITransaction): Promise<void> {
+    public override async apply(transaction: Interfaces.ITransaction): Promise<void> {
         await super.apply(transaction);
 
         // Line is already checked inside throwIfCannotBeApplied run by super.apply method
@@ -86,7 +86,7 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
         );
     }
 
-    public async revert(transaction: Interfaces.ITransaction): Promise<void> {
+    public override async revert(transaction: Interfaces.ITransaction): Promise<void> {
         await super.revert(transaction);
 
         const setGroupPermissionsAsset: GuardianInterfaces.IGuardianGroupPermissionsAsset = transaction.data.asset!
