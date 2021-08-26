@@ -43,11 +43,11 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
         }
     }
 
-    public emitEvents(transaction: Interfaces.ITransaction, emitter: Contracts.Kernel.EventDispatcher): void {
+    public override emitEvents(transaction: Interfaces.ITransaction, emitter: Contracts.Kernel.EventDispatcher): void {
         void emitter.dispatch(GuardianApplicationEvents.SetUserPermissions, transaction.data);
     }
 
-    public async throwIfCannotBeApplied(
+    public override async throwIfCannotBeApplied(
         transaction: Interfaces.ITransaction,
         sender: Contracts.State.Wallet,
     ): Promise<void> {
@@ -76,7 +76,7 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
         return super.throwIfCannotBeApplied(transaction, sender);
     }
 
-    public async throwIfCannotEnterPool(transaction: Interfaces.ITransaction): Promise<void> {
+    public override async throwIfCannotEnterPool(transaction: Interfaces.ITransaction): Promise<void> {
         const {
             publicKey,
         }: GuardianInterfaces.IGuardianUserPermissionsAsset = transaction.data.asset!.setUserPermissions;
