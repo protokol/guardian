@@ -7,7 +7,7 @@ export class GuardianTransactionFactory extends TransactionFactory {
         super(app);
     }
 
-    public static initialize(app?: Contracts.Kernel.Application): GuardianTransactionFactory {
+    public static override initialize(app?: Contracts.Kernel.Application): GuardianTransactionFactory {
         return new GuardianTransactionFactory(app);
     }
 
