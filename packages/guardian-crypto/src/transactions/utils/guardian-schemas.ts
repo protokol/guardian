@@ -27,16 +27,18 @@ export const permissionsSchema = {
 
 Validation.validator.removeKeyword("uniqueAllowDeny");
 Validation.validator.addKeyword("uniqueAllowDeny", {
-    compile: () => ({ allow, deny }) => {
-        if (!(allow && deny)) return true;
+    compile:
+        () =>
+        ({ allow, deny }) => {
+            if (!(allow && deny)) return true;
 
-        const isDuplicate = allow.some((a) =>
-            deny.some(
-                (d) => a.transactionType === d.transactionType && a.transactionTypeGroup === d.transactionTypeGroup,
-            ),
-        );
-        return !isDuplicate;
-    },
+            const isDuplicate = allow.some((a) =>
+                deny.some(
+                    (d) => a.transactionType === d.transactionType && a.transactionTypeGroup === d.transactionTypeGroup,
+                ),
+            );
+            return !isDuplicate;
+        },
     errors: true,
     metaSchema: {
         type: "boolean",
