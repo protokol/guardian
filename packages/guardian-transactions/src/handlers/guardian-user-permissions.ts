@@ -77,9 +77,8 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
     }
 
     public override async throwIfCannotEnterPool(transaction: Interfaces.ITransaction): Promise<void> {
-        const {
-            publicKey,
-        }: GuardianInterfaces.IGuardianUserPermissionsAsset = transaction.data.asset!.setUserPermissions;
+        const { publicKey }: GuardianInterfaces.IGuardianUserPermissionsAsset =
+            transaction.data.asset!.setUserPermissions;
         const hasUserPermissionsTx: boolean = this.poolQuery
             .getAll()
             .whereKind(transaction)
@@ -99,8 +98,8 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
         // AppUtils.assert.defined<GuardianInterfaces.IGuardianUserPermissionsAsset>(
         //     transaction.data.asset?.setUserPermissions,
         // );
-        const setUserPermissionsAsset: GuardianInterfaces.IGuardianUserPermissionsAsset = transaction.data.asset!
-            .setUserPermissions;
+        const setUserPermissionsAsset: GuardianInterfaces.IGuardianUserPermissionsAsset =
+            transaction.data.asset!.setUserPermissions;
         const userWallet = this.walletRepository.findByPublicKey(setUserPermissionsAsset.publicKey);
         const userPermissionsWallet = this.buildUserPermissions(setUserPermissionsAsset);
 
@@ -113,8 +112,8 @@ export class GuardianUserPermissionsHandler extends GuardianTransactionHandler {
     }
 
     public async revertForRecipient(transaction: Interfaces.ITransaction): Promise<void> {
-        const setUserPermissionsAsset: GuardianInterfaces.IGuardianUserPermissionsAsset = transaction.data.asset!
-            .setUserPermissions;
+        const setUserPermissionsAsset: GuardianInterfaces.IGuardianUserPermissionsAsset =
+            transaction.data.asset!.setUserPermissions;
         const userWallet = this.walletRepository.findByPublicKey(setUserPermissionsAsset.publicKey);
 
         const lastUserPermissionsTx = await this.getLastTxByAsset({

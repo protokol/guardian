@@ -89,8 +89,8 @@ export class GuardianGroupPermissionsHandler extends GuardianTransactionHandler 
     public override async revert(transaction: Interfaces.ITransaction): Promise<void> {
         await super.revert(transaction);
 
-        const setGroupPermissionsAsset: GuardianInterfaces.IGuardianGroupPermissionsAsset = transaction.data.asset!
-            .setGroupPermissions;
+        const setGroupPermissionsAsset: GuardianInterfaces.IGuardianGroupPermissionsAsset =
+            transaction.data.asset!.setGroupPermissions;
 
         const lastGroupPermissionsTx = await this.getLastTxByAsset({
             setGroupPermissions: {

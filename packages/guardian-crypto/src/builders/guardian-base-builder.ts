@@ -4,7 +4,7 @@ import { defaults } from "../defaults";
 import { GuardianTransactionGroup } from "../enums";
 
 export abstract class GuardianBaseTransactionBuilder<
-    TBuilder extends Transactions.TransactionBuilder<TBuilder>
+    TBuilder extends Transactions.TransactionBuilder<TBuilder>,
 > extends Transactions.TransactionBuilder<TBuilder> {
     protected constructor() {
         super();
