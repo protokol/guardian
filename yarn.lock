@@ -2416,7 +2416,7 @@ __metadata:
     prettier: ^2.1.2
     rimraf: ^3.0.2
     ts-jest: ~27.0.0
-    typedoc: ~0.21.0
+    typedoc: ~0.22.0
     typescript: ~4.4.0
   languageName: unknown
   linkType: soft
@@ -2437,7 +2437,7 @@ __metadata:
     jest-extended: 0.11.5
     rimraf: ^3.0.2
     ts-jest: ~27.0.0
-    typedoc: ~0.21.0
+    typedoc: ~0.22.0
     typescript: ~4.4.0
     util: ^0.12.3
   languageName: unknown
@@ -2469,7 +2469,7 @@ __metadata:
     prettier: 2.4.0
     rimraf: ^3.0.2
     ts-jest: ~27.0.0
-    typedoc: ~0.21.0
+    typedoc: ~0.22.0
     typescript: ~4.4.0
   languageName: unknown
   linkType: soft
@@ -6883,24 +6883,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"handlebars@npm:^4.7.7":
-  version: 4.7.7
-  resolution: "handlebars@npm:4.7.7"
-  dependencies:
-    minimist: ^1.2.5
-    neo-async: ^2.6.0
-    source-map: ^0.6.1
-    uglify-js: ^3.1.4
-    wordwrap: ^1.0.0
-  dependenciesMeta:
-    uglify-js:
-      optional: true
-  bin:
-    handlebars: bin/handlebars
-  checksum: 1e79a43f5e18d15742977cb987923eab3e2a8f44f2d9d340982bcb69e1735ed049226e534d7c1074eaddaf37e4fb4f471a8adb71cddd5bc8cf3f894241df5cee
-  languageName: node
-  linkType: hard
-
 "hapi-auth-bearer-token@npm:^6.1.6":
   version: 6.2.1
   resolution: "hapi-auth-bearer-token@npm:6.2.1"
@@ -9714,12 +9696,12 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"marked@npm:^2.1.1":
-  version: 2.1.3
-  resolution: "marked@npm:2.1.3"
+"marked@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "marked@npm:3.0.3"
   bin:
     marked: bin/marked
-  checksum: 21a5ecd4941bc760aba21dfd97185853ec3b464cf707ad971e3ddb3aeb2f44d0deeb36b0889932afdb6f734975a994d92f18815dd0fabadbd902bdaff997cc5b
+  checksum: 82651af57ae9d16199ba86f4d48474b6680521cbc0a8d1c142924b3977098a2d750f4eab3ca297ba8a083e4ef072721066e8f03b9a0a9a75948ee0be9506fc2f
   languageName: node
   linkType: hard
 
@@ -9865,7 +9847,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^3.0.0, minimatch@npm:^3.0.4":
+"minimatch@npm:^3.0.4":
   version: 3.0.4
   resolution: "minimatch@npm:3.0.4"
   dependencies:
@@ -10177,13 +10159,6 @@ fsevents@~2.1.2:
   version: 0.6.2
   resolution: "negotiator@npm:0.6.2"
   checksum: dfddaff6c06792f1c4c3809e29a427b8daef8cd437c83b08dd51d7ee11bbd1c29d9512d66b801144d6c98e910ffd8723f2432e0cbf8b18d41d2a09599c975ab3
-  languageName: node
-  linkType: hard
-
-"neo-async@npm:^2.6.0":
-  version: 2.6.2
-  resolution: "neo-async@npm:2.6.2"
-  checksum: deac9f8d00eda7b2e5cd1b2549e26e10a0faa70adaa6fdadca701cc55f49ee9018e427f424bac0c790b7c7e2d3068db97f3093f1093975f2acb8f8818b936ed9
   languageName: node
   linkType: hard
 
@@ -12354,14 +12329,14 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"shiki@npm:^0.9.3":
-  version: 0.9.5
-  resolution: "shiki@npm:0.9.5"
+"shiki@npm:^0.9.10":
+  version: 0.9.10
+  resolution: "shiki@npm:0.9.10"
   dependencies:
     json5: ^2.2.0
     onigasm: ^2.2.5
     vscode-textmate: 5.2.0
-  checksum: 4be871421ca5cd1d5d66d9edee4b33e9ef1c95ebabe5bb1851fb4b265cba8cc82881d1015b2da5ca258a6850880d0643f58bf7d7edb5168c68beb00dd7b20298
+  checksum: 2544ee3321d280de4a22e7e871bc93c1f2566120bf340fcc9764f29e22fcd7aa778bd9f8b133387f0808cd4085bda25c0a7e1c0868d85fe06aea7bbb4c904a68
   languageName: node
   linkType: hard
 
@@ -13457,30 +13432,20 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"typedoc-default-themes@npm:^0.12.10":
-  version: 0.12.10
-  resolution: "typedoc-default-themes@npm:0.12.10"
-  checksum: 4c19a0fecdf24777bd153c6ae4a4f2b23c95521a83483cdbee89aaeef985d7e37f2665b37d55f809ef36d0eb4433a921209dc45a1055791d81464bffeea77dfd
-  languageName: node
-  linkType: hard
-
-"typedoc@npm:~0.21.0":
-  version: 0.21.4
-  resolution: "typedoc@npm:0.21.4"
+"typedoc@npm:~0.22.0":
+  version: 0.22.0
+  resolution: "typedoc@npm:0.22.0"
   dependencies:
     glob: ^7.1.7
-    handlebars: ^4.7.7
     lunr: ^2.3.9
-    marked: ^2.1.1
-    minimatch: ^3.0.0
-    progress: ^2.0.3
-    shiki: ^0.9.3
-    typedoc-default-themes: ^0.12.10
+    marked: ^3.0.3
+    minimatch: ^3.0.4
+    shiki: ^0.9.10
   peerDependencies:
-    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x
+    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x || 4.4.x
   bin:
     typedoc: bin/typedoc
-  checksum: 16bbbfbe1e858c006c5bdc86be8052c9db3be5f95dda7c720e1d2b78a6dc233798d442b0fbfcdb7f6d9e5d0cd41bc9038035c16a83d8880fb042891dbdf0c5f2
+  checksum: a82164d4f3b1ac181dbd3c9aff7dc602fca51f8d9ac08fb0e79d107b35c8e7724d82c1730e17a65317cdffe7c6056f15b5b6be0effc0026bfc58167b6301e59d
   languageName: node
   linkType: hard
 
@@ -13533,15 +13498,6 @@ typescript@~4.4.0:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 194e08e9d1971d667d6fd1a0554616b7022312a2319d70e81a64e502a265992061ee7817ed9a69b52bbabe7a9b85e7938cb8c11c433e40a516b277f8c4dacd51
-  languageName: node
-  linkType: hard
-
-"uglify-js@npm:^3.1.4":
-  version: 3.14.1
-  resolution: "uglify-js@npm:3.14.1"
-  bin:
-    uglifyjs: bin/uglifyjs
-  checksum: 2685f53baeddd4c370329352e0bf9b458918d6e422e8c97b59335196427ab08d972a69202e763bffec9ff0d9bd4fc477b0a60788b1e709a4530fc40f47290b34
   languageName: node
   linkType: hard
 
@@ -13932,13 +13888,6 @@ typescript@~4.4.0:
   version: 1.2.3
   resolution: "word-wrap@npm:1.2.3"
   checksum: 30b48f91fcf12106ed3186ae4fa86a6a1842416df425be7b60485de14bec665a54a68e4b5156647dec3a70f25e84d270ca8bc8cd23182ed095f5c7206a938c1f
-  languageName: node
-  linkType: hard
-
-"wordwrap@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "wordwrap@npm:1.0.0"
-  checksum: 2a44b2788165d0a3de71fd517d4880a8e20ea3a82c080ce46e294f0b68b69a2e49cff5f99c600e275c698a90d12c5ea32aff06c311f0db2eb3f1201f3e7b2a04
   languageName: node
   linkType: hard
 
