@@ -1,6 +1,6 @@
 import { Application, Container, Contracts, Providers, Services } from "@arkecosystem/core-kernel";
 import { Wallets } from "@arkecosystem/core-state";
-import { Handlers } from "@arkecosystem/core-transactions";
+import { Handlers, ServiceProvider } from "@arkecosystem/core-transactions";
 import { Identities, Utils } from "@arkecosystem/crypto";
 import { Handlers as GuardianHandlers, Indexers } from "@protokol/guardian-transactions";
 
@@ -92,6 +92,9 @@ export const initApp = (): Application => {
 		.to(Handlers.TransactionHandlerProvider)
 		.inSingletonScope();
 	app.bind(Container.Identifiers.TransactionHandlerRegistry).to(Handlers.Registry).inSingletonScope();
+	app.bind(Container.Identifiers.TransactionHandlerConstructors).toDynamicValue(
+		ServiceProvider.getTransactionHandlerConstructorsBinding(),
+	);
 
 	app.bind(Container.Identifiers.EventDispatcherService).to(Services.Events.NullEventDispatcher).inSingletonScope();
 
