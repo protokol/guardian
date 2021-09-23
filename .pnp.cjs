@@ -50,8 +50,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@arkecosystem/core", "virtual:3588c977708c640c978cd32119cdd6c5ba92d6d4b0d071aa7fd7252238c9adf05ae49a149b5493e6db91c5b221cb82bebc39a39d5ca16f3e3d58cf6dee5d87bc#npm:3.0.0-next.31"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core", "virtual:ceb009cbbeeaea857448dd895f691f4a2d4c0e35c130e3fdd70bdc0f80ce1575e547f9e04832f77635c154cc38b342ab7ba5208ecd8e950e92d8e0d65f8943c5#npm:3.0.0"],
+            ["@arkecosystem/core-cli", "npm:3.0.0"],
             ["@sindresorhus/tsconfig", "npm:2.0.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
@@ -89,52 +89,52 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core", [
-        ["npm:3.0.0-next.31", {
-          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-virtual-0d4e673657/node_modules/@arkecosystem/core/",
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-virtual-3cc792de43/node_modules/@arkecosystem/core/",
           "packageDependencies": [
-            ["@arkecosystem/core", "npm:3.0.0-next.31"]
+            ["@arkecosystem/core", "npm:3.0.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3588c977708c640c978cd32119cdd6c5ba92d6d4b0d071aa7fd7252238c9adf05ae49a149b5493e6db91c5b221cb82bebc39a39d5ca16f3e3d58cf6dee5d87bc#npm:3.0.0-next.31", {
-          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-virtual-0d4e673657/node_modules/@arkecosystem/core/",
+        ["virtual:ceb009cbbeeaea857448dd895f691f4a2d4c0e35c130e3fdd70bdc0f80ce1575e547f9e04832f77635c154cc38b342ab7ba5208ecd8e950e92d8e0d65f8943c5#npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-virtual-3cc792de43/node_modules/@arkecosystem/core/",
           "packageDependencies": [
-            ["@arkecosystem/core", "virtual:3588c977708c640c978cd32119cdd6c5ba92d6d4b0d071aa7fd7252238c9adf05ae49a149b5493e6db91c5b221cb82bebc39a39d5ca16f3e3d58cf6dee5d87bc#npm:3.0.0-next.31"],
-            ["@arkecosystem/core-api", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-blockchain", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-forger", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-logger-pino", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-magistrate-api", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-p2p", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-snapshots", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-transactions", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-webhooks", "npm:3.0.0-next.31"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core", "virtual:ceb009cbbeeaea857448dd895f691f4a2d4c0e35c130e3fdd70bdc0f80ce1575e547f9e04832f77635c154cc38b342ab7ba5208ecd8e950e92d8e0d65f8943c5#npm:3.0.0"],
+            ["@arkecosystem/core-api", "npm:3.0.0"],
+            ["@arkecosystem/core-blockchain", "npm:3.0.0"],
+            ["@arkecosystem/core-cli", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-forger", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-logger-pino", "npm:3.0.0"],
+            ["@arkecosystem/core-magistrate-api", "npm:3.0.0"],
+            ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0"],
+            ["@arkecosystem/core-p2p", "npm:3.0.0"],
+            ["@arkecosystem/core-snapshots", "npm:3.0.0"],
+            ["@arkecosystem/core-state", "npm:3.0.0"],
+            ["@arkecosystem/core-transaction-pool", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/core-webhooks", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
             ["@arkecosystem/utils", "npm:1.3.0"],
             ["@oclif/errors", "npm:1.3.5"],
             ["@types/pm2", null],
-            ["argon2", "npm:0.26.2"],
+            ["argon2", "npm:0.28.2"],
             ["bip39", "npm:3.0.4"],
             ["boxen", "npm:4.2.0"],
-            ["dayjs", "npm:1.10.6"],
+            ["dayjs", "npm:1.10.7"],
             ["env-paths", "npm:2.2.1"],
             ["envfile", "npm:5.2.0"],
             ["execa", "npm:3.4.0"],
             ["fs-extra", "npm:8.1.0"],
             ["got", "npm:11.8.2"],
-            ["joi", "npm:17.4.1"],
+            ["joi", "npm:17.4.2"],
             ["kleur", "npm:4.1.4"],
             ["ngrok", "npm:3.4.1"],
             ["pm2", null],
-            ["prompts", "npm:2.4.1"],
-            ["tar", "npm:6.1.2"],
-            ["type-fest", "npm:0.16.0"],
+            ["prompts", "npm:2.4.0"],
+            ["tar", "npm:6.1.11"],
+            ["type-fest", "npm:0.21.3"],
             ["wif", "npm:2.0.6"]
           ],
           "packagePeers": [
@@ -145,6 +145,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-api", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-api-npm-3.0.0-5c6b6f9885/node_modules/@arkecosystem/core-api/",
+          "packageDependencies": [
+            ["@arkecosystem/core-api", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@hapi/boom", "npm:9.1.4"],
+            ["@hapi/hapi", "npm:20.1.5"],
+            ["@hapi/hoek", "npm:9.2.0"],
+            ["joi", "npm:17.4.2"],
+            ["nanomatch", "npm:1.2.13"],
+            ["node-cache", "npm:5.1.2"],
+            ["rate-limiter-flexible", "npm:1.3.2"],
+            ["semver", "npm:6.3.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-core-api-npm-3.0.0-next.31-18d3642d7c/node_modules/@arkecosystem/core-api/",
           "packageDependencies": [
@@ -166,6 +185,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-blockchain", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-blockchain-npm-3.0.0-180dcbb7ea-419f0bc9a4.zip/node_modules/@arkecosystem/core-blockchain/",
+          "packageDependencies": [
+            ["@arkecosystem/core-blockchain", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-state", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["joi", "npm:17.4.2"],
+            ["xstate", "npm:4.23.4"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-blockchain-npm-3.0.0-next.31-4bf003e47b-e4673ed8c7.zip/node_modules/@arkecosystem/core-blockchain/",
           "packageDependencies": [
@@ -182,6 +215,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-cli", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-cli-npm-3.0.0-53a7ba6ae1/node_modules/@arkecosystem/core-cli/",
+          "packageDependencies": [
+            ["@arkecosystem/core-cli", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@arkecosystem/utils", "npm:1.3.0"],
+            ["boxen", "npm:4.2.0"],
+            ["cli-table3", "npm:0.6.0"],
+            ["dayjs", "npm:1.10.7"],
+            ["env-paths", "npm:2.2.0"],
+            ["envfile", "npm:5.2.0"],
+            ["execa", "npm:3.4.0"],
+            ["fast-levenshtein", "npm:2.0.6"],
+            ["fs-extra", "npm:8.1.0"],
+            ["glob", "npm:7.1.7"],
+            ["inversify", "npm:5.1.1"],
+            ["joi", "npm:17.4.2"],
+            ["kleur", "npm:4.0.0"],
+            ["latest-version", "npm:5.1.0"],
+            ["listr", "npm:0.14.3"],
+            ["nodejs-tail", "npm:1.1.1"],
+            ["ora", "npm:4.1.1"],
+            ["prompts", "npm:2.4.0"],
+            ["read-last-lines", "npm:1.8.0"],
+            ["reflect-metadata", "npm:0.1.13"],
+            ["semver", "npm:6.3.0"],
+            ["type-fest", "npm:0.21.3"],
+            ["yargs-parser", "npm:20.2.9"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-core-cli-npm-3.0.0-next.31-f099a829ec/node_modules/@arkecosystem/core-cli/",
           "packageDependencies": [
@@ -215,6 +280,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-database", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-database-npm-3.0.0-892e52fa16/node_modules/@arkecosystem/core-database/",
+          "packageDependencies": [
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@arkecosystem/utils", "npm:1.3.0"],
+            ["dayjs", "npm:1.10.7"],
+            ["joi", "npm:17.4.2"],
+            ["pg", "virtual:892e52fa16c20cfdaf97bab6331cb17791cd4f96ee911efd24e19180ed1834658d858f29bec8e141a9158c917b04155cb510f9813481ad74616dc2761b420c72#npm:8.7.1"],
+            ["reflect-metadata", "npm:0.1.13"],
+            ["typeorm", "npm:0.2.25"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-core-database-npm-3.0.0-next.31-9813bf6814/node_modules/@arkecosystem/core-database/",
           "packageDependencies": [
@@ -232,6 +312,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-forger", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-forger-npm-3.0.0-810089849a-08ff3099d2.zip/node_modules/@arkecosystem/core-forger/",
+          "packageDependencies": [
+            ["@arkecosystem/core-forger", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-p2p", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["joi", "npm:17.4.2"],
+            ["node-forge", "npm:0.10.0"],
+            ["wif", "npm:2.0.6"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-forger-npm-3.0.0-next.31-3c3fac4276-7443d9021f.zip/node_modules/@arkecosystem/core-forger/",
           "packageDependencies": [
@@ -247,6 +341,50 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-kernel", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-kernel-npm-3.0.0-8f9d1b1760/node_modules/@arkecosystem/core-kernel/",
+          "packageDependencies": [
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-api", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-blockchain", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-database", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-forger", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-logger-pino", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-magistrate-api", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-manager", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-p2p", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-snapshots", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-state", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-webhooks", "npm:3.0.0-next.31"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@arkecosystem/utils", "npm:1.3.0"],
+            ["@pm2/io", "npm:4.3.5"],
+            ["@protokol/guardian-api", "workspace:packages/guardian-api"],
+            ["@protokol/guardian-transactions", "workspace:packages/guardian-transactions"],
+            ["chalk", "npm:4.1.2"],
+            ["cron", "npm:1.8.2"],
+            ["dayjs", "npm:1.10.7"],
+            ["deepmerge", "npm:4.2.2"],
+            ["env-paths", "npm:2.2.0"],
+            ["fs-extra", "npm:8.1.0"],
+            ["functional-red-black-tree", "npm:1.0.1"],
+            ["glob", "npm:7.1.7"],
+            ["import-fresh", "npm:3.3.0"],
+            ["inversify", "npm:5.1.1"],
+            ["ipaddr.js", "npm:2.0.1"],
+            ["joi", "npm:17.4.2"],
+            ["log-process-errors", "npm:5.1.2"],
+            ["nanomatch", "npm:1.2.13"],
+            ["nsfw", "npm:2.1.2"],
+            ["reflect-metadata", "npm:0.1.13"],
+            ["semver", "npm:6.3.0"],
+            ["type-fest", "npm:0.21.3"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-core-kernel-npm-3.0.0-next.31-ce4b0920c4/node_modules/@arkecosystem/core-kernel/",
           "packageDependencies": [
@@ -292,6 +430,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-logger-pino", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-logger-pino-npm-3.0.0-d2aca059c8-2bb23476f2.zip/node_modules/@arkecosystem/core-logger-pino/",
+          "packageDependencies": [
+            ["@arkecosystem/core-logger-pino", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["chalk", "npm:4.1.2"],
+            ["joi", "npm:17.4.2"],
+            ["pino", "npm:6.13.2"],
+            ["pino-pretty", "npm:4.8.0"],
+            ["pump", "npm:3.0.0"],
+            ["readable-stream", "npm:3.6.0"],
+            ["rotating-file-stream", "npm:2.1.5"],
+            ["split2", "npm:3.2.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-logger-pino-npm-3.0.0-next.31-7ff46f6058-95eeda566a.zip/node_modules/@arkecosystem/core-logger-pino/",
           "packageDependencies": [
@@ -310,6 +464,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-magistrate-api", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-magistrate-api-npm-3.0.0-f38291edf6-a6396af129.zip/node_modules/@arkecosystem/core-magistrate-api/",
+          "packageDependencies": [
+            ["@arkecosystem/core-magistrate-api", "npm:3.0.0"],
+            ["@arkecosystem/core-api", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0"],
+            ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@hapi/boom", "npm:9.1.4"],
+            ["@hapi/hapi", "npm:20.1.5"],
+            ["joi", "npm:17.4.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-magistrate-api-npm-3.0.0-next.31-2ef161cedf-af5b1f541b.zip/node_modules/@arkecosystem/core-magistrate-api/",
           "packageDependencies": [
@@ -327,6 +496,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-magistrate-crypto", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-magistrate-crypto-npm-3.0.0-f2448079f3-97e2ccff86.zip/node_modules/@arkecosystem/core-magistrate-crypto/",
+          "packageDependencies": [
+            ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-magistrate-crypto-npm-3.0.0-next.31-bca2affccc-a20fa807f4.zip/node_modules/@arkecosystem/core-magistrate-crypto/",
           "packageDependencies": [
@@ -339,6 +518,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-magistrate-transactions", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-magistrate-transactions-npm-3.0.0-6b615ccbd5-4ce062b569.zip/node_modules/@arkecosystem/core-magistrate-transactions/",
+          "packageDependencies": [
+            ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-magistrate-transactions-npm-3.0.0-next.31-5f32a561e5-232c4ea2b4.zip/node_modules/@arkecosystem/core-magistrate-transactions/",
           "packageDependencies": [
@@ -384,6 +574,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-p2p", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-p2p-npm-3.0.0-ebed6cefbf-2e4b7969af.zip/node_modules/@arkecosystem/core-p2p/",
+          "packageDependencies": [
+            ["@arkecosystem/core-p2p", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-state", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@hapi/boom", "npm:9.0.0"],
+            ["@hapi/bounce", "npm:2.0.0"],
+            ["@hapi/hapi", "npm:20.1.5"],
+            ["@hapi/hoek", "npm:9.2.0"],
+            ["@hapi/sntp", "npm:4.0.0"],
+            ["@hapi/teamwork", "npm:5.1.0"],
+            ["dayjs", "npm:1.10.7"],
+            ["delay", "npm:4.4.1"],
+            ["ip", "npm:1.1.5"],
+            ["ipaddr.js", "npm:2.0.1"],
+            ["joi", "npm:17.4.2"],
+            ["pluralize", "npm:8.0.0"],
+            ["pretty-ms", "npm:7.0.1"],
+            ["protobufjs", "npm:6.10.2"],
+            ["rate-limiter-flexible", "npm:1.3.2"],
+            ["semver", "npm:6.3.0"],
+            ["ws", "virtual:ebed6cefbf2402c51f010ed713229f0c53a3d654469f43a064433c2addd72ee13d307446d3b63e8f612a767f9626c1d7b4e99dcaf51e8a7d5beee38de5f871b3#npm:7.5.5"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-p2p-npm-3.0.0-next.31-f5c52e00a9-4e6fbf7215.zip/node_modules/@arkecosystem/core-p2p/",
           "packageDependencies": [
@@ -414,6 +632,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-snapshots", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-snapshots-npm-3.0.0-a11f66117f-00788ff9d1.zip/node_modules/@arkecosystem/core-snapshots/",
+          "packageDependencies": [
+            ["@arkecosystem/core-snapshots", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["bytebuffer", "npm:5.0.1"],
+            ["fs-extra", "npm:8.1.0"],
+            ["joi", "npm:17.4.2"],
+            ["msgpack-lite", "npm:0.1.26"],
+            ["ora", "npm:4.1.1"],
+            ["pg-query-stream", "npm:3.4.2"],
+            ["pluralize", "npm:8.0.0"],
+            ["typeorm", "npm:0.2.25"],
+            ["xcase", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-snapshots-npm-3.0.0-next.31-ebad8d54e2-8932549c70.zip/node_modules/@arkecosystem/core-snapshots/",
           "packageDependencies": [
@@ -435,6 +672,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-state", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-state-npm-3.0.0-0f8333d4db/node_modules/@arkecosystem/core-state/",
+          "packageDependencies": [
+            ["@arkecosystem/core-state", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["immutable", "npm:4.0.0-rc.14"],
+            ["joi", "npm:17.4.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-core-state-npm-3.0.0-next.31-7ac108905a/node_modules/@arkecosystem/core-state/",
           "packageDependencies": [
@@ -450,38 +700,53 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-test-framework", [
-        ["npm:3.0.0-next.31", {
-          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-test-framework-npm-3.0.0-next.31-3588c97770/node_modules/@arkecosystem/core-test-framework/",
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-test-framework-npm-3.0.0-ceb009cbbe/node_modules/@arkecosystem/core-test-framework/",
           "packageDependencies": [
-            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core", "virtual:3588c977708c640c978cd32119cdd6c5ba92d6d4b0d071aa7fd7252238c9adf05ae49a149b5493e6db91c5b221cb82bebc39a39d5ca16f3e3d58cf6dee5d87bc#npm:3.0.0-next.31"],
-            ["@arkecosystem/core-api", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-blockchain", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-forger", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-p2p", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.31"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-test-framework", "npm:3.0.0"],
+            ["@arkecosystem/core", "virtual:ceb009cbbeeaea857448dd895f691f4a2d4c0e35c130e3fdd70bdc0f80ce1575e547f9e04832f77635c154cc38b342ab7ba5208ecd8e950e92d8e0d65f8943c5#npm:3.0.0"],
+            ["@arkecosystem/core-api", "npm:3.0.0"],
+            ["@arkecosystem/core-blockchain", "npm:3.0.0"],
+            ["@arkecosystem/core-cli", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-forger", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0"],
+            ["@arkecosystem/core-p2p", "npm:3.0.0"],
+            ["@arkecosystem/core-state", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
             ["bip39", "npm:3.0.4"],
             ["bs58", "npm:4.0.1"],
             ["bytebuffer", "npm:5.0.1"],
-            ["chance", "npm:1.1.7"],
-            ["env-paths", "npm:2.2.1"],
+            ["chance", "npm:1.1.8"],
+            ["env-paths", "npm:2.2.0"],
             ["fast-memoize", "npm:2.5.2"],
             ["fs-extra", "npm:8.1.0"],
             ["got", "npm:11.8.2"],
             ["jest-extended", "npm:0.11.5"],
             ["lodash.clonedeep", "npm:4.5.0"],
             ["tmp", "npm:0.2.1"],
-            ["xstate", "npm:4.23.1"]
+            ["xstate", "npm:4.23.4"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@arkecosystem/core-transaction-pool", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-transaction-pool-npm-3.0.0-c9688c404d/node_modules/@arkecosystem/core-transaction-pool/",
+          "packageDependencies": [
+            ["@arkecosystem/core-transaction-pool", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["better-sqlite3", "npm:7.4.3"],
+            ["bytebuffer", "npm:5.0.1"],
+            ["fs-extra", "npm:8.1.0"],
+            ["joi", "npm:17.4.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-core-transaction-pool-npm-3.0.0-next.31-cc476087e8/node_modules/@arkecosystem/core-transaction-pool/",
           "packageDependencies": [
@@ -501,6 +766,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-transactions", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-core-transactions-npm-3.0.0-4708072f83/node_modules/@arkecosystem/core-transactions/",
+          "packageDependencies": [
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-core-transactions-npm-3.0.0-next.31-136565d258/node_modules/@arkecosystem/core-transactions/",
           "packageDependencies": [
@@ -513,6 +788,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/core-webhooks", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-core-webhooks-npm-3.0.0-6cc53dc5cb-846638d515.zip/node_modules/@arkecosystem/core-webhooks/",
+          "packageDependencies": [
+            ["@arkecosystem/core-webhooks", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@hapi/boom", "npm:9.0.0"],
+            ["@hapi/hapi", "npm:20.1.5"],
+            ["fs-extra", "npm:8.1.0"],
+            ["joi", "npm:17.4.2"],
+            ["lowdb", "npm:1.0.0"],
+            ["uuid", "npm:8.3.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/cache/@arkecosystem-core-webhooks-npm-3.0.0-next.31-83aebb6c86-b337cb8679.zip/node_modules/@arkecosystem/core-webhooks/",
           "packageDependencies": [
@@ -530,6 +820,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@arkecosystem/crypto", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/unplugged/@arkecosystem-crypto-npm-3.0.0-f9879ee42b/node_modules/@arkecosystem/crypto/",
+          "packageDependencies": [
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@arkecosystem/crypto-identities", "npm:1.2.0"],
+            ["@arkecosystem/crypto-networks", "npm:1.2.0"],
+            ["@arkecosystem/utils", "npm:1.3.0"],
+            ["@types/node", "npm:16.4.3"],
+            ["ajv", "npm:6.12.6"],
+            ["ajv-keywords", "virtual:f9879ee42ba83bb129acb955b91d3e986b1089d2d8ad9edd4672e3c7598837d5580626c932e40ca4fdac6fdbdf95cb1635e9a599998a83acae706bf48386c658#npm:3.4.1"],
+            ["bcrypto", "npm:5.4.0"],
+            ["bip32", "npm:2.0.6"],
+            ["bip39", "npm:3.0.4"],
+            ["browserify-aes", "npm:1.2.0"],
+            ["bstring", "npm:0.3.9"],
+            ["buffer-xor", "npm:2.0.2"],
+            ["builtin-modules", "npm:3.2.0"],
+            ["bytebuffer", "npm:5.0.1"],
+            ["dayjs", "npm:1.10.7"],
+            ["deepmerge", "npm:4.2.2"],
+            ["fast-memoize", "npm:2.5.2"],
+            ["ipaddr.js", "npm:2.0.1"],
+            ["lodash.get", "npm:4.4.2"],
+            ["lodash.set", "npm:4.3.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:3.0.0-next.31", {
           "packageLocation": "./.yarn/unplugged/@arkecosystem-crypto-npm-3.0.0-next.31-2ae897890e/node_modules/@arkecosystem/crypto/",
           "packageDependencies": [
@@ -576,6 +893,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@arkecosystem-crypto-networks-npm-1.1.0-c3f4b25b3f-795910daa8.zip/node_modules/@arkecosystem/crypto-networks/",
           "packageDependencies": [
             ["@arkecosystem/crypto-networks", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/@arkecosystem-crypto-networks-npm-1.2.0-f623186677-813c865124.zip/node_modules/@arkecosystem/crypto-networks/",
+          "packageDependencies": [
+            ["@arkecosystem/crypto-networks", "npm:1.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -1490,10 +1814,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:9.0.0", {
+          "packageLocation": "./.yarn/cache/@hapi-boom-npm-9.0.0-27c43f2aeb-30d30d7a9a.zip/node_modules/@hapi/boom/",
+          "packageDependencies": [
+            ["@hapi/boom", "npm:9.0.0"],
+            ["@hapi/hoek", "npm:9.2.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:9.1.3", {
           "packageLocation": "./.yarn/cache/@hapi-boom-npm-9.1.3-acc154387d-b7f54fa3fd.zip/node_modules/@hapi/boom/",
           "packageDependencies": [
             ["@hapi/boom", "npm:9.1.3"],
+            ["@hapi/hoek", "npm:9.2.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:9.1.4", {
+          "packageLocation": "./.yarn/cache/@hapi-boom-npm-9.1.4-1a3569656a-b1cdde1e82.zip/node_modules/@hapi/boom/",
+          "packageDependencies": [
+            ["@hapi/boom", "npm:9.1.4"],
             ["@hapi/hoek", "npm:9.2.0"]
           ],
           "linkType": "HARD",
@@ -2669,6 +3009,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@mapbox/node-pre-gyp", [
+        ["npm:1.0.5", {
+          "packageLocation": "./.yarn/cache/@mapbox-node-pre-gyp-npm-1.0.5-4e17430ec9-c1f182a707.zip/node_modules/@mapbox/node-pre-gyp/",
+          "packageDependencies": [
+            ["@mapbox/node-pre-gyp", "npm:1.0.5"],
+            ["detect-libc", "npm:1.0.3"],
+            ["https-proxy-agent", "npm:5.0.0"],
+            ["make-dir", "npm:3.1.0"],
+            ["node-fetch", "npm:2.6.1"],
+            ["nopt", "npm:5.0.0"],
+            ["npmlog", "npm:4.1.2"],
+            ["rimraf", "npm:3.0.2"],
+            ["semver", "npm:7.3.5"],
+            ["tar", "npm:6.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@nodelib/fs.scandir", [
         ["npm:2.1.5", {
           "packageLocation": "./.yarn/cache/@nodelib-fs.scandir-npm-2.1.5-89c67370dd-a970d595bd.zip/node_modules/@nodelib/fs.scandir/",
@@ -2831,6 +3189,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["safe-buffer", "npm:5.2.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@phc-format-npm-1.0.0-9663606e18-15ee02504f.zip/node_modules/@phc/format/",
+          "packageDependencies": [
+            ["@phc/format", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@pm2/agent-node", [
@@ -2963,8 +3328,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@protokol/guardian", "workspace:."],
-            ["@arkecosystem/core", "virtual:3588c977708c640c978cd32119cdd6c5ba92d6d4b0d071aa7fd7252238c9adf05ae49a149b5493e6db91c5b221cb82bebc39a39d5ca16f3e3d58cf6dee5d87bc#npm:3.0.0-next.31"],
-            ["@arkecosystem/core-cli", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core", "virtual:ceb009cbbeeaea857448dd895f691f4a2d4c0e35c130e3fdd70bdc0f80ce1575e547f9e04832f77635c154cc38b342ab7ba5208ecd8e950e92d8e0d65f8943c5#npm:3.0.0"],
+            ["@arkecosystem/core-cli", "npm:3.0.0"],
             ["@sindresorhus/tsconfig", "npm:2.0.0"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
@@ -2996,14 +3361,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/guardian-api/",
           "packageDependencies": [
             ["@protokol/guardian-api", "workspace:packages/guardian-api"],
-            ["@arkecosystem/core-api", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-transactions", "npm:3.0.0-next.31"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-api", "npm:3.0.0"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-state", "npm:3.0.0"],
+            ["@arkecosystem/core-test-framework", "npm:3.0.0"],
+            ["@arkecosystem/core-transaction-pool", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
             ["@hapi/boom", "npm:9.1.3"],
             ["@hapi/hapi", "npm:20.1.5"],
             ["@protokol/guardian-crypto", "workspace:packages/guardian-crypto"],
@@ -3026,7 +3391,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-simple-import-sort", "virtual:d203bf382b1d200a4debed8aca4ef27c3ac5838eaa88751966fdf2c665f75cf7b2bdaf2167e9cb6f24b433c641ff73155e43c645d08a955402360bc364d3a9d8#npm:7.0.0"],
             ["jest", "virtual:d203bf382b1d200a4debed8aca4ef27c3ac5838eaa88751966fdf2c665f75cf7b2bdaf2167e9cb6f24b433c641ff73155e43c645d08a955402360bc364d3a9d8#npm:27.0.6"],
             ["jest-extended", "npm:0.11.5"],
-            ["joi", "npm:17.4.1"],
+            ["joi", "npm:17.4.2"],
             ["latest-version", "npm:5.1.0"],
             ["prettier", "npm:2.3.2"],
             ["rimraf", "npm:3.0.2"],
@@ -3042,9 +3407,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/guardian-crypto/",
           "packageDependencies": [
             ["@protokol/guardian-crypto", "workspace:packages/guardian-crypto"],
-            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.31"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
-            ["@protokol/utils", "npm:1.0.0-beta.38"],
+            ["@arkecosystem/core-test-framework", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
+            ["@protokol/utils", "npm:1.0.0"],
             ["@sindresorhus/tsconfig", "npm:2.0.0"],
             ["@types/jest", "npm:27.0.0"],
             ["bytebuffer", "npm:5.0.1"],
@@ -3066,13 +3431,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/guardian-transactions/",
           "packageDependencies": [
             ["@protokol/guardian-transactions", "workspace:packages/guardian-transactions"],
-            ["@arkecosystem/core-database", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-kernel", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-state", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-test-framework", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-transaction-pool", "npm:3.0.0-next.31"],
-            ["@arkecosystem/core-transactions", "npm:3.0.0-next.31"],
-            ["@arkecosystem/crypto", "npm:3.0.0-next.31"],
+            ["@arkecosystem/core-database", "npm:3.0.0"],
+            ["@arkecosystem/core-kernel", "npm:3.0.0"],
+            ["@arkecosystem/core-state", "npm:3.0.0"],
+            ["@arkecosystem/core-test-framework", "npm:3.0.0"],
+            ["@arkecosystem/core-transaction-pool", "npm:3.0.0"],
+            ["@arkecosystem/core-transactions", "npm:3.0.0"],
+            ["@arkecosystem/crypto", "npm:3.0.0"],
             ["@protokol/guardian-crypto", "workspace:packages/guardian-crypto"],
             ["@sindresorhus/tsconfig", "npm:2.0.0"],
             ["@types/eslint", "npm:7.28.0"],
@@ -3095,10 +3460,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@protokol/utils", [
-        ["npm:1.0.0-beta.38", {
-          "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-beta.38-cfb6f977f4-03cb6e944a.zip/node_modules/@protokol/utils/",
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@protokol-utils-npm-1.0.0-7822b57f49-180b7e5a88.zip/node_modules/@protokol/utils/",
           "packageDependencies": [
-            ["@protokol/utils", "npm:1.0.0-beta.38"]
+            ["@protokol/utils", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4101,6 +4466,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ajv-keywords", [
+        ["npm:3.4.1", {
+          "packageLocation": "./.yarn/cache/ajv-keywords-npm-3.4.1-851fd088de-0ecb945d00.zip/node_modules/ajv-keywords/",
+          "packageDependencies": [
+            ["ajv-keywords", "npm:3.4.1"]
+          ],
+          "linkType": "SOFT",
+        }],
         ["npm:3.5.2", {
           "packageLocation": "./.yarn/cache/ajv-keywords-npm-3.5.2-0e391b70e2-7dc5e59316.zip/node_modules/ajv-keywords/",
           "packageDependencies": [
@@ -4112,6 +4484,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/ajv-keywords-virtual-85096776f3/0/cache/ajv-keywords-npm-3.5.2-0e391b70e2-7dc5e59316.zip/node_modules/ajv-keywords/",
           "packageDependencies": [
             ["ajv-keywords", "virtual:2ae897890e0ac1a3685b7b7084da768fac58159212323162bf167e4738577622fb919d599df460b6d284638482c8a3d739a59339459d534bdf4fd47eef0bda4c#npm:3.5.2"],
+            ["@types/ajv", null],
+            ["ajv", "npm:6.12.6"]
+          ],
+          "packagePeers": [
+            "@types/ajv",
+            "ajv"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:f9879ee42ba83bb129acb955b91d3e986b1089d2d8ad9edd4672e3c7598837d5580626c932e40ca4fdac6fdbdf95cb1635e9a599998a83acae706bf48386c658#npm:3.4.1", {
+          "packageLocation": "./.yarn/__virtual__/ajv-keywords-virtual-de3d691286/0/cache/ajv-keywords-npm-3.4.1-851fd088de-0ecb945d00.zip/node_modules/ajv-keywords/",
+          "packageDependencies": [
+            ["ajv-keywords", "virtual:f9879ee42ba83bb129acb955b91d3e986b1089d2d8ad9edd4672e3c7598837d5580626c932e40ca4fdac6fdbdf95cb1635e9a599998a83acae706bf48386c658#npm:3.4.1"],
             ["@types/ajv", null],
             ["ajv", "npm:6.12.6"]
           ],
@@ -4345,6 +4730,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@phc/format", "npm:0.5.0"],
             ["node-addon-api", "npm:2.0.2"],
             ["node-pre-gyp", "npm:0.14.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.28.2", {
+          "packageLocation": "./.yarn/unplugged/argon2-npm-0.28.2-65cdc5f49c/node_modules/argon2/",
+          "packageDependencies": [
+            ["argon2", "npm:0.28.2"],
+            ["@mapbox/node-pre-gyp", "npm:1.0.5"],
+            ["@phc/format", "npm:1.0.0"],
+            ["node-addon-api", "npm:3.2.1"],
+            ["opencollective-postinstall", "npm:2.0.3"]
           ],
           "linkType": "HARD",
         }]
@@ -5421,13 +5817,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["supports-color", "npm:7.2.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.1.2", {
+          "packageLocation": "./.yarn/cache/chalk-npm-4.1.2-ba8b67ab80-fe75c9d5c7.zip/node_modules/chalk/",
+          "packageDependencies": [
+            ["chalk", "npm:4.1.2"],
+            ["ansi-styles", "npm:4.3.0"],
+            ["supports-color", "npm:7.2.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["chance", [
-        ["npm:1.1.7", {
-          "packageLocation": "./.yarn/cache/chance-npm-1.1.7-7520901cfb-4d9f7f7b3a.zip/node_modules/chance/",
+        ["npm:1.1.8", {
+          "packageLocation": "./.yarn/cache/chance-npm-1.1.8-47e2e1db1e-e733f51e10.zip/node_modules/chance/",
           "packageDependencies": [
-            ["chance", "npm:1.1.7"]
+            ["chance", "npm:1.1.8"]
           ],
           "linkType": "HARD",
         }]
@@ -6112,6 +6517,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dayjs", "npm:1.10.6"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.10.7", {
+          "packageLocation": "./.yarn/cache/dayjs-npm-1.10.7-34318a8e39-a0a4ca95ab.zip/node_modules/dayjs/",
+          "packageDependencies": [
+            ["dayjs", "npm:1.10.7"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["debug", [
@@ -6162,18 +6574,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:2bcc47d217f870e3d52f0e55493dc34fd3da852877f7db32fa2940cc320151746026495daf6a34a974488cf5a949d93be1e2dc1ffba036faf081a9b15fcd2252#npm:2.6.9", {
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-6cfa7ae8cd/0/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",
-          "packageDependencies": [
-            ["debug", "virtual:2bcc47d217f870e3d52f0e55493dc34fd3da852877f7db32fa2940cc320151746026495daf6a34a974488cf5a949d93be1e2dc1ffba036faf081a9b15fcd2252#npm:2.6.9"],
-            ["ms", "npm:2.0.0"],
-            ["supports-color", null]
-          ],
-          "packagePeers": [
-            "supports-color"
-          ],
-          "linkType": "HARD",
-        }],
         ["virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2", {
           "packageLocation": "./.yarn/__virtual__/debug-virtual-e152771b72/0/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
           "packageDependencies": [
@@ -6203,6 +6603,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["debug", "virtual:a4b0b23612877bb8ecd676f61757dee4b570d5742933d683545f6bb9167f8c0595f398efe8e02b59cd6ba4a9ea054c0232eb8b3518ad889c3eb0528764caebfb#npm:4.1.1"],
             ["ms", "npm:2.1.3"],
+            ["supports-color", null]
+          ],
+          "packagePeers": [
+            "supports-color"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:c5a024ec2e0c9cd8a290d611acd3bb1322a0de49d58dbda3434aa6d7e3b73ef61af16f02caafa54fa1c58a3843a7b1e79adb931d478a6fcda659f4e67abc08d2#npm:2.6.9", {
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-f73f4c217f/0/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",
+          "packageDependencies": [
+            ["debug", "virtual:c5a024ec2e0c9cd8a290d611acd3bb1322a0de49d58dbda3434aa6d7e3b73ef61af16f02caafa54fa1c58a3843a7b1e79adb931d478a6fcda659f4e67abc08d2#npm:2.6.9"],
+            ["ms", "npm:2.0.0"],
             ["supports-color", null]
           ],
           "packagePeers": [
@@ -6724,6 +7136,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["env-paths", [
+        ["npm:2.2.0", {
+          "packageLocation": "./.yarn/cache/env-paths-npm-2.2.0-ac4ed99068-ba2aea3830.zip/node_modules/env-paths/",
+          "packageDependencies": [
+            ["env-paths", "npm:2.2.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.2.1", {
           "packageLocation": "./.yarn/cache/env-paths-npm-2.2.1-7c7577428c-65b5df55a8.zip/node_modules/env-paths/",
           "packageDependencies": [
@@ -7367,7 +7786,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/expand-brackets-npm-2.1.4-392c703c48-1781d422e7.zip/node_modules/expand-brackets/",
           "packageDependencies": [
             ["expand-brackets", "npm:2.1.4"],
-            ["debug", "virtual:2bcc47d217f870e3d52f0e55493dc34fd3da852877f7db32fa2940cc320151746026495daf6a34a974488cf5a949d93be1e2dc1ffba036faf081a9b15fcd2252#npm:2.6.9"],
+            ["debug", "virtual:c5a024ec2e0c9cd8a290d611acd3bb1322a0de49d58dbda3434aa6d7e3b73ef61af16f02caafa54fa1c58a3843a7b1e79adb931d478a6fcda659f4e67abc08d2#npm:2.6.9"],
             ["define-property", "npm:0.2.5"],
             ["extend-shallow", "npm:2.0.1"],
             ["posix-character-classes", "npm:0.1.1"],
@@ -7608,6 +8027,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["fast-url-parser", "npm:1.1.3"],
             ["punycode", "npm:1.4.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fastify-warning", [
+        ["npm:0.2.0", {
+          "packageLocation": "./.yarn/cache/fastify-warning-npm-0.2.0-f9c53563fc-c19ebccf54.zip/node_modules/fastify-warning/",
+          "packageDependencies": [
+            ["fastify-warning", "npm:0.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8052,7 +8480,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["get-uri", "npm:2.0.4"],
             ["data-uri-to-buffer", "npm:1.2.0"],
-            ["debug", "virtual:2bcc47d217f870e3d52f0e55493dc34fd3da852877f7db32fa2940cc320151746026495daf6a34a974488cf5a949d93be1e2dc1ffba036faf081a9b15fcd2252#npm:2.6.9"],
+            ["debug", "virtual:c5a024ec2e0c9cd8a290d611acd3bb1322a0de49d58dbda3434aa6d7e3b73ef61af16f02caafa54fa1c58a3843a7b1e79adb931d478a6fcda659f4e67abc08d2#npm:2.6.9"],
             ["extend", "npm:3.0.2"],
             ["file-uri-to-path", "npm:1.0.0"],
             ["ftp", "npm:0.3.10"],
@@ -10501,6 +10929,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@sideway/pinpoint", "npm:2.0.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:17.4.2", {
+          "packageLocation": "./.yarn/cache/joi-npm-17.4.2-93548ecd23-977ada1f9d.zip/node_modules/joi/",
+          "packageDependencies": [
+            ["joi", "npm:17.4.2"],
+            ["@hapi/hoek", "npm:9.2.0"],
+            ["@hapi/topo", "npm:5.1.0"],
+            ["@sideway/address", "npm:4.1.2"],
+            ["@sideway/formula", "npm:3.0.0"],
+            ["@sideway/pinpoint", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["joycon", [
@@ -10805,6 +11245,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/kleur-npm-3.0.3-f6f53649a4-df82cd1e17.zip/node_modules/kleur/",
           "packageDependencies": [
             ["kleur", "npm:3.0.3"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/kleur-npm-4.0.0-aba7063ba8-768efe2b9b.zip/node_modules/kleur/",
+          "packageDependencies": [
+            ["kleur", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }],
@@ -11895,6 +12342,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:3.2.1", {
+          "packageLocation": "./.yarn/unplugged/node-addon-api-npm-3.2.1-a29528f81d/node_modules/node-addon-api/",
+          "packageDependencies": [
+            ["node-addon-api", "npm:3.2.1"],
+            ["node-gyp", "npm:8.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:4.0.0", {
           "packageLocation": "./.yarn/unplugged/node-addon-api-npm-4.0.0-040fa4fd86/node_modules/node-addon-api/",
           "packageDependencies": [
@@ -12419,6 +12874,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["opencollective-postinstall", [
+        ["npm:2.0.3", {
+          "packageLocation": "./.yarn/cache/opencollective-postinstall-npm-2.0.3-954643c36b-0a68c5cef1.zip/node_modules/opencollective-postinstall/",
+          "packageDependencies": [
+            ["opencollective-postinstall", "npm:2.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["optionator", [
         ["npm:0.8.3", {
           "packageLocation": "./.yarn/cache/optionator-npm-0.8.3-bc555bc5b7-b8695ddf3d.zip/node_modules/optionator/",
@@ -12868,6 +13332,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:8.7.1", {
+          "packageLocation": "./.yarn/cache/pg-npm-8.7.1-47be8f5ecd-3a17d9a73d.zip/node_modules/pg/",
+          "packageDependencies": [
+            ["pg", "npm:8.7.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:892e52fa16c20cfdaf97bab6331cb17791cd4f96ee911efd24e19180ed1834658d858f29bec8e141a9158c917b04155cb510f9813481ad74616dc2761b420c72#npm:8.7.1", {
+          "packageLocation": "./.yarn/__virtual__/pg-virtual-5688f70dc4/0/cache/pg-npm-8.7.1-47be8f5ecd-3a17d9a73d.zip/node_modules/pg/",
+          "packageDependencies": [
+            ["pg", "virtual:892e52fa16c20cfdaf97bab6331cb17791cd4f96ee911efd24e19180ed1834658d858f29bec8e141a9158c917b04155cb510f9813481ad74616dc2761b420c72#npm:8.7.1"],
+            ["@types/pg-native", null],
+            ["buffer-writer", "npm:2.0.0"],
+            ["packet-reader", "npm:1.0.0"],
+            ["pg-connection-string", "npm:2.5.0"],
+            ["pg-native", null],
+            ["pg-pool", "virtual:5688f70dc4c5c4a272fe6ca5a6986c71bb8b5000d16263fda13f0c45b7b075d31dbe6b65f4020f08a2aa947d7452a227b8ed0ac7a934c23d12360e52408263ac#npm:3.4.1"],
+            ["pg-protocol", "npm:1.5.0"],
+            ["pg-types", "npm:2.2.0"],
+            ["pgpass", "npm:1.0.4"]
+          ],
+          "packagePeers": [
+            "@types/pg-native",
+            "pg-native"
+          ],
+          "linkType": "HARD",
+        }],
         ["virtual:b82d418bb5d8e93b6caee5283d7f6c28b6703fdf8f927ced1656f887a1c1279ae453e57237883d946a412da378861b3cdd268d29d202402cf7241e8ead654ec3#npm:8.6.0", {
           "packageLocation": "./.yarn/__virtual__/pg-virtual-8490f09322/0/cache/pg-npm-8.6.0-5a6707a5ba-37d5d656bf.zip/node_modules/pg/",
           "packageDependencies": [
@@ -12935,6 +13426,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pg-pool", "npm:3.3.0"]
           ],
           "linkType": "SOFT",
+        }],
+        ["npm:3.4.1", {
+          "packageLocation": "./.yarn/cache/pg-pool-npm-3.4.1-14f060ebff-50d68bd99a.zip/node_modules/pg-pool/",
+          "packageDependencies": [
+            ["pg-pool", "npm:3.4.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:5688f70dc4c5c4a272fe6ca5a6986c71bb8b5000d16263fda13f0c45b7b075d31dbe6b65f4020f08a2aa947d7452a227b8ed0ac7a934c23d12360e52408263ac#npm:3.4.1", {
+          "packageLocation": "./.yarn/__virtual__/pg-pool-virtual-6dc5179891/0/cache/pg-pool-npm-3.4.1-14f060ebff-50d68bd99a.zip/node_modules/pg-pool/",
+          "packageDependencies": [
+            ["pg-pool", "virtual:5688f70dc4c5c4a272fe6ca5a6986c71bb8b5000d16263fda13f0c45b7b075d31dbe6b65f4020f08a2aa947d7452a227b8ed0ac7a934c23d12360e52408263ac#npm:3.4.1"],
+            ["@types/pg", null],
+            ["pg", "virtual:892e52fa16c20cfdaf97bab6331cb17791cd4f96ee911efd24e19180ed1834658d858f29bec8e141a9158c917b04155cb510f9813481ad74616dc2761b420c72#npm:8.7.1"]
+          ],
+          "packagePeers": [
+            "@types/pg",
+            "pg"
+          ],
+          "linkType": "HARD",
         }],
         ["virtual:8490f093221a01a262e32a8259901a6fe4655303473635756054586ec07fd67566b30a16f8310b2ed07b7acfc444f88eefac89e01b79deeeb71dc7061685d586#npm:3.3.0", {
           "packageLocation": "./.yarn/__virtual__/pg-pool-virtual-b7e9f2a3be/0/cache/pg-pool-npm-3.3.0-ad591c0006-f85cef5b3f.zip/node_modules/pg-pool/",
@@ -13026,6 +13537,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pino", "npm:6.13.0"],
             ["fast-redact", "npm:3.0.1"],
             ["fast-safe-stringify", "npm:2.0.8"],
+            ["flatstr", "npm:1.0.12"],
+            ["pino-std-serializers", "npm:3.2.0"],
+            ["quick-format-unescaped", "npm:4.0.3"],
+            ["sonic-boom", "npm:1.4.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.13.2", {
+          "packageLocation": "./.yarn/cache/pino-npm-6.13.2-60b212cb2e-daed080996.zip/node_modules/pino/",
+          "packageDependencies": [
+            ["pino", "npm:6.13.2"],
+            ["fast-redact", "npm:3.0.1"],
+            ["fast-safe-stringify", "npm:2.0.8"],
+            ["fastify-warning", "npm:0.2.0"],
             ["flatstr", "npm:1.0.12"],
             ["pino-std-serializers", "npm:3.2.0"],
             ["quick-format-unescaped", "npm:4.0.3"],
@@ -13383,6 +13908,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prompts", [
+        ["npm:2.4.0", {
+          "packageLocation": "./.yarn/cache/prompts-npm-2.4.0-44f1e10a9a-96c7bef8eb.zip/node_modules/prompts/",
+          "packageDependencies": [
+            ["prompts", "npm:2.4.0"],
+            ["kleur", "npm:3.0.3"],
+            ["sisteransi", "npm:1.0.5"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.4.1", {
           "packageLocation": "./.yarn/cache/prompts-npm-2.4.1-dd3df3be17-05bf486587.zip/node_modules/prompts/",
           "packageDependencies": [
@@ -14367,7 +14901,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["snapdragon", "npm:0.8.2"],
             ["base", "npm:0.11.2"],
-            ["debug", "virtual:2bcc47d217f870e3d52f0e55493dc34fd3da852877f7db32fa2940cc320151746026495daf6a34a974488cf5a949d93be1e2dc1ffba036faf081a9b15fcd2252#npm:2.6.9"],
+            ["debug", "virtual:c5a024ec2e0c9cd8a290d611acd3bb1322a0de49d58dbda3434aa6d7e3b73ef61af16f02caafa54fa1c58a3843a7b1e79adb931d478a6fcda659f4e67abc08d2#npm:2.6.9"],
             ["define-property", "npm:0.2.5"],
             ["extend-shallow", "npm:2.0.1"],
             ["map-cache", "npm:0.2.2"],
@@ -14956,6 +15490,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mkdirp", "npm:0.5.5"],
             ["safe-buffer", "npm:5.2.1"],
             ["yallist", "npm:3.1.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.1.11", {
+          "packageLocation": "./.yarn/cache/tar-npm-6.1.11-e6ac3cba9c-a04c07bb9e.zip/node_modules/tar/",
+          "packageDependencies": [
+            ["tar", "npm:6.1.11"],
+            ["chownr", "npm:2.0.0"],
+            ["fs-minipass", "npm:2.1.0"],
+            ["minipass", "npm:3.1.3"],
+            ["minizlib", "npm:2.1.2"],
+            ["mkdirp", "npm:1.0.4"],
+            ["yallist", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }],
@@ -16104,6 +16651,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:7.5.5", {
+          "packageLocation": "./.yarn/cache/ws-npm-7.5.5-8f4a2a84a8-bd2b437256.zip/node_modules/ws/",
+          "packageDependencies": [
+            ["ws", "npm:7.5.5"]
+          ],
+          "linkType": "SOFT",
+        }],
         ["virtual:b1d317f96b6c5e226dc356136f342658cec526094f12d0d8876a0d8a7e661bb677db0376f6488e02122bea7669dfd6726b895258a5630b302b7410a9935a1e39#npm:6.2.2", {
           "packageLocation": "./.yarn/__virtual__/ws-virtual-d55ce029e2/0/cache/ws-npm-6.2.2-ca62a10fa0-aec3154ec5.zip/node_modules/ws/",
           "packageDependencies": [
@@ -16111,6 +16665,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/bufferutil", null],
             ["@types/utf-8-validate", null],
             ["async-limiter", "npm:1.0.1"],
+            ["bufferutil", null],
+            ["utf-8-validate", null]
+          ],
+          "packagePeers": [
+            "@types/bufferutil",
+            "@types/utf-8-validate",
+            "bufferutil",
+            "utf-8-validate"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:ebed6cefbf2402c51f010ed713229f0c53a3d654469f43a064433c2addd72ee13d307446d3b63e8f612a767f9626c1d7b4e99dcaf51e8a7d5beee38de5f871b3#npm:7.5.5", {
+          "packageLocation": "./.yarn/__virtual__/ws-virtual-1c4e2fc5ba/0/cache/ws-npm-7.5.5-8f4a2a84a8-bd2b437256.zip/node_modules/ws/",
+          "packageDependencies": [
+            ["ws", "virtual:ebed6cefbf2402c51f010ed713229f0c53a3d654469f43a064433c2addd72ee13d307446d3b63e8f612a767f9626c1d7b4e99dcaf51e8a7d5beee38de5f871b3#npm:7.5.5"],
+            ["@types/bufferutil", null],
+            ["@types/utf-8-validate", null],
             ["bufferutil", null],
             ["utf-8-validate", null]
           ],
@@ -16210,6 +16781,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/xstate-npm-4.23.1-96d9ff391a-b1c9148de2.zip/node_modules/xstate/",
           "packageDependencies": [
             ["xstate", "npm:4.23.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.23.4", {
+          "packageLocation": "./.yarn/cache/xstate-npm-4.23.4-a2d22084b1-14bdebb12b.zip/node_modules/xstate/",
+          "packageDependencies": [
+            ["xstate", "npm:4.23.4"]
           ],
           "linkType": "HARD",
         }]
