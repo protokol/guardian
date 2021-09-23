@@ -36,7 +36,7 @@ describe("API - Post transaction", () => {
 			transactions: [actual.data],
 		});
 
-		// response should be 403 (without custom error handler is 500)
-		expect(response.data.statusCode).toBe(403);
+		expect(response.statusCode).toBe(200);
+		expect(response.data.data.invalid[0]).toStrictEqual(actual.id);
 	});
 });

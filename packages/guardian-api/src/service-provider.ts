@@ -1,7 +1,7 @@
 import { Identifiers as ApiIdentifiers, Server } from "@arkecosystem/core-api";
 import { Container, Contracts, Providers } from "@arkecosystem/core-kernel";
 
-import { Handler, initForbiddenErrorHandler } from "./handlers";
+import { Handler } from "./handlers";
 import { Identifiers } from "./identifiers";
 import { GroupSearchService, UserSearchService } from "./services";
 
@@ -22,7 +22,6 @@ export class ServiceProvider extends Providers.ServiceProvider {
 					plugin: Handler,
 					routes: { prefix: "/api/guardian" },
 				});
-				initForbiddenErrorHandler(server);
 			}
 		}
 	}
