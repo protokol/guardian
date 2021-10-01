@@ -1,5 +1,6 @@
 ![Img](guardian-crypto.png)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![codecov](https://codecov.io/gh/protokol/guardian/branch/develop/graph/badge.svg?token=DISCZNUXC0&flag=guardian-crypto)](https://codecov.io/gh/protokol/guardian)
 
 # GUARDIAN-CRYPTO
 
