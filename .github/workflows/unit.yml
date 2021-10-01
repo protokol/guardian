@@ -29,10 +29,25 @@ jobs:
               run: yarn && yarn build
 
             - name: GUARDIAN-CRYPTO
-              run: cd packages/guardian-crypto && yarn test:unit:coverage --coverageDirectory .coverage/unit-guardian-crypto --maxWorkers=2
+              run: cd packages/guardian-crypto && yarn test:unit:coverage --maxWorkers=2
+
+            - uses: codecov/codecov-action@v2
+              with:
+                directory: packages/guardian-crypto/.coverage
+                flags: guardian-crypto
 
             - name: GUARDIAN-TRANSACTIONS
-              run: cd packages/guardian-transactions && yarn test:unit:coverage --coverageDirectory .coverage/unit-guardian-transactions --maxWorkers=2
+              run: cd packages/guardian-transactions && yarn test:unit:coverage --maxWorkers=2
+
+            - uses: codecov/codecov-action@v2
+              with:
+                directory: packages/guardian-transactions/.coverage
+                flags: guardian-transactions
 
             - name: GUARDIAN-API
-              run: cd packages/guardian-api && yarn test:unit:coverage --coverageDirectory .coverage/unit-guardian-api --maxWorkers=2
+              run: cd packages/guardian-api && yarn test:unit:coverage --maxWorkers=2
+
+            - uses: codecov/codecov-action@v2
+              with:
+                directory: packages/guardian-api/.coverage
+                flags: guardian-api
