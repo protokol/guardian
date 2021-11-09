@@ -12,7 +12,7 @@
 		"publish": "yarn workspaces foreach -pt --no-private run publish",
 		"build": "yarn workspaces foreach -pt run build",
 		"clean": "yarn workspaces foreach -pt run clean",
-	  	"changelog": "yarn auto-changelog",
+		"changelog": "yarn auto-changelog",
 		"version": "yarn workspaces foreach version",
 		"version:apply": "yarn workspaces foreach version apply",
 		"version:check": "yarn version check --interactive",
@@ -53,7 +53,7 @@
 		"auto-changelog": "^2.3.0",
 		"codecov": "^3.7.2",
 		"cross-env": "^7.0.2",
-		"eslint": "^8.0.0",
+		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.2.0",
 		"eslint-plugin-jest": "^25.0.0",
 		"eslint-plugin-prettier": "^4.0.0",
@@ -104,5 +104,5 @@
 	"workspaces": [
 		"packages/*"
 	],
-	"packageManager": "yarn@3.0.2"
+	"packageManager": "yarn@3.1.0"
 }
