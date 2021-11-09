@@ -40,7 +40,7 @@
         "@protokol/guardian-crypto": "workspace:packages/guardian-crypto"
     },
     "devDependencies": {
-        "@types/node": "^14.14.31",
+        "@types/node": "^16.0.0",
         "@types/rimraf": "^3.0.0",
         "rimraf": "^3.0.2",
         "typedoc": "~0.22.0",
