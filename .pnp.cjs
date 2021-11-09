@@ -2795,7 +2795,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0"],
             ["@protokol/client", "npm:1.0.0"],
             ["@protokol/guardian-crypto", "workspace:packages/guardian-crypto"],
-            ["@types/node", "npm:14.17.19"],
+            ["@types/node", "npm:16.11.7"],
             ["@types/rimraf", "npm:3.0.2"],
             ["rimraf", "npm:3.0.2"],
             ["typedoc", "virtual:badcd63cd78af5fef07ddf9685fcfd8c6f32a5757c0c37a8bd540255805c45dad47e044b620979e943d71c20772456f6ea1cae33ad5de46c8a661cbb7a62cee9#npm:0.22.0"],
@@ -3244,10 +3244,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:14.17.19", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.19-d855b45632-3365ee4fe7.zip/node_modules/@types/node/",
+        ["npm:16.11.7", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.7-1799a0a435-2706403e6e.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.19"]
+            ["@types/node", "npm:16.11.7"]
           ],
           "linkType": "HARD",
         }],
