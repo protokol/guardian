@@ -3218,7 +3218,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:d203bf382b1d200a4debed8aca4ef27c3ac5838eaa88751966fdf2c665f75cf7b2bdaf2167e9cb6f24b433c641ff73155e43c645d08a955402360bc364d3a9d8#npm:27.0.6"],
             ["jest-extended", "npm:1.0.0"],
             ["joi", "npm:17.4.2"],
-            ["latest-version", "npm:5.1.0"],
+            ["latest-version", "npm:6.0.0"],
             ["prettier", "npm:2.3.2"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:d203bf382b1d200a4debed8aca4ef27c3ac5838eaa88751966fdf2c665f75cf7b2bdaf2167e9cb6f24b433c641ff73155e43c645d08a955402360bc364d3a9d8#npm:27.1.0"],
@@ -8736,6 +8736,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:11.8.3", {
+          "packageLocation": "./.yarn/cache/got-npm-11.8.3-caf98d599b-3b6db107d9.zip/node_modules/got/",
+          "packageDependencies": [
+            ["got", "npm:11.8.3"],
+            ["@sindresorhus/is", "npm:4.0.1"],
+            ["@szmarczak/http-timer", "npm:4.0.6"],
+            ["@types/cacheable-request", "npm:6.0.2"],
+            ["@types/responselike", "npm:1.0.0"],
+            ["cacheable-lookup", "npm:5.0.4"],
+            ["cacheable-request", "npm:7.0.2"],
+            ["decompress-response", "npm:6.0.0"],
+            ["http2-wrapper", "npm:1.0.3"],
+            ["lowercase-keys", "npm:2.0.0"],
+            ["p-cancelable", "npm:2.1.1"],
+            ["responselike", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:9.6.0", {
           "packageLocation": "./.yarn/cache/got-npm-9.6.0-80edc15fd0-941807bd97.zip/node_modules/got/",
           "packageDependencies": [
@@ -11614,6 +11632,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["package-json", "npm:6.5.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:6.0.0", {
+          "packageLocation": "./.yarn/cache/latest-version-npm-6.0.0-d228167147-c3f282dee4.zip/node_modules/latest-version/",
+          "packageDependencies": [
+            ["latest-version", "npm:6.0.0"],
+            ["package-json", "npm:7.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["leven", [
@@ -13343,6 +13369,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["registry-auth-token", "npm:4.2.1"],
             ["registry-url", "npm:5.1.0"],
             ["semver", "npm:6.3.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/package-json-npm-7.0.0-d6434d1150-c03699b057.zip/node_modules/package-json/",
+          "packageDependencies": [
+            ["package-json", "npm:7.0.0"],
+            ["got", "npm:11.8.3"],
+            ["registry-auth-token", "npm:4.2.1"],
+            ["registry-url", "npm:5.1.0"],
+            ["semver", "npm:7.3.5"]
           ],
           "linkType": "HARD",
         }]

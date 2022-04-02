@@ -2408,7 +2408,7 @@ __metadata:
     jest: ^27.0.0
     jest-extended: ^1.0.0
     joi: ^17.4.2
-    latest-version: ^5.1.0
+    latest-version: ^6.0.0
     prettier: ^2.1.2
     rimraf: ^3.0.2
     ts-jest: ~27.1.0
@@ -4471,7 +4471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacheable-request@npm:^7.0.1":
+"cacheable-request@npm:^7.0.1, cacheable-request@npm:^7.0.2":
   version: 7.0.2
   resolution: "cacheable-request@npm:7.0.2"
   dependencies:
@@ -7160,6 +7160,25 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"got@npm:^11.8.2":
+  version: 11.8.3
+  resolution: "got@npm:11.8.3"
+  dependencies:
+    "@sindresorhus/is": ^4.0.0
+    "@szmarczak/http-timer": ^4.0.5
+    "@types/cacheable-request": ^6.0.1
+    "@types/responselike": ^1.0.0
+    cacheable-lookup: ^5.0.3
+    cacheable-request: ^7.0.2
+    decompress-response: ^6.0.0
+    http2-wrapper: ^1.0.0-beta.5.2
+    lowercase-keys: ^2.0.0
+    p-cancelable: ^2.0.0
+    responselike: ^2.0.0
+  checksum: 3b6db107d9765470b18e4cb22f7c7400381be7425b9be5823f0168d6c21b5d6b28b023c0b3ee208f73f6638c3ce251948ca9b54a1e8f936d3691139ac202d01b
+  languageName: node
+  linkType: hard
+
 "got@npm:^9.6.0":
   version: 9.6.0
   resolution: "got@npm:9.6.0"
@@ -9791,6 +9810,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"latest-version@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "latest-version@npm:6.0.0"
+  dependencies:
+    package-json: ^7.0.0
+  checksum: c3f282dee464b400dacac9bd785415df9f55b31b08f7e201ca9d6862ce829c6f49d2c14120632d43f6bca48e0eaa2daa6cf755f291fac9fe5dc67fdd9777ab77
+  languageName: node
+  linkType: hard
+
 "leven@npm:2.1.0":
   version: 2.1.0
   resolution: "leven@npm:2.1.0"
@@ -11363,6 +11391,18 @@ fsevents@~2.1.2:
     registry-url: ^5.0.0
     semver: ^6.2.0
   checksum: cc9f890d3667d7610e6184decf543278b87f657d1ace0deb4a9c9155feca738ef88f660c82200763d3348010f4e42e9c7adc91e96ab0f86a770955995b5351e2
+  languageName: node
+  linkType: hard
+
+"package-json@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "package-json@npm:7.0.0"
+  dependencies:
+    got: ^11.8.2
+    registry-auth-token: ^4.0.0
+    registry-url: ^5.0.0
+    semver: ^7.3.5
+  checksum: c03699b057f665c5bf2d6af76190b8fb32aaf69c70a78faf7c073c03c3d0d5e168d4a96f386739a4d179e925e66289bf0b93a446fbb3f97b05451a3cd2a3bd90
   languageName: node
   linkType: hard
 
