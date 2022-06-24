@@ -3237,7 +3237,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0"],
             ["@protokol/utils", "npm:1.0.0"],
             ["@sindresorhus/tsconfig", "npm:2.0.0"],
-            ["@types/jest", "npm:27.4.0"],
+            ["@types/jest", "npm:27.5.2"],
             ["bytebuffer", "npm:5.0.1"],
             ["codecov", "npm:3.8.3"],
             ["cross-env", "npm:7.0.3"],
@@ -3649,11 +3649,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:27.4.0", {
-          "packageLocation": "./.yarn/cache/@types-jest-npm-27.4.0-33755263ec-d2350267f9.zip/node_modules/@types/jest/",
+        ["npm:27.5.2", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-27.5.2-f8ba570ba6-7e11c6826a.zip/node_modules/@types/jest/",
           "packageDependencies": [
-            ["@types/jest", "npm:27.4.0"],
-            ["jest-diff", "npm:27.4.2"],
+            ["@types/jest", "npm:27.5.2"],
+            ["jest-matcher-utils", "npm:27.5.1"],
             ["pretty-format", "npm:27.4.2"]
           ],
           "linkType": "HARD",
@@ -6851,13 +6851,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/diff-sequences-npm-27.0.6-1eed05107b-f35ad024d4.zip/node_modules/diff-sequences/",
           "packageDependencies": [
             ["diff-sequences", "npm:27.0.6"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:27.4.0", {
-          "packageLocation": "./.yarn/cache/diff-sequences-npm-27.4.0-3693b5b4cd-66d04033e8.zip/node_modules/diff-sequences/",
-          "packageDependencies": [
-            ["diff-sequences", "npm:27.4.0"]
           ],
           "linkType": "HARD",
         }],
@@ -10251,17 +10244,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:27.4.2", {
-          "packageLocation": "./.yarn/cache/jest-diff-npm-27.4.2-2cced147c0-e5bcdb4f27.zip/node_modules/jest-diff/",
-          "packageDependencies": [
-            ["jest-diff", "npm:27.4.2"],
-            ["chalk", "npm:4.1.1"],
-            ["diff-sequences", "npm:27.4.0"],
-            ["jest-get-type", "npm:27.4.0"],
-            ["pretty-format", "npm:27.4.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:27.5.1", {
           "packageLocation": "./.yarn/cache/jest-diff-npm-27.5.1-818e549196-8be27c1e1e.zip/node_modules/jest-diff/",
           "packageDependencies": [
@@ -10446,13 +10428,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/jest-get-type-npm-27.0.6-635fb783d0-2d4c1381bb.zip/node_modules/jest-get-type/",
           "packageDependencies": [
             ["jest-get-type", "npm:27.0.6"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:27.4.0", {
-          "packageLocation": "./.yarn/cache/jest-get-type-npm-27.4.0-72f58c1f46-bb9b70e420.zip/node_modules/jest-get-type/",
-          "packageDependencies": [
-            ["jest-get-type", "npm:27.4.0"]
           ],
           "linkType": "HARD",
         }],
@@ -16064,7 +16039,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", null],
             ["@types/babel-jest", null],
             ["@types/babel__core", null],
-            ["@types/jest", "npm:27.4.0"],
+            ["@types/jest", "npm:27.5.2"],
             ["@types/typescript", null],
             ["babel-jest", null],
             ["bs-logger", "npm:0.2.6"],
