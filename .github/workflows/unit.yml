@@ -31,7 +31,7 @@ jobs:
             - name: GUARDIAN-CRYPTO
               run: cd packages/guardian-crypto && yarn test:unit:coverage --maxWorkers=2
 
-            - uses: codecov/codecov-action@v2
+            - uses: codecov/codecov-action@v3
               with:
                 directory: packages/guardian-crypto/.coverage
                 flags: guardian-crypto
@@ -39,7 +39,7 @@ jobs:
             - name: GUARDIAN-TRANSACTIONS
               run: cd packages/guardian-transactions && yarn test:unit:coverage --maxWorkers=2
 
-            - uses: codecov/codecov-action@v2
+            - uses: codecov/codecov-action@v3
               with:
                 directory: packages/guardian-transactions/.coverage
                 flags: guardian-transactions
@@ -47,7 +47,7 @@ jobs:
             - name: GUARDIAN-API
               run: cd packages/guardian-api && yarn test:unit:coverage --maxWorkers=2
 
-            - uses: codecov/codecov-action@v2
+            - uses: codecov/codecov-action@v3
               with:
                 directory: packages/guardian-api/.coverage
                 flags: guardian-api
