@@ -2390,7 +2390,7 @@ __metadata:
     "@protokol/guardian-crypto": "workspace:packages/guardian-crypto"
     "@protokol/guardian-transactions": "workspace:packages/guardian-transactions"
     "@sindresorhus/tsconfig": ^2.0.0
-    "@types/eslint": ^7.2.10
+    "@types/eslint": ^9.0.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/hapi__boom": ^7.4.1
     "@types/hapi__joi": ^17.1.6
@@ -2467,7 +2467,7 @@ __metadata:
     "@arkecosystem/crypto": ^3.0.0
     "@protokol/guardian-crypto": "workspace:packages/guardian-crypto"
     "@sindresorhus/tsconfig": ~2.0.0
-    "@types/eslint": ^7.2.10
+    "@types/eslint": ^9.0.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
     "@types/prettier": ^2.1.5
@@ -2492,7 +2492,7 @@ __metadata:
     "@arkecosystem/core": ^3.0.0
     "@arkecosystem/core-cli": ^3.0.0
     "@sindresorhus/tsconfig": ^2.0.0
-    "@types/eslint": ^7.2.10
+    "@types/eslint": ^9.0.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
     "@types/prettier": ^2.0.2
@@ -2733,13 +2733,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^7.2.10":
+"@types/eslint@npm:*":
   version: 7.28.0
   resolution: "@types/eslint@npm:7.28.0"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
   checksum: 75ac2577d2a2e35bae66f56d2d1c871d5e836b2721cf14bd3df450c9d584eba48fa3b1013fba710245bf4795f16e1df0ed315e543e3199c4815ee4782537d0ae
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:^9.0.0":
+  version: 9.6.1
+  resolution: "@types/eslint@npm:9.6.1"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: c286e79707ab604b577cf8ce51d9bbb9780e3d6a68b38a83febe13fa05b8012c92de17c28532fac2b03d3c460123f5055d603a579685325246ca1c86828223e0
   languageName: node
   linkType: hard
 
