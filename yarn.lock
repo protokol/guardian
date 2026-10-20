@@ -2105,6 +2105,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@noble/hashes@npm:^1.2.0":
+  version: 1.8.0
+  resolution: "@noble/hashes@npm:1.8.0"
+  checksum: c94e98b941963676feaba62475b1ccfa8341e3f572adbb3b684ee38b658df44100187fa0ef4220da580b13f8d27e87d5492623c8a02ecc61f23fb9960c7918f5
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -2471,7 +2478,7 @@ __metadata:
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
     "@types/prettier": ^2.1.5
-    bip39: 3.0.4
+    bip39: 3.1.2
     codecov: ^3.8.1
     eslint: ^7.32.0
     eslint-plugin-prettier: ^4.0.0
@@ -4111,6 +4118,15 @@ __metadata:
     pbkdf2: ^3.0.9
     randombytes: ^2.0.1
   checksum: 79ce1600a03d1ba5053bdd4e6323f9463ec340764c7e52918b6c6b9dca81221940f2d9a65656447f108f9bc2c8d9ae8df319cca83bbd1dad63f53ef2768d9bae
+  languageName: node
+  linkType: hard
+
+"bip39@npm:3.1.2":
+  version: 3.1.2
+  resolution: "bip39@npm:3.1.2"
+  dependencies:
+    "@noble/hashes": ^1.2.0
+  checksum: bb9df98ee9de896aad588c40a8e841f992c0c466d71853f2c118469ad3b996946aaef93a85c10036addc5f09b35db2f3868cb001c38d9a10ad94ba1e350b7172
   languageName: node
   linkType: hard
 
