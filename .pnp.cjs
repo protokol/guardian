@@ -2845,6 +2845,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@noble/hashes", [
+        ["npm:1.8.0", {
+          "packageLocation": "./.yarn/cache/@noble-hashes-npm-1.8.0-a397449e64-c94e98b941.zip/node_modules/@noble/hashes/",
+          "packageDependencies": [
+            ["@noble/hashes", "npm:1.8.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@nodelib/fs.scandir", [
         ["npm:2.1.5", {
           "packageLocation": "./.yarn/cache/@nodelib-fs.scandir-npm-2.1.5-89c67370dd-a970d595bd.zip/node_modules/@nodelib/fs.scandir/",
@@ -3287,7 +3296,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:27.0.0"],
             ["@types/prettier", "npm:2.3.2"],
-            ["bip39", "npm:3.0.4"],
+            ["bip39", "npm:3.1.2"],
             ["codecov", "npm:3.8.3"],
             ["eslint", "npm:7.32.0"],
             ["eslint-plugin-prettier", "virtual:2114906214ae1b3aacbb0ff8e15f5f26a82db57364046b914e58da85667524fd28e84745ee8637ff1154e38d0c758268e428da29fb33617a6ca86e0cf0cc6298#npm:4.0.0"],
@@ -5277,6 +5286,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["create-hash", "npm:1.2.0"],
             ["pbkdf2", "npm:3.1.2"],
             ["randombytes", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.1.2", {
+          "packageLocation": "./.yarn/cache/bip39-npm-3.1.2-409f09b73d-bb9df98ee9.zip/node_modules/bip39/",
+          "packageDependencies": [
+            ["bip39", "npm:3.1.2"],
+            ["@noble/hashes", "npm:1.8.0"]
           ],
           "linkType": "HARD",
         }]
